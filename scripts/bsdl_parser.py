@@ -12,11 +12,6 @@ TODO:
     Need to allow for multiple pins with same signal "VSS:(10,26,49,74,99)" -> "VSS:10, VSS:26, VSS:49...."
     Also need to allow for this when creating the ports list in JSON
 '''
-
-import re
-import json
-import os
-
 def read_bsdl_file(file_path):
     try:
         with open(file_path, 'r') as file:
