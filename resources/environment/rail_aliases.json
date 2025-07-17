@@ -1,0 +1,22 @@
+{
+  "GND": {
+    "aliases": ["GND", "VSS", "AGND", "DGND", "0V"],
+    "voltage": 0.0,
+    "auto_detect": true
+  },
+  "VCC": {
+    "aliases": ["VCC", "VDD", "3V3", "IOVCC"],
+    "voltage": 3.3,
+    "auto_detect": true
+  },
+  "5V": {
+    "aliases": ["5V", "+5V", "VUSB"],
+    "voltage": 5.0,
+    "auto_detect": true
+  },
+  "24V": {
+    "aliases": ["24V", "PWR_24", "V24"],
+    "voltage": 24.0,
+    "auto_detect": false
+  }
+}

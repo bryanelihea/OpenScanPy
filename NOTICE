@@ -1,0 +1,19 @@
+OpenScan
+Copyright 2025 OpenScan Contributors
+
+This software is licensed under the Apache License, Version 2.0,
+with an additional Patent Non-Assertion Clause to protect the
+community from patent-related legal actions.
+
+For license details, see the LICENSE file in this directory.
+
+Third-party components used within this project may have their
+own licenses, noted where applicable in source files or documentation.
+
+If used in commercial or derivative works, attribution should be
+provided in the form of:
+
+    "Powered by OpenScan" or similar acknowledgement.
+
+This NOTICE file is provided for informational purposes only and
+does not modify the terms of the LICENSE.

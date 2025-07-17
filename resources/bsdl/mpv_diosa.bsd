@@ -1,0 +1,125 @@
+-------------------------------------------------------------------------------
+--
+-- Copyright (C) 2007-2013  JTAG Technologies B.V.
+--
+-------------------------------------------------------------------------------
+
+entity MPV_DIOS is
+  generic (PHYSICAL_PIN_MAP : string := "DIOS");
+
+  port (CH :inout bit_vector(1 to 16);
+        S1 :inout bit;
+        S2 :inout bit;
+        GND:linkage bit;
+        VCC:linkage bit;
+        TDO:out bit;
+        TMS, TDI, TCK, TRST:in bit);
+
+  use STD_1149_1_1994.all;   -- Get Std 1149.1-1994 attributes and definitions
+
+  attribute COMPONENT_CONFORMANCE of MPV_DIOS : entity is "STD_1149_1_1993";
+
+  attribute PIN_MAP of MPV_DIOS : entity is PHYSICAL_PIN_MAP;
+
+  constant DIOS:PIN_MAP_STRING:=
+          "CH :(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16),"&
+          "S1 :126,"&
+          "S2 :110,"&
+          "GND:114,"&
+          "VCC:128,"&
+          "TDO:116, TMS:113, TCK:115, TDI:112, TRST:117";
+
+  attribute TAP_SCAN_IN    of TDI : signal is true;
+  attribute TAP_SCAN_MODE  of TMS : signal is true;
+  attribute TAP_SCAN_OUT   of TDO : signal is true;
+  attribute TAP_SCAN_CLOCK of TCK : signal is (40.0e6, BOTH);
+  attribute TAP_SCAN_RESET of TRST : signal is true;
+
+  attribute INSTRUCTION_LENGTH of MPV_DIOS : entity is 8;
+
+  attribute INSTRUCTION_OPCODE of MPV_DIOS : entity is
+       "BYPASS        (11111111),"  &
+       "EXTEST        (00000000),"  &
+       "SAMPLE        (00000001),"  &
+       "IDCODE        (00000010),"  &
+       "ECIDCODE      (00000011),"  &
+       "HIGHZ         (00000100),"  &
+       "BOUNDARY_READ (00000110),"  &
+       "CLAMP         (00000101),"  &
+       "POWER         (00000111)";
+
+  attribute INSTRUCTION_CAPTURE of MPV_DIOS : entity is "00000001";
+
+  attribute IDCODE_REGISTER of MPV_DIOS     : entity is
+            "0000"                &   --   4 bits  > device version
+            "1011111010101101"    &   --   16 bits > part number
+            "00011101001"         &   --   11 bits > manufacturer ID
+            "1" ;                     --   Mandatory LSB
+
+  attribute REGISTER_ACCESS of MPV_DIOS : entity is
+       "BOUNDARY 	(BOUNDARY_READ)," &
+       "ECID[67]        (ECIDCODE),"  &
+       "POWER[3]        (POWER)";
+
+  attribute BOUNDARY_LENGTH of MPV_DIOS : entity is 55;
+
+  attribute BOUNDARY_REGISTER of MPV_DIOS : entity is
+     --num   cell  port     function safe [ccell disval rslt]
+
+        "0  (BC_1, *,         control , 0),"  &
+        "1  (BC_1, CH(1),     output3 , 1,   0,    0,     Z),"  &
+        "2  (BC_4, CH(1),     input   , X),"  &
+        "3  (BC_1, *,         control , 0),"  &
+        "4  (BC_1, CH(2),     output3 , 1,   3,    0,     Z),"  &
+        "5  (BC_4, CH(2),     input   , X),"  &
+        "6  (BC_1, *,         control , 0),"  &
+        "7  (BC_1, CH(3),     output3 , 1,   6,    0,     Z),"  &
+        "8  (BC_4, CH(3),     input   , X),"  &
+        "9  (BC_1, *,         control , 0),"  &
+        "10 (BC_1, CH(4),     output3 , 1,   9,    0,     Z),"  &
+        "11 (BC_4, CH(4),     input   , X),"  &
+        "12 (BC_1, *,         control , 0),"  &
+        "13 (BC_1, CH(5),     output3 , 1,   12,   0,     Z),"  &
+        "14 (BC_4, CH(5),     input   , X),"  &
+        "15 (BC_1, *,         control , 0),"  &
+        "16 (BC_1, CH(6),     output3 , 1,   15,   0,     Z),"  &
+        "17 (BC_4, CH(6),     input   , X),"  &
+        "18 (BC_1, *,         control , 0),"  &
+        "19 (BC_1, CH(7),     output3 , 1,   18,   0,     Z),"  &
+        "20 (BC_4, CH(7),     input   , X),"  &
+        "21 (BC_1, *,         control , 0),"  &
+        "22 (BC_1, CH(8),     output3 , 1,   21,   0,     Z),"  &
+        "23 (BC_4, CH(8),     input   , X),"  &
+        "24 (BC_1, *,         control , 0),"  &
+        "25 (BC_1, S1,        output3 , 1,   24,   0,     Z),"  &
+        "26 (BC_4, S1,        input   , X),"  &
+        "27 (BC_4, *,         internal, X),"  &
+        "28 (BC_1, *,         control , 0),"  &
+        "29 (BC_1, CH(9),     output3 , 1,   28,   0,     Z),"  &
+        "30 (BC_4, CH(9),     input   , X),"  &
+        "31 (BC_1, *,         control , 0),"  &
+        "32 (BC_1, CH(10),    output3 , 1,   31,   0,     Z),"  &
+        "33 (BC_4, CH(10),    input   , X),"  &
+        "34 (BC_1, *,         control , 0),"  &
+        "35 (BC_1, CH(11),    output3 , 1,   34,   0,     Z),"  &
+        "36 (BC_4, CH(11),    input   , X),"  &
+        "37 (BC_1, *,         control , 0),"  &
+        "38 (BC_1, CH(12),    output3 , 1,   37,   0,     Z),"  &
+        "39 (BC_4, CH(12),    input   , X),"  &
+        "40 (BC_1, *,         control , 0),"  &
+        "41 (BC_1, CH(13),    output3 , 1,   40,   0,     Z),"  &
+        "42 (BC_4, CH(13),    input   , X),"  &
+        "43 (BC_1, *,         control , 0),"  &
+        "44 (BC_1, CH(14),    output3 , 1,   43,   0,     Z),"  &
+        "45 (BC_4, CH(14),    input   , X),"  &
+        "46 (BC_1, *,         control , 0),"  &
+        "47 (BC_1, CH(15),    output3 , 1,   46,   0,     Z),"  &
+        "48 (BC_4, CH(15),    input   , X),"  &
+        "49 (BC_1, *,         control , 0),"  &
+        "50 (BC_1, CH(16),    output3 , 1,   49,   0,     Z),"  &
+        "51 (BC_4, CH(16),    input   , X),"  &
+        "52 (BC_1, *,         control , 0),"  &
+        "53 (BC_1, S2,        output3 , 1,   52,   0,     Z),"  &
+        "54 (BC_4, S2,        input   , X)";
+
+end MPV_DIOS;

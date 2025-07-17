@@ -1,0 +1,723 @@
+{
+    "entity": "MPV_DIOS",
+    "standard": "STD_1149_1_1993",
+    "ir_length": 8,
+    "bsr_length": 55,
+    "idcode": "0000 1011111010101101 00011101001 1",
+    "instruction_capture": "00000001",
+    "opcodes": {
+        "BYPASS": "11111111",
+        "EXTEST": "00000000",
+        "SAMPLE": "00000001",
+        "IDCODE": "00000010",
+        "ECIDCODE": "00000011",
+        "HIGHZ": "00000100",
+        "BOUNDARY_READ": "00000110",
+        "CLAMP": "00000101",
+        "POWER": "00000111"
+    },
+    "ports": [
+        {
+            "name": "CH1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 1
+        },
+        {
+            "name": "CH2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 2
+        },
+        {
+            "name": "CH3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 3
+        },
+        {
+            "name": "CH4",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 4
+        },
+        {
+            "name": "CH5",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 5
+        },
+        {
+            "name": "CH6",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 6
+        },
+        {
+            "name": "CH7",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 7
+        },
+        {
+            "name": "CH8",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 8
+        },
+        {
+            "name": "CH9",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 9
+        },
+        {
+            "name": "CH10",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 10
+        },
+        {
+            "name": "CH11",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 11
+        },
+        {
+            "name": "CH12",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 12
+        },
+        {
+            "name": "CH13",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 13
+        },
+        {
+            "name": "CH14",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 14
+        },
+        {
+            "name": "CH15",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 15
+        },
+        {
+            "name": "CH16",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 16
+        },
+        {
+            "name": "S1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 126
+        },
+        {
+            "name": "S2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": 110
+        },
+        {
+            "name": "GND",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": 114
+        },
+        {
+            "name": "VCC",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": 128
+        },
+        {
+            "name": "TDO",
+            "direction": "out",
+            "type": "bit",
+            "pin": 116
+        },
+        {
+            "name": "TMS",
+            "direction": "in",
+            "type": "bit",
+            "pin": 113
+        },
+        {
+            "name": "TDI",
+            "direction": "in",
+            "type": "bit",
+            "pin": 112
+        },
+        {
+            "name": "TCK",
+            "direction": "in",
+            "type": "bit",
+            "pin": 115
+        },
+        {
+            "name": "TRST",
+            "direction": "in",
+            "type": "bit",
+            "pin": 117
+        }
+    ],
+    "bsr": [
+        {
+            "cell_num": 0,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 1,
+            "cell_type": "BC_1",
+            "port": "CH(1)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "0",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 2,
+            "cell_type": "BC_4",
+            "port": "CH(1)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 3,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 4,
+            "cell_type": "BC_1",
+            "port": "CH(2)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "3",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 5,
+            "cell_type": "BC_4",
+            "port": "CH(2)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 6,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 7,
+            "cell_type": "BC_1",
+            "port": "CH(3)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "6",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 8,
+            "cell_type": "BC_4",
+            "port": "CH(3)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 9,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 10,
+            "cell_type": "BC_1",
+            "port": "CH(4)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "9",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 11,
+            "cell_type": "BC_4",
+            "port": "CH(4)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 12,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 13,
+            "cell_type": "BC_1",
+            "port": "CH(5)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "12",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 14,
+            "cell_type": "BC_4",
+            "port": "CH(5)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 15,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 16,
+            "cell_type": "BC_1",
+            "port": "CH(6)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "15",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 17,
+            "cell_type": "BC_4",
+            "port": "CH(6)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 18,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 19,
+            "cell_type": "BC_1",
+            "port": "CH(7)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "18",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 20,
+            "cell_type": "BC_4",
+            "port": "CH(7)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 21,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 22,
+            "cell_type": "BC_1",
+            "port": "CH(8)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "21",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 23,
+            "cell_type": "BC_4",
+            "port": "CH(8)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 24,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 25,
+            "cell_type": "BC_1",
+            "port": "S1",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "24",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 26,
+            "cell_type": "BC_4",
+            "port": "S1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 27,
+            "cell_type": "BC_4",
+            "port": "*",
+            "function": "internal",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 28,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 29,
+            "cell_type": "BC_1",
+            "port": "CH(9)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "28",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 30,
+            "cell_type": "BC_4",
+            "port": "CH(9)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 31,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 32,
+            "cell_type": "BC_1",
+            "port": "CH(10)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "31",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 33,
+            "cell_type": "BC_4",
+            "port": "CH(10)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 34,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 35,
+            "cell_type": "BC_1",
+            "port": "CH(11)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "34",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 36,
+            "cell_type": "BC_4",
+            "port": "CH(11)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 37,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 38,
+            "cell_type": "BC_1",
+            "port": "CH(12)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "37",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 39,
+            "cell_type": "BC_4",
+            "port": "CH(12)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 40,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 41,
+            "cell_type": "BC_1",
+            "port": "CH(13)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "40",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 42,
+            "cell_type": "BC_4",
+            "port": "CH(13)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 43,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 44,
+            "cell_type": "BC_1",
+            "port": "CH(14)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "43",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 45,
+            "cell_type": "BC_4",
+            "port": "CH(14)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 46,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 47,
+            "cell_type": "BC_1",
+            "port": "CH(15)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "46",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 48,
+            "cell_type": "BC_4",
+            "port": "CH(15)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 49,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 50,
+            "cell_type": "BC_1",
+            "port": "CH(16)",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "49",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 51,
+            "cell_type": "BC_4",
+            "port": "CH(16)",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 52,
+            "cell_type": "BC_1",
+            "port": "*",
+            "function": "control",
+            "safe": "0",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 53,
+            "cell_type": "BC_1",
+            "port": "S2",
+            "function": "output3",
+            "safe": "1",
+            "c_cell": "52",
+            "disval": "0",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 54,
+            "cell_type": "BC_4",
+            "port": "S2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        }
+    ]
+}
