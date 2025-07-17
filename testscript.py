@@ -1,9 +1,9 @@
 import ftd2xx
 import time
-from enum import Enum
+from enum import IntEnum
 import re
 
-class TestState(Enum):
+class TestState(IntEnum):
     UNINIT = -1
     TLR = 0
     IDLE = 1
@@ -41,6 +41,85 @@ pin_state = {
 # Constants
 BIT_TMS = 3
 BIT_TRST = 4
+
+assigned_devices = {}   # this is where we allocate the bsdl files
+
+import json
+import os
+import re
+
+assigned_devices = {}
+
+BASE_BSDL_PATH = os.path.join(os.path.dirname(__file__), "resources", "bsdl_json")
+
+import os
+
+def get_bsdl_names():
+    """
+    Returns a list of BSDL names (folder names) in resources/bsdl_json/
+    """
+    if not os.path.isdir(BASE_BSDL_PATH):
+        return ""
+    b = ','.join(sorted([
+        name for name in os.listdir(BASE_BSDL_PATH)
+        if os.path.isdir(os.path.join(BASE_BSDL_PATH, name))
+    ]))
+    ##print(f"Available Devices: {b}")
+    return b
+
+
+def assign_device(index, bsdl_name) -> int:
+    if not isinstance(int(index), int) or int(index) < 1:
+        raise ValueError("Index must be a positive integer starting from 1")
+
+    json_path = os.path.join(BASE_BSDL_PATH, bsdl_name, "bsdl.json")
+    if not os.path.isfile(json_path):
+        raise FileNotFoundError(f"BSDL JSON file not found: {json_path}")
+
+    with open(json_path, "r") as f:
+        bsdl_data = json.load(f)
+
+    ir_len = bsdl_data["ir_length"]
+    bsr_len = bsdl_data["bsr_length"]
+
+    raw_idcode = bsdl_data.get("idcode")
+    idcode = int(re.sub(r"\s+", "", raw_idcode), 2) if raw_idcode else None
+
+    # Normalize opcode keys
+    raw_opcodes = bsdl_data.get("opcodes", {})
+    opcodes = {k.upper(): v for k, v in raw_opcodes.items()}
+
+    # Extract commonly used commands
+    commands = {
+        "BYPASS": opcodes.get("BYPASS"),
+        "EXTEST": opcodes.get("EXTEST"),
+        "SAMPLE": opcodes.get("SAMPLE") or opcodes.get("SAMPLE/PRELOAD"),
+        "IDCODE": opcodes.get("IDCODE"),
+        "CLAMP": opcodes.get("CLAMP"),
+        "HIGHZ": opcodes.get("HIGHZ"),
+    }
+
+    assigned_devices[int(index)] = {
+        "bsdl_file": bsdl_name,
+        "ir_length": ir_len,
+        "bsr_length": bsr_len,
+        "idcode": idcode,
+        "commands": commands,
+        "bsdl_data": bsdl_data
+    }
+
+    # Print confirmation
+    print(f"Assigned Device {int(index)}:")
+    print(f"  BSDL File : {bsdl_name}")
+    print(f"  IR Length : {ir_len}")
+    print(f"  BSR Bits  : {bsr_len}")
+    if idcode is not None:
+        print(f"  IDCODE    : 0x{idcode:08X}")
+    else:
+        print(f"  IDCODE    : (not specified)")
+    print(f"  Commands  : {', '.join(f'{k}={v}' for k, v in commands.items() if v)}")
+
+    return f"0x{idcode:08X}"
 
 def set_tms(level: int):
     if level:
@@ -81,6 +160,19 @@ def jtag_clock(tms_level):
 
 def set_test_state(new_state: TestState):
     global tap1_current_state, tap2_current_state
+
+    if isinstance(new_state, str):
+        try:
+            new_state = TestState[new_state]
+        except KeyError:
+            raise ValueError(f"Invalid state name: {new_state}")
+    elif isinstance(new_state, int):
+        try:
+            new_state = TestState(new_state)
+        except ValueError:
+            raise ValueError(f"Invalid state value: {new_state}")
+    elif not isinstance(new_state, TestState):
+        raise TypeError("Expected a TestState, string, or int")
 
     if selected_tap == 1:
         current_state = tap1_current_state
@@ -251,8 +343,34 @@ def set_tap_enable(tap1_enable: int, tap2_enable: int):
 def send_bytes_same(value, byte_count = 64):
     ftdi_a.write(bytes([0x19, byte_count - 1, 0x00]) + bytes([value] * (byte_count)))
 
-def send_byte_while_read(value):
-    ftdi_a.write(bytes([0x39, 0x00, 0x00, value]))
+def send_bytes_while_read(data):
+    if not data:
+        return b''
+    if isinstance(data, (bytes, bytearray)):
+        data = list(data)
+    elif not isinstance(data, list):
+        raise TypeError("Data must be a list, bytes, or bytearray.")
+
+    n = len(data)
+    length = n - 1
+    cmd = bytearray()
+    cmd.append(0x39)                    # 0x39 = clock in/out, LSB-first
+    cmd.append(length & 0xFF)          # Length LSB
+    cmd.append((length >> 8) & 0xFF)   # Length MSB
+    cmd.extend(data)
+    ftdi_a.write(bytes(cmd))
+    wait_for_bytes(n)
+    return ftdi_a.read(n)
+
+def send_bytes_while_read_hexstring(hex_string):
+    """
+    Accepts a string like '00 00 00 00' and sends it as bytes.
+    """
+    try:
+        byte_values = bytes(int(b, 16) for b in hex_string.split())
+        return send_bytes_while_read(byte_values)
+    except Exception as e:
+        return f"Error: {e}"
 
 def send_bits(value, bit_count):
     ftdi_a.write(bytes([0x1B, bit_count - 1, value]))
@@ -281,9 +399,7 @@ def detect_chain_length():
     send_bytes_same(0x00,256)   # send zeroes to clear register
     flush()
     clear_read_buffer()
-    send_byte_while_read(0x01)  # now send single byte of 0x01 while reading
-    wait_for_bytes(1)
-    rx_byte = ftdi_a.read(1)
+    rx_byte = send_bytes_while_read(bytes([0x01]))  # now send single byte of 0x01 while reading
     detected = detect_device_count_from_byte(rx_byte[0])
     print(f"Detected {detected} devices on TAP {selected_tap}")
     return detected
@@ -386,6 +502,96 @@ def tlr():
     set_test_state(TestState.TLR)
     flush()
 
+def send_ir_chain(*args) -> str:
+    """
+    Supports:
+    - send_ir_chain({1: "IDCODE", 2: "BYPASS"})     # original dict form
+    - send_ir_chain("IDCODE", "BYPASS", "BYPASS")   # positional args: index 1 gets first, etc.
+    """
+
+    if len(args) == 1 and isinstance(args[0], dict):
+        device_cmd_map = args[0]
+    else:
+        # Build device_cmd_map from positional args: 1-based index
+        device_cmd_map = {i + 1: arg for i, arg in enumerate(args)}
+
+    
+    return _send_ir_chain_internal(device_cmd_map)
+
+def _send_ir_chain_internal(device_cmd_map) -> str:
+    """
+    Internal IR shift logic that expects a {device_index: command} dict.
+    """
+
+    chain_ir_bits = []
+
+    # Build IR chain from TDO to TDI (highest to lowest index)
+    for index in sorted(assigned_devices.keys(), reverse=True):
+        device = assigned_devices[index]
+        cmd = device_cmd_map.get(index, "BYPASS")  # Default to BYPASS if not specified
+        opcode_bin = device["commands"].get(cmd.upper())
+        if opcode_bin is None:
+            raise ValueError(f"Command '{cmd}' not defined for device {index}.")
+
+        ir_len = device["ir_length"]
+        padded = opcode_bin.zfill(ir_len)
+        chain_ir_bits.append(padded[::-1])  # Reverse each instruction for LSB-first
+
+    # Full IR stream, LSB-first
+    full_ir = ''.join(chain_ir_bits)
+    total_len = len(full_ir)
+
+    if total_len % 8 == 0:
+        full_bytes = (total_len // 8) - 1
+        leftover_bits = 8
+    else:
+        full_bytes = total_len // 8
+        leftover_bits = total_len % 8
+
+    cmd = bytearray()
+    pos = 0
+    
+    set_test_state(TestState.SHIFT_IR)
+
+    if full_bytes > 0:
+        cmd.append(0x19)
+        cmd.append(full_bytes - 1)
+        cmd.append(0x00)
+        for i in range(full_bytes):
+            byte = int(full_ir[pos:pos+8][::-1], 2)
+            cmd.append(byte)
+            pos += 8
+    
+    remaining = total_len - pos
+    if remaining > 1:
+        bits_to_send = remaining - 1
+        cmd.append(0x1B)
+        cmd.append(bits_to_send - 1)
+        bits = int(full_ir[pos:pos+bits_to_send][::-1], 2)
+        cmd.append(bits)
+        pos += bits_to_send
+
+    if cmd:
+        ftdi_a.write(bytes(cmd))
+
+    if pos < total_len:
+        final_bit = int(full_ir[pos])
+        set_tms(1)
+        final_cmd = bytearray()
+        final_cmd.append(0x1B)
+        final_cmd.append(0x00)
+        final_cmd.append(0x01 if final_bit else 0x00)
+        ftdi_a.write(bytes(final_cmd))
+
+    if selected_tap == 1:
+        global tap1_current_state
+        tap1_current_state = TestState.EXIT1_IR
+    elif selected_tap == 2:
+        global tap2_current_state
+        tap2_current_state = TestState.EXIT1_IR
+
+    return "success"
+
 # --- Usage example ---
 if __name__ == "__main__":
     tap = 1
@@ -396,4 +602,15 @@ if __name__ == "__main__":
 
     print(f"Detected {detect_chain_length()} devices in chain")
 
+    print(f"Available devices: {get_bsdl_names()}")
+
+    assign_device(1, "mpv_diosa")
+    assign_device(2, "mpv_diosa")
+    assign_device(3, "mpv_diosa")
+    assign_device(4, "mpv_diosa")
+
+    send_ir_chain("IDCODE", "IDCODE", "IDCODE", "IDCODE")
+
+    set_test_state(TestState.SHIFT_DR)
+    print(send_bytes_while_read(bytes([0x00] * 4 * 4)))
     close_controller()
