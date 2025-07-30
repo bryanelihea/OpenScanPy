@@ -1,0 +1,5956 @@
+{
+    "entity": "F781962A",
+    "standard": "STD_1149_1_2001",
+    "ir_length": 6,
+    "bsr_length": 470,
+    "idcode": "0010 1011100101000100 00000010111 1",
+    "instruction_capture": "XXXX01",
+    "opcodes": {
+        "EXTEST": "011000",
+        "IDCODE": "000100",
+        "BYPASS": "111111",
+        "SAMPLE": "011011",
+        "PRELOAD": "011100",
+        "PRIVATE": "000000,  000001,  000010,  000011,  000101,  000110,  000111,  001000,  001001,  001010,  001011,  001100,  001101,  001110,  001111,  010000,  010001,  010010,  010011,  010100,  010101,  010110,  010111,  011001,  011010,  011101,  011110,  011111,  100000,  100001,  100010,  100011,  100100,  100101,  100110,  100111,  101000,  101001,  101010,  101011,  101100,  101101,  101110,  101111,  110000,  110001,  110010,  110011,  110100,  110101,  110110,  110111,  111000,  111001,  111010,  111011,  111100,  111101,  111110"
+    },
+    "ports": [
+        {
+            "name": "EMU0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C14"
+        },
+        {
+            "name": "EMU1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B14"
+        },
+        {
+            "name": "EXT_WAKEUP",
+            "direction": "in",
+            "type": "bit",
+            "pin": "C5"
+        },
+        {
+            "name": "I2C0_SCL",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C16"
+        },
+        {
+            "name": "I2C0_SDA",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C17"
+        },
+        {
+            "name": "XTALIN",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "V10"
+        },
+        {
+            "name": "XTALOUT",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "U11"
+        },
+        {
+            "name": "RTC_XTALIN",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "A6"
+        },
+        {
+            "name": "RTC_XTALOUT",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "A4"
+        },
+        {
+            "name": "PMIC_POWER_EN",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "C6"
+        },
+        {
+            "name": "RTC_PWRONRSTn",
+            "direction": "in",
+            "type": "bit",
+            "pin": "B5"
+        },
+        {
+            "name": "TCK",
+            "direction": "in",
+            "type": "bit",
+            "pin": "A12"
+        },
+        {
+            "name": "TDI",
+            "direction": "in",
+            "type": "bit",
+            "pin": "B11"
+        },
+        {
+            "name": "TDO",
+            "direction": "out",
+            "type": "bit",
+            "pin": "A11"
+        },
+        {
+            "name": "TMS",
+            "direction": "in",
+            "type": "bit",
+            "pin": "C11"
+        },
+        {
+            "name": "USB0_DRVVBUS",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F16"
+        },
+        {
+            "name": "USB1_DRVVBUS",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F15"
+        },
+        {
+            "name": "ddr_a0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F3"
+        },
+        {
+            "name": "ddr_a1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H1"
+        },
+        {
+            "name": "ddr_a10",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F4"
+        },
+        {
+            "name": "ddr_a11",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F2"
+        },
+        {
+            "name": "ddr_a12",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E3"
+        },
+        {
+            "name": "ddr_a13",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H3"
+        },
+        {
+            "name": "ddr_a14",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H4"
+        },
+        {
+            "name": "ddr_a15",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D3"
+        },
+        {
+            "name": "ddr_a2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E4"
+        },
+        {
+            "name": "ddr_a3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C3"
+        },
+        {
+            "name": "ddr_a4",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C2"
+        },
+        {
+            "name": "ddr_a5",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B1"
+        },
+        {
+            "name": "ddr_a6",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D5"
+        },
+        {
+            "name": "ddr_a7",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E2"
+        },
+        {
+            "name": "ddr_a8",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D4"
+        },
+        {
+            "name": "ddr_a9",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C1"
+        },
+        {
+            "name": "ddr_ba0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C4"
+        },
+        {
+            "name": "ddr_ba1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E1"
+        },
+        {
+            "name": "ddr_ba2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B3"
+        },
+        {
+            "name": "ddr_casn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F1"
+        },
+        {
+            "name": "ddr_ck",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D2"
+        },
+        {
+            "name": "ddr_cke",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G3"
+        },
+        {
+            "name": "ddr_csn0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H2"
+        },
+        {
+            "name": "ddr_d0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M3"
+        },
+        {
+            "name": "ddr_d1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M4"
+        },
+        {
+            "name": "ddr_d10",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K2"
+        },
+        {
+            "name": "ddr_d11",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K3"
+        },
+        {
+            "name": "ddr_d12",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K4"
+        },
+        {
+            "name": "ddr_d13",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L3"
+        },
+        {
+            "name": "ddr_d14",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L4"
+        },
+        {
+            "name": "ddr_d15",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M1"
+        },
+        {
+            "name": "ddr_d2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "N1"
+        },
+        {
+            "name": "ddr_d3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "N2"
+        },
+        {
+            "name": "ddr_d4",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "N3"
+        },
+        {
+            "name": "ddr_d5",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "N4"
+        },
+        {
+            "name": "ddr_d6",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "P3"
+        },
+        {
+            "name": "ddr_d7",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "P4"
+        },
+        {
+            "name": "ddr_d8",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "J1"
+        },
+        {
+            "name": "ddr_d9",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K1"
+        },
+        {
+            "name": "ddr_dqm0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M2"
+        },
+        {
+            "name": "ddr_dqm1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "J2"
+        },
+        {
+            "name": "ddr_dqs0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "P1"
+        },
+        {
+            "name": "ddr_dqs1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L1"
+        },
+        {
+            "name": "ddr_dqsn0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "P2"
+        },
+        {
+            "name": "ddr_dqsn1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L2"
+        },
+        {
+            "name": "ddr_nck",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D1"
+        },
+        {
+            "name": "ddr_odt",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G1"
+        },
+        {
+            "name": "ddr_rasn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G4"
+        },
+        {
+            "name": "ddr_resetn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G2"
+        },
+        {
+            "name": "ddr_vtp",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "J3"
+        },
+        {
+            "name": "ddr_wen",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B2"
+        },
+        {
+            "name": "eCAP0_in_PWM0_out",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C18"
+        },
+        {
+            "name": "gpmc_a0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R13"
+        },
+        {
+            "name": "gpmc_a1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V14"
+        },
+        {
+            "name": "gpmc_a10",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T16"
+        },
+        {
+            "name": "gpmc_a11",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V17"
+        },
+        {
+            "name": "gpmc_a2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U14"
+        },
+        {
+            "name": "gpmc_a3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T14"
+        },
+        {
+            "name": "gpmc_a4",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R14"
+        },
+        {
+            "name": "gpmc_a5",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V15"
+        },
+        {
+            "name": "gpmc_a6",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U15"
+        },
+        {
+            "name": "gpmc_a7",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T15"
+        },
+        {
+            "name": "gpmc_a8",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V16"
+        },
+        {
+            "name": "gpmc_a9",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U16"
+        },
+        {
+            "name": "gpmc_ad0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U7"
+        },
+        {
+            "name": "gpmc_ad1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V7"
+        },
+        {
+            "name": "gpmc_ad10",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T11"
+        },
+        {
+            "name": "gpmc_ad11",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U12"
+        },
+        {
+            "name": "gpmc_ad12",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T12"
+        },
+        {
+            "name": "gpmc_ad13",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R12"
+        },
+        {
+            "name": "gpmc_ad14",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V13"
+        },
+        {
+            "name": "gpmc_ad15",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U13"
+        },
+        {
+            "name": "gpmc_ad2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R8"
+        },
+        {
+            "name": "gpmc_ad3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T8"
+        },
+        {
+            "name": "gpmc_ad4",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U8"
+        },
+        {
+            "name": "gpmc_ad5",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V8"
+        },
+        {
+            "name": "gpmc_ad6",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R9"
+        },
+        {
+            "name": "gpmc_ad7",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T9"
+        },
+        {
+            "name": "gpmc_ad8",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U10"
+        },
+        {
+            "name": "gpmc_ad9",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T10"
+        },
+        {
+            "name": "gpmc_advn_ale",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R7"
+        },
+        {
+            "name": "gpmc_ben0_cle",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T6"
+        },
+        {
+            "name": "gpmc_ben1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U18"
+        },
+        {
+            "name": "gpmc_clk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V12"
+        },
+        {
+            "name": "gpmc_csn0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V6"
+        },
+        {
+            "name": "gpmc_csn1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U9"
+        },
+        {
+            "name": "gpmc_csn2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V9"
+        },
+        {
+            "name": "gpmc_csn3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T13"
+        },
+        {
+            "name": "gpmc_oen_ren",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T7"
+        },
+        {
+            "name": "gpmc_wait0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T17"
+        },
+        {
+            "name": "gpmc_wen",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U6"
+        },
+        {
+            "name": "gpmc_wpn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U17"
+        },
+        {
+            "name": "lcd_ac_bias_en",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R6"
+        },
+        {
+            "name": "lcd_data0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R1"
+        },
+        {
+            "name": "lcd_data1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R2"
+        },
+        {
+            "name": "lcd_data10",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U3"
+        },
+        {
+            "name": "lcd_data11",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U4"
+        },
+        {
+            "name": "lcd_data12",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V2"
+        },
+        {
+            "name": "lcd_data13",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V3"
+        },
+        {
+            "name": "lcd_data14",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V4"
+        },
+        {
+            "name": "lcd_data15",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T5"
+        },
+        {
+            "name": "lcd_data2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R3"
+        },
+        {
+            "name": "lcd_data3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R4"
+        },
+        {
+            "name": "lcd_data4",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T1"
+        },
+        {
+            "name": "lcd_data5",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T2"
+        },
+        {
+            "name": "lcd_data6",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T3"
+        },
+        {
+            "name": "lcd_data7",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "T4"
+        },
+        {
+            "name": "lcd_data8",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U1"
+        },
+        {
+            "name": "lcd_data9",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U2"
+        },
+        {
+            "name": "lcd_hsync",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "R5"
+        },
+        {
+            "name": "lcd_pclk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "V5"
+        },
+        {
+            "name": "lcd_vsync",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "U5"
+        },
+        {
+            "name": "mcasp0_aclkr",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B12"
+        },
+        {
+            "name": "mcasp0_aclkx",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "A13"
+        },
+        {
+            "name": "mcasp0_ahclkr",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C12"
+        },
+        {
+            "name": "mcasp0_ahclkx",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "A14"
+        },
+        {
+            "name": "mcasp0_axr0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D12"
+        },
+        {
+            "name": "mcasp0_axr1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D13"
+        },
+        {
+            "name": "mcasp0_fsr",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C13"
+        },
+        {
+            "name": "mcasp0_fsx",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B13"
+        },
+        {
+            "name": "mdc",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M18"
+        },
+        {
+            "name": "mdio",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M17"
+        },
+        {
+            "name": "mii1_col",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H16"
+        },
+        {
+            "name": "mii1_crs",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H17"
+        },
+        {
+            "name": "mii1_rx_clk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L18"
+        },
+        {
+            "name": "mii1_rxd0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "M16"
+        },
+        {
+            "name": "mii1_rxd1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L15"
+        },
+        {
+            "name": "mii1_rxd2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L16"
+        },
+        {
+            "name": "mii1_rxd3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "L17"
+        },
+        {
+            "name": "mii1_rx_dv",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "J17"
+        },
+        {
+            "name": "mii1_rx_er",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "J15"
+        },
+        {
+            "name": "mii1_tx_clk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K18"
+        },
+        {
+            "name": "mii1_txd0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K17"
+        },
+        {
+            "name": "mii1_txd1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K16"
+        },
+        {
+            "name": "mii1_txd2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "K15"
+        },
+        {
+            "name": "mii1_txd3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "J18"
+        },
+        {
+            "name": "mii1_tx_en",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "J16"
+        },
+        {
+            "name": "mmc0_clk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G17"
+        },
+        {
+            "name": "mmc0_cmd",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G18"
+        },
+        {
+            "name": "mmc0_dat0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G16"
+        },
+        {
+            "name": "mmc0_dat1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "G15"
+        },
+        {
+            "name": "mmc0_dat2",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F18"
+        },
+        {
+            "name": "mmc0_dat3",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "F17"
+        },
+        {
+            "name": "EXTINTn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B18"
+        },
+        {
+            "name": "WARMRSTn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "A10"
+        },
+        {
+            "name": "TRSTn",
+            "direction": "in",
+            "type": "bit",
+            "pin": "B10"
+        },
+        {
+            "name": "PWRONRSTn",
+            "direction": "in",
+            "type": "bit",
+            "pin": "B15"
+        },
+        {
+            "name": "rmii1_ref_clk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "H18"
+        },
+        {
+            "name": "spi0_cs0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "A16"
+        },
+        {
+            "name": "spi0_cs1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "C15"
+        },
+        {
+            "name": "spi0_d0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B17"
+        },
+        {
+            "name": "spi0_d1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "B16"
+        },
+        {
+            "name": "spi0_sclk",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "A17"
+        },
+        {
+            "name": "testout",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "A3"
+        },
+        {
+            "name": "uart0_ctsn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E18"
+        },
+        {
+            "name": "uart0_rtsn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E17"
+        },
+        {
+            "name": "uart0_rxd",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E15"
+        },
+        {
+            "name": "uart0_txd",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "E16"
+        },
+        {
+            "name": "uart1_ctsn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D18"
+        },
+        {
+            "name": "uart1_rtsn",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D17"
+        },
+        {
+            "name": "uart1_rxd",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D16"
+        },
+        {
+            "name": "uart1_txd",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D15"
+        },
+        {
+            "name": "xdma_event_intr0",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "A15"
+        },
+        {
+            "name": "xdma_event_intr1",
+            "direction": "inout",
+            "type": "bit",
+            "pin": "D14"
+        },
+        {
+            "name": "AIN0",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "B6"
+        },
+        {
+            "name": "AIN1",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "C7"
+        },
+        {
+            "name": "AIN2",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "B7"
+        },
+        {
+            "name": "AIN3",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "A7"
+        },
+        {
+            "name": "AIN4",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "C8"
+        },
+        {
+            "name": "AIN5",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "B8"
+        },
+        {
+            "name": "AIN6",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "A8"
+        },
+        {
+            "name": "AIN7",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "C9"
+        },
+        {
+            "name": "USB0_CE",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "M15"
+        },
+        {
+            "name": "USB0_DM",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "N18"
+        },
+        {
+            "name": "USB0_DP",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "N17"
+        },
+        {
+            "name": "USB0_ID",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "P16"
+        },
+        {
+            "name": "USB1_CE",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "P18"
+        },
+        {
+            "name": "USB1_DM",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "R18"
+        },
+        {
+            "name": "USB1_DP",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "R17"
+        },
+        {
+            "name": "USB1_ID",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "P17"
+        },
+        {
+            "name": "VREFN",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "A9"
+        },
+        {
+            "name": "VREFP",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "B9"
+        },
+        {
+            "name": "cap_vbb_mpu",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "C10"
+        },
+        {
+            "name": "cap_vdd_rtc",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "D6"
+        },
+        {
+            "name": "cap_vdd_sram_core",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "D9"
+        },
+        {
+            "name": "cap_vdd_sram_mpu",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "D11"
+        },
+        {
+            "name": "ddr_vref",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "J4"
+        },
+        {
+            "name": "ENZ_KALDO_1P8V",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": "B4"
+        },
+        {
+            "name": "vdd_core",
+            "direction": "linkage",
+            "type": "bit",
+            "pin": null
+        }
+    ],
+    "bsr": [
+        {
+            "cell_num": 0,
+            "cell_type": "bc_1",
+            "port": "ddr_dqs1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "1",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 1,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 2,
+            "cell_type": "bc_1",
+            "port": "ddr_dqs1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 3,
+            "cell_type": "bc_1",
+            "port": "ddr_dqs0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "4",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 4,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 5,
+            "cell_type": "bc_1",
+            "port": "ddr_dqs0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 6,
+            "cell_type": "bc_1",
+            "port": "ddr_dqm1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "7",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 7,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 8,
+            "cell_type": "bc_1",
+            "port": "ddr_dqm1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 9,
+            "cell_type": "bc_1",
+            "port": "ddr_dqm0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "10",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 10,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 11,
+            "cell_type": "bc_1",
+            "port": "ddr_dqm0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 12,
+            "cell_type": "bc_1",
+            "port": "ddr_d15",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "13",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 13,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 14,
+            "cell_type": "bc_1",
+            "port": "ddr_d15",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 15,
+            "cell_type": "bc_1",
+            "port": "ddr_d14",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "16",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 16,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 17,
+            "cell_type": "bc_1",
+            "port": "ddr_d14",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 18,
+            "cell_type": "bc_1",
+            "port": "ddr_d13",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "19",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 19,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 20,
+            "cell_type": "bc_1",
+            "port": "ddr_d13",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 21,
+            "cell_type": "bc_1",
+            "port": "ddr_d12",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "22",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 22,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 23,
+            "cell_type": "bc_1",
+            "port": "ddr_d12",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 24,
+            "cell_type": "bc_1",
+            "port": "ddr_d11",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "25",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 25,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 26,
+            "cell_type": "bc_1",
+            "port": "ddr_d11",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 27,
+            "cell_type": "bc_1",
+            "port": "ddr_d10",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "28",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 28,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 29,
+            "cell_type": "bc_1",
+            "port": "ddr_d10",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 30,
+            "cell_type": "bc_1",
+            "port": "ddr_d9",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "31",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 31,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 32,
+            "cell_type": "bc_1",
+            "port": "ddr_d9",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 33,
+            "cell_type": "bc_1",
+            "port": "ddr_d8",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "34",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 34,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 35,
+            "cell_type": "bc_1",
+            "port": "ddr_d8",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 36,
+            "cell_type": "bc_1",
+            "port": "ddr_d7",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "37",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 37,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 38,
+            "cell_type": "bc_1",
+            "port": "ddr_d7",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 39,
+            "cell_type": "bc_1",
+            "port": "ddr_d6",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "40",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 40,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 41,
+            "cell_type": "bc_1",
+            "port": "ddr_d6",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 42,
+            "cell_type": "bc_1",
+            "port": "ddr_d5",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "43",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 43,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 44,
+            "cell_type": "bc_1",
+            "port": "ddr_d5",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 45,
+            "cell_type": "bc_1",
+            "port": "ddr_d4",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "46",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 46,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 47,
+            "cell_type": "bc_1",
+            "port": "ddr_d4",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 48,
+            "cell_type": "bc_1",
+            "port": "ddr_d3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "49",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 49,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 50,
+            "cell_type": "bc_1",
+            "port": "ddr_d3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 51,
+            "cell_type": "bc_1",
+            "port": "ddr_d2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "52",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 52,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 53,
+            "cell_type": "bc_1",
+            "port": "ddr_d2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 54,
+            "cell_type": "bc_1",
+            "port": "ddr_d1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "55",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 55,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 56,
+            "cell_type": "bc_1",
+            "port": "ddr_d1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 57,
+            "cell_type": "bc_1",
+            "port": "ddr_d0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "58",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 58,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 59,
+            "cell_type": "bc_1",
+            "port": "ddr_d0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 60,
+            "cell_type": "bc_1",
+            "port": "ddr_odt",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "95",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 61,
+            "cell_type": "bc_1",
+            "port": "ddr_odt",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 62,
+            "cell_type": "bc_1",
+            "port": "ddr_resetn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "95",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 63,
+            "cell_type": "bc_1",
+            "port": "ddr_resetn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 64,
+            "cell_type": "bc_1",
+            "port": "ddr_a15",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 65,
+            "cell_type": "bc_1",
+            "port": "ddr_a15",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 66,
+            "cell_type": "bc_1",
+            "port": "ddr_a14",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "95",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 67,
+            "cell_type": "bc_1",
+            "port": "ddr_a14",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 68,
+            "cell_type": "bc_1",
+            "port": "ddr_a13",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "95",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 69,
+            "cell_type": "bc_1",
+            "port": "ddr_a13",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 70,
+            "cell_type": "bc_1",
+            "port": "ddr_a12",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 71,
+            "cell_type": "bc_1",
+            "port": "ddr_a12",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 72,
+            "cell_type": "bc_1",
+            "port": "ddr_a11",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 73,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 74,
+            "cell_type": "bc_1",
+            "port": "ddr_a11",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 75,
+            "cell_type": "bc_1",
+            "port": "ddr_a10",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 76,
+            "cell_type": "bc_1",
+            "port": "ddr_a10",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 77,
+            "cell_type": "bc_1",
+            "port": "ddr_a9",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 78,
+            "cell_type": "bc_1",
+            "port": "ddr_a9",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 79,
+            "cell_type": "bc_1",
+            "port": "ddr_a8",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 80,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 81,
+            "cell_type": "bc_1",
+            "port": "ddr_a8",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 82,
+            "cell_type": "bc_1",
+            "port": "ddr_a7",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 83,
+            "cell_type": "bc_1",
+            "port": "ddr_a7",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 84,
+            "cell_type": "bc_1",
+            "port": "ddr_a6",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 85,
+            "cell_type": "bc_1",
+            "port": "ddr_a6",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 86,
+            "cell_type": "bc_1",
+            "port": "ddr_a5",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 87,
+            "cell_type": "bc_1",
+            "port": "ddr_a5",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 88,
+            "cell_type": "bc_1",
+            "port": "ddr_a4",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 89,
+            "cell_type": "bc_1",
+            "port": "ddr_a4",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 90,
+            "cell_type": "bc_1",
+            "port": "ddr_a3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 91,
+            "cell_type": "bc_1",
+            "port": "ddr_a3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 92,
+            "cell_type": "bc_1",
+            "port": "ddr_a2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 93,
+            "cell_type": "bc_1",
+            "port": "ddr_a2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 94,
+            "cell_type": "bc_1",
+            "port": "ddr_a1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "95",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 95,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 96,
+            "cell_type": "bc_1",
+            "port": "ddr_a1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 97,
+            "cell_type": "bc_1",
+            "port": "ddr_a0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 98,
+            "cell_type": "bc_1",
+            "port": "ddr_a0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 99,
+            "cell_type": "bc_1",
+            "port": "ddr_ba2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 100,
+            "cell_type": "bc_1",
+            "port": "ddr_ba2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 101,
+            "cell_type": "bc_1",
+            "port": "ddr_ba1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 102,
+            "cell_type": "bc_1",
+            "port": "ddr_ba1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 103,
+            "cell_type": "bc_1",
+            "port": "ddr_ba0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 104,
+            "cell_type": "bc_1",
+            "port": "ddr_ba0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 105,
+            "cell_type": "bc_1",
+            "port": "ddr_wen",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 106,
+            "cell_type": "bc_1",
+            "port": "ddr_wen",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 107,
+            "cell_type": "bc_1",
+            "port": "ddr_rasn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 108,
+            "cell_type": "bc_1",
+            "port": "ddr_rasn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 109,
+            "cell_type": "bc_1",
+            "port": "ddr_casn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 110,
+            "cell_type": "bc_1",
+            "port": "ddr_casn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 111,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "internal",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 112,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "internal",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 113,
+            "cell_type": "bc_1",
+            "port": "ddr_ck",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "80",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 114,
+            "cell_type": "bc_1",
+            "port": "ddr_ck",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 115,
+            "cell_type": "bc_1",
+            "port": "ddr_cke",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "73",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 116,
+            "cell_type": "bc_1",
+            "port": "ddr_cke",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 117,
+            "cell_type": "bc_1",
+            "port": "ddr_csn0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "95",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 118,
+            "cell_type": "bc_1",
+            "port": "ddr_csn0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 119,
+            "cell_type": "bc_1",
+            "port": "USB1_DRVVBUS",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "120",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 120,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 121,
+            "cell_type": "bc_1",
+            "port": "USB1_DRVVBUS",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 122,
+            "cell_type": "bc_1",
+            "port": "USB0_DRVVBUS",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "123",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 123,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 124,
+            "cell_type": "bc_1",
+            "port": "USB0_DRVVBUS",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 125,
+            "cell_type": "bc_1",
+            "port": "EXT_WAKEUP",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 126,
+            "cell_type": "bc_1",
+            "port": "RTC_PWRONRSTn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 127,
+            "cell_type": "bc_1",
+            "port": "EMU1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "128",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 128,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 129,
+            "cell_type": "bc_1",
+            "port": "EMU1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 130,
+            "cell_type": "bc_1",
+            "port": "EMU0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "131",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 131,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 132,
+            "cell_type": "bc_1",
+            "port": "EMU0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 133,
+            "cell_type": "bc_1",
+            "port": "EXTINTn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "134",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 134,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 135,
+            "cell_type": "bc_1",
+            "port": "EXTINTn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 136,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "internal",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 137,
+            "cell_type": "bc_1",
+            "port": "WARMRSTn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "138",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 138,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 139,
+            "cell_type": "bc_1",
+            "port": "WARMRSTn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 140,
+            "cell_type": "bc_1",
+            "port": "xdma_event_intr1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "141",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 141,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 142,
+            "cell_type": "bc_1",
+            "port": "xdma_event_intr1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 143,
+            "cell_type": "bc_1",
+            "port": "xdma_event_intr0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "144",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 144,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 145,
+            "cell_type": "bc_1",
+            "port": "xdma_event_intr0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 146,
+            "cell_type": "bc_1",
+            "port": "mcasp0_ahclkx",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "147",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 147,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 148,
+            "cell_type": "bc_1",
+            "port": "mcasp0_ahclkx",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 149,
+            "cell_type": "bc_1",
+            "port": "mcasp0_axr1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "150",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 150,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 151,
+            "cell_type": "bc_1",
+            "port": "mcasp0_axr1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 152,
+            "cell_type": "bc_1",
+            "port": "mcasp0_fsr",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "153",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 153,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 154,
+            "cell_type": "bc_1",
+            "port": "mcasp0_fsr",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 155,
+            "cell_type": "bc_1",
+            "port": "mcasp0_aclkr",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "156",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 156,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 157,
+            "cell_type": "bc_1",
+            "port": "mcasp0_aclkr",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 158,
+            "cell_type": "bc_1",
+            "port": "mcasp0_ahclkr",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "159",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 159,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 160,
+            "cell_type": "bc_1",
+            "port": "mcasp0_ahclkr",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 161,
+            "cell_type": "bc_1",
+            "port": "mcasp0_axr0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "162",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 162,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 163,
+            "cell_type": "bc_1",
+            "port": "mcasp0_axr0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 164,
+            "cell_type": "bc_1",
+            "port": "mcasp0_fsx",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "165",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 165,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 166,
+            "cell_type": "bc_1",
+            "port": "mcasp0_fsx",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 167,
+            "cell_type": "bc_1",
+            "port": "mcasp0_aclkx",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "168",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 168,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 169,
+            "cell_type": "bc_1",
+            "port": "mcasp0_aclkx",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 170,
+            "cell_type": "bc_1",
+            "port": "I2C0_SCL",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "171",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 171,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 172,
+            "cell_type": "bc_1",
+            "port": "I2C0_SCL",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 173,
+            "cell_type": "bc_1",
+            "port": "I2C0_SDA",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "174",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 174,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 175,
+            "cell_type": "bc_1",
+            "port": "I2C0_SDA",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 176,
+            "cell_type": "bc_1",
+            "port": "uart1_txd",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "177",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 177,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 178,
+            "cell_type": "bc_1",
+            "port": "uart1_txd",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 179,
+            "cell_type": "bc_1",
+            "port": "uart1_rxd",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "180",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 180,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 181,
+            "cell_type": "bc_1",
+            "port": "uart1_rxd",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 182,
+            "cell_type": "bc_1",
+            "port": "uart1_rtsn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "183",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 183,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 184,
+            "cell_type": "bc_1",
+            "port": "uart1_rtsn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 185,
+            "cell_type": "bc_1",
+            "port": "uart1_ctsn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "186",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 186,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 187,
+            "cell_type": "bc_1",
+            "port": "uart1_ctsn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 188,
+            "cell_type": "bc_1",
+            "port": "uart0_txd",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "189",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 189,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 190,
+            "cell_type": "bc_1",
+            "port": "uart0_txd",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 191,
+            "cell_type": "bc_1",
+            "port": "uart0_rxd",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "192",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 192,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 193,
+            "cell_type": "bc_1",
+            "port": "uart0_rxd",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 194,
+            "cell_type": "bc_1",
+            "port": "uart0_rtsn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "195",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 195,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 196,
+            "cell_type": "bc_1",
+            "port": "uart0_rtsn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 197,
+            "cell_type": "bc_1",
+            "port": "uart0_ctsn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "198",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 198,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 199,
+            "cell_type": "bc_1",
+            "port": "uart0_ctsn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 200,
+            "cell_type": "bc_1",
+            "port": "eCAP0_in_PWM0_out",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "201",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 201,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 202,
+            "cell_type": "bc_1",
+            "port": "eCAP0_in_PWM0_out",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 203,
+            "cell_type": "bc_1",
+            "port": "spi0_cs1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "204",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 204,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 205,
+            "cell_type": "bc_1",
+            "port": "spi0_cs1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 206,
+            "cell_type": "bc_1",
+            "port": "spi0_cs0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "207",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 207,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 208,
+            "cell_type": "bc_1",
+            "port": "spi0_cs0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 209,
+            "cell_type": "bc_1",
+            "port": "spi0_d1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "210",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 210,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 211,
+            "cell_type": "bc_1",
+            "port": "spi0_d1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 212,
+            "cell_type": "bc_1",
+            "port": "spi0_d0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "213",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 213,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 214,
+            "cell_type": "bc_1",
+            "port": "spi0_d0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 215,
+            "cell_type": "bc_1",
+            "port": "spi0_sclk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "216",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 216,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 217,
+            "cell_type": "bc_1",
+            "port": "spi0_sclk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 218,
+            "cell_type": "bc_1",
+            "port": "mdc",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "219",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 219,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 220,
+            "cell_type": "bc_1",
+            "port": "mdc",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 221,
+            "cell_type": "bc_1",
+            "port": "mdio",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "222",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 222,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 223,
+            "cell_type": "bc_1",
+            "port": "mdio",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 224,
+            "cell_type": "bc_1",
+            "port": "rmii1_ref_clk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "225",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 225,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 226,
+            "cell_type": "bc_1",
+            "port": "rmii1_ref_clk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 227,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "228",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 228,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 229,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 230,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "231",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 231,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 232,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 233,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "234",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 234,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 235,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 236,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "237",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 237,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 238,
+            "cell_type": "bc_1",
+            "port": "mii1_rxd3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 239,
+            "cell_type": "bc_1",
+            "port": "mii1_rx_clk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "240",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 240,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 241,
+            "cell_type": "bc_1",
+            "port": "mii1_rx_clk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 242,
+            "cell_type": "bc_1",
+            "port": "mii1_tx_clk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "243",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 243,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 244,
+            "cell_type": "bc_1",
+            "port": "mii1_tx_clk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 245,
+            "cell_type": "bc_1",
+            "port": "mii1_txd0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "246",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 246,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 247,
+            "cell_type": "bc_1",
+            "port": "mii1_txd0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 248,
+            "cell_type": "bc_1",
+            "port": "mii1_txd1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "249",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 249,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 250,
+            "cell_type": "bc_1",
+            "port": "mii1_txd1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 251,
+            "cell_type": "bc_1",
+            "port": "mii1_txd2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "252",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 252,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 253,
+            "cell_type": "bc_1",
+            "port": "mii1_txd2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 254,
+            "cell_type": "bc_1",
+            "port": "mii1_txd3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "255",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 255,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 256,
+            "cell_type": "bc_1",
+            "port": "mii1_txd3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 257,
+            "cell_type": "bc_1",
+            "port": "mii1_rx_dv",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "258",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 258,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 259,
+            "cell_type": "bc_1",
+            "port": "mii1_rx_dv",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 260,
+            "cell_type": "bc_1",
+            "port": "mii1_tx_en",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "261",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 261,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 262,
+            "cell_type": "bc_1",
+            "port": "mii1_tx_en",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 263,
+            "cell_type": "bc_1",
+            "port": "mii1_rx_er",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "264",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 264,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 265,
+            "cell_type": "bc_1",
+            "port": "mii1_rx_er",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 266,
+            "cell_type": "bc_1",
+            "port": "mii1_crs",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "267",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 267,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 268,
+            "cell_type": "bc_1",
+            "port": "mii1_crs",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 269,
+            "cell_type": "bc_1",
+            "port": "mii1_col",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "270",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 270,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 271,
+            "cell_type": "bc_1",
+            "port": "mii1_col",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 272,
+            "cell_type": "bc_1",
+            "port": "mmc0_cmd",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "273",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 273,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 274,
+            "cell_type": "bc_1",
+            "port": "mmc0_cmd",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 275,
+            "cell_type": "bc_1",
+            "port": "mmc0_clk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "276",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 276,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 277,
+            "cell_type": "bc_1",
+            "port": "mmc0_clk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 278,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "279",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 279,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 280,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 281,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "282",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 282,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 283,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 284,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "285",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 285,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 286,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 287,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "288",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 288,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 289,
+            "cell_type": "bc_1",
+            "port": "mmc0_dat3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 290,
+            "cell_type": "bc_1",
+            "port": "lcd_ac_bias_en",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "291",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 291,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 292,
+            "cell_type": "bc_1",
+            "port": "lcd_ac_bias_en",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 293,
+            "cell_type": "bc_1",
+            "port": "lcd_pclk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "294",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 294,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 295,
+            "cell_type": "bc_1",
+            "port": "lcd_pclk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 296,
+            "cell_type": "bc_1",
+            "port": "lcd_hsync",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "297",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 297,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 298,
+            "cell_type": "bc_1",
+            "port": "lcd_hsync",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 299,
+            "cell_type": "bc_1",
+            "port": "lcd_vsync",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "300",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 300,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 301,
+            "cell_type": "bc_1",
+            "port": "lcd_vsync",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 302,
+            "cell_type": "bc_1",
+            "port": "lcd_data15",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "303",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 303,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 304,
+            "cell_type": "bc_1",
+            "port": "lcd_data15",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 305,
+            "cell_type": "bc_1",
+            "port": "lcd_data14",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "306",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 306,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 307,
+            "cell_type": "bc_1",
+            "port": "lcd_data14",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 308,
+            "cell_type": "bc_1",
+            "port": "lcd_data13",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "309",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 309,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 310,
+            "cell_type": "bc_1",
+            "port": "lcd_data13",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 311,
+            "cell_type": "bc_1",
+            "port": "lcd_data12",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "312",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 312,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 313,
+            "cell_type": "bc_1",
+            "port": "lcd_data12",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 314,
+            "cell_type": "bc_1",
+            "port": "lcd_data11",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "315",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 315,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 316,
+            "cell_type": "bc_1",
+            "port": "lcd_data11",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 317,
+            "cell_type": "bc_1",
+            "port": "lcd_data10",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "318",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 318,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 319,
+            "cell_type": "bc_1",
+            "port": "lcd_data10",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 320,
+            "cell_type": "bc_1",
+            "port": "lcd_data9",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "321",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 321,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 322,
+            "cell_type": "bc_1",
+            "port": "lcd_data9",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 323,
+            "cell_type": "bc_1",
+            "port": "lcd_data8",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "324",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 324,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 325,
+            "cell_type": "bc_1",
+            "port": "lcd_data8",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 326,
+            "cell_type": "bc_1",
+            "port": "lcd_data7",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "327",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 327,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 328,
+            "cell_type": "bc_1",
+            "port": "lcd_data7",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 329,
+            "cell_type": "bc_1",
+            "port": "lcd_data6",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "330",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 330,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 331,
+            "cell_type": "bc_1",
+            "port": "lcd_data6",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 332,
+            "cell_type": "bc_1",
+            "port": "lcd_data5",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "333",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 333,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 334,
+            "cell_type": "bc_1",
+            "port": "lcd_data5",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 335,
+            "cell_type": "bc_1",
+            "port": "lcd_data4",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "336",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 336,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 337,
+            "cell_type": "bc_1",
+            "port": "lcd_data4",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 338,
+            "cell_type": "bc_1",
+            "port": "lcd_data3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "339",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 339,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 340,
+            "cell_type": "bc_1",
+            "port": "lcd_data3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 341,
+            "cell_type": "bc_1",
+            "port": "lcd_data2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "342",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 342,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 343,
+            "cell_type": "bc_1",
+            "port": "lcd_data2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 344,
+            "cell_type": "bc_1",
+            "port": "lcd_data1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "345",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 345,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 346,
+            "cell_type": "bc_1",
+            "port": "lcd_data1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 347,
+            "cell_type": "bc_1",
+            "port": "lcd_data0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "348",
+            "disval": "1",
+            "rslt": "Z"
+        },
+        {
+            "cell_num": 348,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 349,
+            "cell_type": "bc_1",
+            "port": "lcd_data0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 350,
+            "cell_type": "bc_1",
+            "port": "gpmc_ben0_cle",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "351",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 351,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 352,
+            "cell_type": "bc_1",
+            "port": "gpmc_ben0_cle",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 353,
+            "cell_type": "bc_1",
+            "port": "gpmc_wen",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "354",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 354,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 355,
+            "cell_type": "bc_1",
+            "port": "gpmc_wen",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 356,
+            "cell_type": "bc_1",
+            "port": "gpmc_oen_ren",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "357",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 357,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 358,
+            "cell_type": "bc_1",
+            "port": "gpmc_oen_ren",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 359,
+            "cell_type": "bc_1",
+            "port": "gpmc_advn_ale",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "360",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 360,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 361,
+            "cell_type": "bc_1",
+            "port": "gpmc_advn_ale",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 362,
+            "cell_type": "bc_1",
+            "port": "gpmc_clk",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "363",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 363,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 364,
+            "cell_type": "bc_1",
+            "port": "gpmc_clk",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 365,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "366",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 366,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 367,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 368,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "369",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 369,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 370,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 371,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "372",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 372,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 373,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 374,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "375",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 375,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 376,
+            "cell_type": "bc_1",
+            "port": "gpmc_csn0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 377,
+            "cell_type": "bc_1",
+            "port": "gpmc_ben1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "378",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 378,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 379,
+            "cell_type": "bc_1",
+            "port": "gpmc_ben1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 380,
+            "cell_type": "bc_1",
+            "port": "gpmc_wpn",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "381",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 381,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 382,
+            "cell_type": "bc_1",
+            "port": "gpmc_wpn",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 383,
+            "cell_type": "bc_1",
+            "port": "gpmc_wait0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "384",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 384,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 385,
+            "cell_type": "bc_1",
+            "port": "gpmc_wait0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 386,
+            "cell_type": "bc_1",
+            "port": "gpmc_a11",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "387",
+            "disval": "1",
+            "rslt": "pull1"
+        },
+        {
+            "cell_num": 387,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 388,
+            "cell_type": "bc_1",
+            "port": "gpmc_a11",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 389,
+            "cell_type": "bc_1",
+            "port": "gpmc_a10",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "390",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 390,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 391,
+            "cell_type": "bc_1",
+            "port": "gpmc_a10",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 392,
+            "cell_type": "bc_1",
+            "port": "gpmc_a9",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "393",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 393,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 394,
+            "cell_type": "bc_1",
+            "port": "gpmc_a9",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 395,
+            "cell_type": "bc_1",
+            "port": "gpmc_a8",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "396",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 396,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 397,
+            "cell_type": "bc_1",
+            "port": "gpmc_a8",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 398,
+            "cell_type": "bc_1",
+            "port": "gpmc_a7",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "399",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 399,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 400,
+            "cell_type": "bc_1",
+            "port": "gpmc_a7",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 401,
+            "cell_type": "bc_1",
+            "port": "gpmc_a6",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "402",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 402,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 403,
+            "cell_type": "bc_1",
+            "port": "gpmc_a6",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 404,
+            "cell_type": "bc_1",
+            "port": "gpmc_a5",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "405",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 405,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 406,
+            "cell_type": "bc_1",
+            "port": "gpmc_a5",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 407,
+            "cell_type": "bc_1",
+            "port": "gpmc_a4",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "408",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 408,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 409,
+            "cell_type": "bc_1",
+            "port": "gpmc_a4",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 410,
+            "cell_type": "bc_1",
+            "port": "gpmc_a3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "411",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 411,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 412,
+            "cell_type": "bc_1",
+            "port": "gpmc_a3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 413,
+            "cell_type": "bc_1",
+            "port": "gpmc_a2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "414",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 414,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 415,
+            "cell_type": "bc_1",
+            "port": "gpmc_a2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 416,
+            "cell_type": "bc_1",
+            "port": "gpmc_a1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "417",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 417,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 418,
+            "cell_type": "bc_1",
+            "port": "gpmc_a1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 419,
+            "cell_type": "bc_1",
+            "port": "gpmc_a0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "420",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 420,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 421,
+            "cell_type": "bc_1",
+            "port": "gpmc_a0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 422,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad15",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "423",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 423,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 424,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad15",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 425,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad14",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "426",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 426,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 427,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad14",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 428,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad13",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "429",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 429,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 430,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad13",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 431,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad12",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "432",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 432,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 433,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad12",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 434,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad11",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "435",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 435,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 436,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad11",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 437,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad10",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "438",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 438,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 439,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad10",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 440,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad9",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "441",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 441,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 442,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad9",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 443,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad8",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "444",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 444,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 445,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad8",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 446,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad7",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "447",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 447,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 448,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad7",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 449,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad6",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "450",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 450,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 451,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad6",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 452,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad5",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "453",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 453,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 454,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad5",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 455,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad4",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "456",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 456,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 457,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad4",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 458,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad3",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "459",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 459,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 460,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad3",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 461,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad2",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "462",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 462,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 463,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad2",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 464,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad1",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "465",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 465,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 466,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad1",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 467,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad0",
+            "function": "output3",
+            "safe": "X",
+            "c_cell": "468",
+            "disval": "1",
+            "rslt": "pull0"
+        },
+        {
+            "cell_num": 468,
+            "cell_type": "bc_1",
+            "port": "*",
+            "function": "control",
+            "safe": "1",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        },
+        {
+            "cell_num": 469,
+            "cell_type": "bc_1",
+            "port": "gpmc_ad0",
+            "function": "input",
+            "safe": "X",
+            "c_cell": null,
+            "disval": null,
+            "rslt": null
+        }
+    ]
+}

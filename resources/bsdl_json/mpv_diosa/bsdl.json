@@ -21,151 +21,151 @@
             "name": "CH1",
             "direction": "inout",
             "type": "bit",
-            "pin": 1
+            "pin": "1"
         },
         {
             "name": "CH2",
             "direction": "inout",
             "type": "bit",
-            "pin": 2
+            "pin": "2"
         },
         {
             "name": "CH3",
             "direction": "inout",
             "type": "bit",
-            "pin": 3
+            "pin": "3"
         },
         {
             "name": "CH4",
             "direction": "inout",
             "type": "bit",
-            "pin": 4
+            "pin": "4"
         },
         {
             "name": "CH5",
             "direction": "inout",
             "type": "bit",
-            "pin": 5
+            "pin": "5"
         },
         {
             "name": "CH6",
             "direction": "inout",
             "type": "bit",
-            "pin": 6
+            "pin": "6"
         },
         {
             "name": "CH7",
             "direction": "inout",
             "type": "bit",
-            "pin": 7
+            "pin": "7"
         },
         {
             "name": "CH8",
             "direction": "inout",
             "type": "bit",
-            "pin": 8
+            "pin": "8"
         },
         {
             "name": "CH9",
             "direction": "inout",
             "type": "bit",
-            "pin": 9
+            "pin": "9"
         },
         {
             "name": "CH10",
             "direction": "inout",
             "type": "bit",
-            "pin": 10
+            "pin": "10"
         },
         {
             "name": "CH11",
             "direction": "inout",
             "type": "bit",
-            "pin": 11
+            "pin": "11"
         },
         {
             "name": "CH12",
             "direction": "inout",
             "type": "bit",
-            "pin": 12
+            "pin": "12"
         },
         {
             "name": "CH13",
             "direction": "inout",
             "type": "bit",
-            "pin": 13
+            "pin": "13"
         },
         {
             "name": "CH14",
             "direction": "inout",
             "type": "bit",
-            "pin": 14
+            "pin": "14"
         },
         {
             "name": "CH15",
             "direction": "inout",
             "type": "bit",
-            "pin": 15
+            "pin": "15"
         },
         {
             "name": "CH16",
             "direction": "inout",
             "type": "bit",
-            "pin": 16
+            "pin": "16"
         },
         {
             "name": "S1",
             "direction": "inout",
             "type": "bit",
-            "pin": 126
+            "pin": "126"
         },
         {
             "name": "S2",
             "direction": "inout",
             "type": "bit",
-            "pin": 110
+            "pin": "110"
         },
         {
             "name": "GND",
             "direction": "linkage",
             "type": "bit",
-            "pin": 114
+            "pin": "114"
         },
         {
             "name": "VCC",
             "direction": "linkage",
             "type": "bit",
-            "pin": 128
+            "pin": "128"
         },
         {
             "name": "TDO",
             "direction": "out",
             "type": "bit",
-            "pin": 116
+            "pin": "116"
         },
         {
             "name": "TMS",
             "direction": "in",
             "type": "bit",
-            "pin": 113
+            "pin": "113"
         },
         {
             "name": "TDI",
             "direction": "in",
             "type": "bit",
-            "pin": 112
+            "pin": "112"
         },
         {
             "name": "TCK",
             "direction": "in",
             "type": "bit",
-            "pin": 115
+            "pin": "115"
         },
         {
             "name": "TRST",
             "direction": "in",
             "type": "bit",
-            "pin": 117
+            "pin": "117"
         }
     ],
     "bsr": [

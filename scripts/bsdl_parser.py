@@ -251,7 +251,7 @@ def create_json_from_bsdl(content, output_file):
                             for idx, value in enumerate(values, start=1):
                                 pin_map[f"{pin_name}{idx}"] = int(value.strip())
                         else:
-                            pin_map[pin_name] = int(pin_values)
+                            pin_map[pin_name] = pin_values
 
         # Extract attributes
         attributes = []
