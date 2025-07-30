@@ -43,6 +43,7 @@ BIT_TMS = 3
 BIT_TRST = 4
 
 assigned_devices = {}   # this is where we allocate the bsdl files
+fullBsrLength = 0
 
 import json
 import os
@@ -50,9 +51,23 @@ import re
 
 assigned_devices = {}
 
+outgoing_bsr_bits = ""  # MSB→LSB bitstring
+incoming_bsr_bits = ""  # MSB→LSB bitstring
+
 BASE_BSDL_PATH = os.path.join(os.path.dirname(__file__), "resources", "bsdl_json")
 
 import os
+
+def updateBsrLength():
+    global fullBsrLength, outgoing_bsr, incoming_bsr
+    fullBsrLength = 0
+    for device in assigned_devices:
+        fullBsrLength += assigned_devices[device]["bsr_length"]
+
+    outgoing_bsr = b''
+    incoming_bsr = b''
+
+    return fullBsrLength
 
 def get_bsdl_names():
     """
@@ -87,17 +102,7 @@ def assign_device(index, bsdl_name) -> int:
 
     # Normalize opcode keys
     raw_opcodes = bsdl_data.get("opcodes", {})
-    opcodes = {k.upper(): v for k, v in raw_opcodes.items()}
-
-    # Extract commonly used commands
-    commands = {
-        "BYPASS": opcodes.get("BYPASS"),
-        "EXTEST": opcodes.get("EXTEST"),
-        "SAMPLE": opcodes.get("SAMPLE") or opcodes.get("SAMPLE/PRELOAD"),
-        "IDCODE": opcodes.get("IDCODE"),
-        "CLAMP": opcodes.get("CLAMP"),
-        "HIGHZ": opcodes.get("HIGHZ"),
-    }
+    commands = {k.upper(): v for k, v in raw_opcodes.items()}  
 
     assigned_devices[int(index)] = {
         "bsdl_file": bsdl_name,
@@ -282,6 +287,8 @@ def set_test_state(new_state: TestState):
     else:
         tap2_current_state = current_state
 
+    return str(current_state)
+
 def wait_for_bytes(num_bytes, timeout=100):
     count = 0
     while ftdi_a.getQueueStatus() < num_bytes and count < timeout:
@@ -332,6 +339,7 @@ def select_tap(tap: int):
     set_tap_enable(1 if int(tap) == 1 else 0, 1 if int(tap) == 2 else 0)
     selected_tap = int(tap)
     print(f"TAP {selected_tap} selected")
+    return selected_tap
 
 def set_tap_enable(tap1_enable: int, tap2_enable: int):
     # this enables the TMS signal to be gated to the individual TAPs. TAP1_EN also controls the TDO routing
@@ -376,7 +384,7 @@ def send_bits(value, bit_count):
     ftdi_a.write(bytes([0x1B, bit_count - 1, value]))
 
 def clear_read_buffer():
-    ftdi_a.purge(3)  # Clear read buffer
+    ftdi_a.purge(1)  # Clear read buffer
 
 def flush():
     ftdi_a.write(bytes([0x87]))  # Flush the output buffer
@@ -483,7 +491,7 @@ def open_controller(ftdi_index: int):
 
     # setup the channels
     sync_mpsse()
-    set_clock(12000000)
+    set_clock(1000000)
     ftdi_a.write(b'\x83\x87')  # Slew/Schmitt config or edge-quality aid
     flush()
     set_jt3705_3v3()
@@ -492,6 +500,7 @@ def open_controller(ftdi_index: int):
     set_buffers(1)  # enable the output buffers
     flush()
     print("Opened Controller Successfully")
+    return "success"
 
 def close_controller():
     ftdi_a.close()
@@ -499,90 +508,124 @@ def close_controller():
     print("Closed Controller")
 
 def tlr():
-    set_test_state(TestState.TLR)
+    ret = set_test_state(TestState.TLR)
     flush()
+    return str(ret)
 
 def send_ir_chain(*args) -> str:
     """
     Supports:
     - send_ir_chain({1: "IDCODE", 2: "BYPASS"})     # original dict form
-    - send_ir_chain("IDCODE", "BYPASS", "BYPASS")   # positional args: index 1 gets first, etc.
+    - send_ir_chain("IDCODE", "BYPASS", "EXTEST")   # positional args: index 1 gets first, etc.
+
+    Returns: Comma-separated string of DR lengths per device based on the instruction,
+             e.g., "32,1,55"
     """
 
     if len(args) == 1 and isinstance(args[0], dict):
         device_cmd_map = args[0]
     else:
-        # Build device_cmd_map from positional args: 1-based index
         device_cmd_map = {i + 1: arg for i, arg in enumerate(args)}
 
-    
-    return _send_ir_chain_internal(device_cmd_map)
+    _send_ir_chain_internal(device_cmd_map)
+
+    dr_lengths = []
+    for i in sorted(assigned_devices.keys()):
+        cmd = device_cmd_map.get(i, "BYPASS").upper()
+        dev = assigned_devices[i]
+        if cmd == "BYPASS":
+            dr_lengths.append("1")
+        elif cmd == "IDCODE":
+            dr_lengths.append(str(dev["commands"]["IDCODE"].__len__()))
+        elif cmd in ("EXTEST", "SAMPLE", "SAMPLE/PRELOAD"):
+            dr_lengths.append(str(dev["bsr_length"]))
+        else:
+            # Default fallback to BSR length for unknowns
+            dr_lengths.append(str(dev["bsr_length"]))
+
+    return ",".join(dr_lengths)
 
 def _send_ir_chain_internal(device_cmd_map) -> str:
     """
     Internal IR shift logic that expects a {device_index: command} dict.
+    Builds IR chain from TDI to TDO (Device 1 → N), MSB-to-LSB.
     """
-
     chain_ir_bits = []
 
-    # Build IR chain from TDO to TDI (highest to lowest index)
-    for index in sorted(assigned_devices.keys(), reverse=True):
+    # Build IR chain from TDI to TDO (lowest to highest index)
+    for index in sorted(assigned_devices.keys()):
         device = assigned_devices[index]
-        cmd = device_cmd_map.get(index, "BYPASS")  # Default to BYPASS if not specified
+        cmd = device_cmd_map.get(index, "BYPASS")
         opcode_bin = device["commands"].get(cmd.upper())
+
         if opcode_bin is None:
             raise ValueError(f"Command '{cmd}' not defined for device {index}.")
 
         ir_len = device["ir_length"]
-        padded = opcode_bin.zfill(ir_len)
-        chain_ir_bits.append(padded[::-1])  # Reverse each instruction for LSB-first
+        padded = opcode_bin.zfill(ir_len)  # e.g., "000010"
+        print(f"OpCode: {padded}")
+        chain_ir_bits.append(padded)  # MSB-to-LSB, do NOT reverse
 
-    # Full IR stream, LSB-first
+    # Create full IR bitstream (MSB to LSB)
     full_ir = ''.join(chain_ir_bits)
     total_len = len(full_ir)
 
-    if total_len % 8 == 0:
-        full_bytes = (total_len // 8) - 1
-        leftover_bits = 8
-    else:
-        full_bytes = total_len // 8
-        leftover_bits = total_len % 8
+    print(f"Full IR:          {full_ir}")
 
+    # Pad to next full byte boundary
+    pad_len = (8 - total_len % 8) % 8
+    full_ir_padded =  full_ir + ("0" * pad_len)
+    total_padded_len = len(full_ir_padded)
+
+    print(f"Full IR Padded: {full_ir_padded}")
+
+    # Convert to bytes, starting from LSB (FTDI will reverse bits)
+    bytes_list = []
+    for i in range(0, total_padded_len, 8):
+        byte_str = full_ir_padded[i:i+8]
+        byte_val = int(byte_str, 2)
+        bytes_list.append(byte_val)
+
+    bytes_list = list(reversed(bytes_list))
+    print(f"Byte List: {bytes_list}")
+
+    # FTDI expects full bytes via 0x19, remaining bits via 0x1B, final bit with TMS
     cmd = bytearray()
-    pos = 0
-    
     set_test_state(TestState.SHIFT_IR)
 
-    if full_bytes > 0:
+    if len(bytes_list) > 1:
         cmd.append(0x19)
-        cmd.append(full_bytes - 1)
+        cmd.append(len(bytes_list) - 2)  # minus 1 for FTDI, then minus 1 for final bit
         cmd.append(0x00)
-        for i in range(full_bytes):
-            byte = int(full_ir[pos:pos+8][::-1], 2)
-            cmd.append(byte)
-            pos += 8
-    
-    remaining = total_len - pos
-    if remaining > 1:
-        bits_to_send = remaining - 1
+        for b in bytes_list[:-1]:
+            cmd.append(b)
+
+    if total_padded_len > 1:
+        # Bits before the last one (handled with TMS)
+        bits_to_send = (total_padded_len - 1) % 8 or 8
+        last_byte = bytes_list[-1]
+        partial = last_byte & ((1 << bits_to_send) - 1)
         cmd.append(0x1B)
         cmd.append(bits_to_send - 1)
-        bits = int(full_ir[pos:pos+bits_to_send][::-1], 2)
-        cmd.append(bits)
-        pos += bits_to_send
+        cmd.append(partial)
 
     if cmd:
+        print(f"cmd: {cmd}")
         ftdi_a.write(bytes(cmd))
+    flush()
+    # Final bit (MSB) goes with TMS=1
+    final_bit_index = total_padded_len - 1
+    final_bit = int(full_ir_padded[final_bit_index])
+    set_tms(1)
+    final_cmd = bytearray()
+    final_cmd.append(0x1B)
+    final_cmd.append(0x00)
+    final_cmd.append(0x01 if final_bit else 0x00)
+    print(f"Final cmd: {final_cmd}")
+    ftdi_a.write(bytes(final_cmd))
+    flush()
 
-    if pos < total_len:
-        final_bit = int(full_ir[pos])
-        set_tms(1)
-        final_cmd = bytearray()
-        final_cmd.append(0x1B)
-        final_cmd.append(0x00)
-        final_cmd.append(0x01 if final_bit else 0x00)
-        ftdi_a.write(bytes(final_cmd))
-
+    # Update TAP state
     if selected_tap == 1:
         global tap1_current_state
         tap1_current_state = TestState.EXIT1_IR
@@ -590,27 +633,181 @@ def _send_ir_chain_internal(device_cmd_map) -> str:
         global tap2_current_state
         tap2_current_state = TestState.EXIT1_IR
 
-    return "success"
+    set_test_state(TestState.UPDATE_IR)
+
+    return str(bytes_list)
+
+def generate_safe_bsr():
+    """
+    Constructs the full-chain safe BSR as a bitstring.
+    Stored in memory MSB → LSB (Device 1 to Device N).
+    """
+    global outgoing_bsr_bits
+
+    bitstream = ''
+
+    # Build MSB→LSB bitstring (Device 1 to N)
+    for index in sorted(assigned_devices.keys()):  # TDI → TDO
+        cells = assigned_devices[index]["bsdl_data"]["bsr"]
+        for cell in cells:
+            safe = str(cell.get("safe", "X")).strip().upper()
+            bitstream += '1' if safe == '1' else '0'
+
+    outgoing_bsr_bits = bitstream
+
+    print(f"Generated safe BSR (stored MSB→LSB): {bitstream}")
+    return outgoing_bsr_bits
+
+
+def format_bsr_bits_for_debug(bitstr: str) -> str:
+    return bitstr  # no padding added anymore
+
+def exchange_bsr(update=True):
+    global incoming_bsr_bits, tap1_current_state, tap2_current_state
+
+    set_test_state(TestState.SHIFT_DR)
+    flush()
+    
+    bitstr = outgoing_bsr_bits
+    total_bits = len(bitstr)
+
+    cmd = bytearray()
+    tx_bytes = []
+
+    # Work from LSB end to group into bytes
+    i = total_bits
+    while i > 8:
+        byte_bits = bitstr[i - 8:i]
+        tx_bytes.append(int(byte_bits, 2))
+        i -= 8
+
+    # remaining bits (less than or equal to 8)
+    remainder_bits = bitstr[0:i]
+
+    remainder_rx_bytes = 0
+
+    # Shift full bytes first
+    if len(tx_bytes) > 1:
+        remainder_rx_bytes = 2
+        cmd += bytes([0x39, len(tx_bytes) - 1, 0x00])   #39
+        #cmd += bytes(tx_bytes[:-1])
+        cmd += bytes(tx_bytes)
+    else:
+        remainder_rx_bytes = 1
+
+    # Partial bits before final bit (all but last)
+    if len(remainder_bits) > 1:
+        partial_bits_value = int(remainder_bits[:-1], 2)
+        partial_bits_len = len(remainder_bits) - 1
+        cmd += bytes([0x3B, partial_bits_len - 1, partial_bits_value])  #3B
+
+    ftdi_a.write(bytes(cmd))
+    flush()
+
+    # Final bit with TMS = 1
+    if update:
+        set_tms(1)
+
+    final_bit = int(remainder_bits[-1])
+    ftdi_a.write(bytes([0x3B, 0x00, final_bit]))
+
+    flush()
+
+    # Wait for and read back incoming bytes
+    num_bytes = (len(tx_bytes) + remainder_rx_bytes)
+    wait_for_bytes(num_bytes)
+
+    rx = ftdi_a.read(len(tx_bytes)) # this is the whole bytes only
+
+    # Reconstruct MSB→LSB bitstream from reversed byte order
+    incoming_bsr_bits = ''.join(f'{b:08b}' for b in rx)
+
+    if remainder_rx_bytes > 1:
+        rx_remainder_except_last = ftdi_a.read(1)
+        incoming_bsr_bits = f'{rx_remainder_except_last[0]:08b}'[-(len(remainder_bits) - 1):] + incoming_bsr_bits
+
+    rx_final = ftdi_a.read(1)
+    incoming_bsr_bits = f'{rx_final[0]:08b}'[-1] + incoming_bsr_bits
+
+    # Debug
+    print("\n========== BSR Exchange ==========")
+    #print(f"Total BSR Bits Intended  : {total_bits}")
+    print(f"Outgoing Bitstream       : {format_bsr_bits_for_debug(bitstr)}")
+    #print(f"FTDI 0x39 Bytes Clocked  : {len(tx_bytes)}")
+    #print(f"FTDI 0x3B Bits Clocked   : {(len(remainder_bits) - 1) if len(remainder_bits) > 1 else 0}")
+    #print(f"FTDI Final Bit (TMS Bit) : {final_bit}")
+    print(f"Incoming Bitstream       : {format_bsr_bits_for_debug(incoming_bsr_bits)}")
+    print("==================================\n")
+
+    if update:
+        if selected_tap == 1:
+            tap1_current_state = TestState.EXIT1_DR
+        else:
+            tap2_current_state = TestState.EXIT1_DR
+
+        set_test_state(TestState.UPDATE_DR)
+
+    return incoming_bsr_bits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # --- Usage example ---
 if __name__ == "__main__":
-    tap = 1
     print(get_controllers())
     open_controller(0)
 
-    select_tap(tap)
-
+    select_tap(1)
     print(f"Detected {detect_chain_length()} devices in chain")
 
     print(f"Available devices: {get_bsdl_names()}")
 
-    assign_device(1, "mpv_diosa")
-    assign_device(2, "mpv_diosa")
-    assign_device(3, "mpv_diosa")
-    assign_device(4, "mpv_diosa")
+    #id1 = assign_device(1, "mpv_diosa")
+    #id2 = assign_device(2, "mpv_diosa")
+    #id3 = assign_device(3, "mpv_diosa")
+    #id4 = assign_device(4, "mpv_diosa")
 
-    send_ir_chain("IDCODE", "IDCODE", "IDCODE", "IDCODE")
+    #print(f"Total BSR Length: {updateBsrLength()}")
+    assign_device(1, "SPRM607")
+    
+    tlr()
 
+    print(send_ir_chain("IDCODE"))  #, "IDCODE", "IDCODE", "IDCODE"))
     set_test_state(TestState.SHIFT_DR)
-    print(send_bytes_while_read(bytes([0x00] * 4 * 4)))
-    close_controller()
+    print(send_bytes_while_read(bytes([0x00] * 4 )))#* 4)))
+
+    tlr()
+    
+    generate_safe_bsr() # this is needed to initialise the outgoing variable
+
+    #print(send_ir_chain("SAMPLE", "SAMPLE", "SAMPLE", "SAMPLE"))
+    print(send_ir_chain("EXTEST"))
+
+    print(exchange_bsr(True))   
+
+    #outgoing_bsr_bits = incoming_bsr_bits
+
+    
+    
+    print(exchange_bsr(True))   # now we should be in sync
+                                                                                                                                                                                              #    5         4         3         2         1
+                                                                                                            #                                                                                 4321098765432109876543210987654321098765432109876543210
+    outgoing_bsr_bits = "01001001001001001001001001001001001001001001001001001001001000000100000001000000100000000000000100000000000000000000000010010000100100101010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010"
+    print(exchange_bsr(True))
+
+    # now we can read back
+    #print(exchange_bsr(True))
+
+    
