@@ -1,0 +1,1784 @@
+{
+  "model": "OSD3358_Module",
+  "devices": {
+    "XXX1": {
+      "role": "core",
+      "bsdl_name": "am335x"
+    },
+    "XXX2": {
+      "role": "package"
+    }
+  },
+  "netlist": {
+    "WARMRSTn": [
+      {
+        "device": "XXX1",
+        "pin": "A10",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R11"
+      }
+    ],
+    "TDO": [
+      {
+        "device": "XXX1",
+        "pin": "A11",
+        "type": "OUTPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C2"
+      }
+    ],
+    "TCK": [
+      {
+        "device": "XXX1",
+        "pin": "A12",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D1"
+      }
+    ],
+    "mcasp0_aclkx": [
+      {
+        "device": "XXX1",
+        "pin": "A13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A1"
+      }
+    ],
+    "mcasp0_ahclkx": [
+      {
+        "device": "XXX1",
+        "pin": "A14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C4"
+      }
+    ],
+    "xdma_event_intr0": [
+      {
+        "device": "XXX1",
+        "pin": "A15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A4"
+      }
+    ],
+    "spi0_cs0": [
+      {
+        "device": "XXX1",
+        "pin": "A16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A14"
+      }
+    ],
+    "spi0_sclk": [
+      {
+        "device": "XXX1",
+        "pin": "A17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A13"
+      }
+    ],
+    "RTC_XTALOUT": [
+      {
+        "device": "XXX1",
+        "pin": "A4",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A5"
+      }
+    ],
+    "vss_rtc": [
+      {
+        "device": "XXX1",
+        "pin": "A5",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B5"
+      }
+    ],
+    "RTC_XTALIN": [
+      {
+        "device": "XXX1",
+        "pin": "A6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A6"
+      }
+    ],
+    "AIN3": [
+      {
+        "device": "XXX1",
+        "pin": "A7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C6"
+      }
+    ],
+    "AIN6": [
+      {
+        "device": "XXX1",
+        "pin": "A8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C9"
+      }
+    ],
+    "VREFN": [
+      {
+        "device": "XXX1",
+        "pin": "A9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B9"
+      }
+    ],
+    "TRSTn": [
+      {
+        "device": "XXX1",
+        "pin": "B10",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D3"
+      }
+    ],
+    "TDI": [
+      {
+        "device": "XXX1",
+        "pin": "B11",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C1"
+      }
+    ],
+    "mcasp0_aclkr": [
+      {
+        "device": "XXX1",
+        "pin": "B12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A3"
+      }
+    ],
+    "mcasp0_fsx": [
+      {
+        "device": "XXX1",
+        "pin": "B13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A2"
+      }
+    ],
+    "EMU1": [
+      {
+        "device": "XXX1",
+        "pin": "B14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E3"
+      }
+    ],
+    "PWRONRSTn": [
+      {
+        "device": "XXX1",
+        "pin": "B15",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P11"
+      }
+    ],
+    "spi0_d1": [
+      {
+        "device": "XXX1",
+        "pin": "B16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B14"
+      }
+    ],
+    "spi0_d0": [
+      {
+        "device": "XXX1",
+        "pin": "B17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B13"
+      }
+    ],
+    "EXTINTn": [
+      {
+        "device": "XXX1",
+        "pin": "B18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D4"
+      }
+    ],
+    "ENZ_KALDO_1P8V": [
+      {
+        "device": "XXX1",
+        "pin": "B4",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "M6"
+      }
+    ],
+    "RTC_PWRONRSTn": [
+      {
+        "device": "XXX1",
+        "pin": "B5",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N5"
+      }
+    ],
+    "AIN0": [
+      {
+        "device": "XXX1",
+        "pin": "B6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A8"
+      }
+    ],
+    "AIN2": [
+      {
+        "device": "XXX1",
+        "pin": "B7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B6"
+      }
+    ],
+    "AIN5": [
+      {
+        "device": "XXX1",
+        "pin": "B8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C8"
+      }
+    ],
+    "VREFP": [
+      {
+        "device": "XXX1",
+        "pin": "B9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B7"
+      }
+    ],
+    "TMS": [
+      {
+        "device": "XXX1",
+        "pin": "C11",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D2"
+      }
+    ],
+    "mcasp0_ahclkr": [
+      {
+        "device": "XXX1",
+        "pin": "C12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B1"
+      }
+    ],
+    "mcasp0_fsr": [
+      {
+        "device": "XXX1",
+        "pin": "C13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B3"
+      }
+    ],
+    "EMU0": [
+      {
+        "device": "XXX1",
+        "pin": "C14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E2"
+      }
+    ],
+    "spi0_cs1": [
+      {
+        "device": "XXX1",
+        "pin": "C15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C14"
+      }
+    ],
+    "I2C0_SCL": [
+      {
+        "device": "XXX1",
+        "pin": "C16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C10"
+      }
+    ],
+    "I2C0_SDA": [
+      {
+        "device": "XXX1",
+        "pin": "C17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C11"
+      }
+    ],
+    "eCAP0_in_PWM0_out": [
+      {
+        "device": "XXX1",
+        "pin": "C18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C5"
+      }
+    ],
+    "EXT_WAKEUP": [
+      {
+        "device": "XXX1",
+        "pin": "C5",
+        "type": "INPUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "M4"
+      }
+    ],
+    "PMIC_POWER_EN": [
+      {
+        "device": "XXX1",
+        "pin": "C6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N10"
+      }
+    ],
+    "AIN1": [
+      {
+        "device": "XXX1",
+        "pin": "C7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B8"
+      }
+    ],
+    "AIN4": [
+      {
+        "device": "XXX1",
+        "pin": "C8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C7"
+      }
+    ],
+    "AIN7": [
+      {
+        "device": "XXX1",
+        "pin": "C9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D7"
+      }
+    ],
+    "mcasp0_axr0": [
+      {
+        "device": "XXX1",
+        "pin": "D12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B2"
+      }
+    ],
+    "mcasp0_axr1": [
+      {
+        "device": "XXX1",
+        "pin": "D13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C3"
+      }
+    ],
+    "xdma_event_intr1": [
+      {
+        "device": "XXX1",
+        "pin": "D14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B4"
+      }
+    ],
+    "uart1_txd": [
+      {
+        "device": "XXX1",
+        "pin": "D15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B11"
+      }
+    ],
+    "uart1_rxd": [
+      {
+        "device": "XXX1",
+        "pin": "D16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A11"
+      }
+    ],
+    "uart1_rtsn": [
+      {
+        "device": "XXX1",
+        "pin": "D17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A10"
+      }
+    ],
+    "uart1_ctsn": [
+      {
+        "device": "XXX1",
+        "pin": "D18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B10"
+      }
+    ],
+    "cap_vdd_rtc": [
+      {
+        "device": "XXX1",
+        "pin": "D6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D5"
+      }
+    ],
+    "uart0_rxd": [
+      {
+        "device": "XXX1",
+        "pin": "E15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A12"
+      }
+    ],
+    "uart0_txd": [
+      {
+        "device": "XXX1",
+        "pin": "E16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B12"
+      }
+    ],
+    "uart0_rtsn": [
+      {
+        "device": "XXX1",
+        "pin": "E17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C13"
+      }
+    ],
+    "uart0_ctsn": [
+      {
+        "device": "XXX1",
+        "pin": "E18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C12"
+      }
+    ],
+    "vssa_adc": [
+      {
+        "device": "XXX1",
+        "pin": "E8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "A9"
+      }
+    ],
+    "USB1_DRVVBUS": [
+      {
+        "device": "XXX1",
+        "pin": "F15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "M14"
+      }
+    ],
+    "USB0_DRVVBUS": [
+      {
+        "device": "XXX1",
+        "pin": "F16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J15"
+      }
+    ],
+    "mmc0_dat3": [
+      {
+        "device": "XXX1",
+        "pin": "F17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C15"
+      }
+    ],
+    "mmc0_dat2": [
+      {
+        "device": "XXX1",
+        "pin": "F18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "C16"
+      }
+    ],
+    "mmc0_dat1": [
+      {
+        "device": "XXX1",
+        "pin": "G15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "V3"
+      }
+    ],
+    "mmc0_dat0": [
+      {
+        "device": "XXX1",
+        "pin": "G16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "Y3"
+      }
+    ],
+    "mmc0_clk": [
+      {
+        "device": "XXX1",
+        "pin": "G17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "B15"
+      }
+    ],
+    "vddshv4(1)": [
+      {
+        "device": "XXX1",
+        "pin": "H14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX1",
+        "pin": "J14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F9"
+      }
+    ],
+    "mii1_col": [
+      {
+        "device": "XXX1",
+        "pin": "H16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F15"
+      }
+    ],
+    "mii1_crs": [
+      {
+        "device": "XXX1",
+        "pin": "H17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F14"
+      }
+    ],
+    "rmii1_ref_clk": [
+      {
+        "device": "XXX1",
+        "pin": "H18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J14"
+      }
+    ],
+    "mii1_rx_er": [
+      {
+        "device": "XXX1",
+        "pin": "J15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E15"
+      }
+    ],
+    "mii1_tx_en": [
+      {
+        "device": "XXX1",
+        "pin": "J16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G14"
+      }
+    ],
+    "mii1_rx_dv": [
+      {
+        "device": "XXX1",
+        "pin": "J17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F16"
+      }
+    ],
+    "mii1_txd3": [
+      {
+        "device": "XXX1",
+        "pin": "J18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G15"
+      }
+    ],
+    "vddshv5(1)": [
+      {
+        "device": "XXX1",
+        "pin": "K14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX1",
+        "pin": "L14"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G9"
+      }
+    ],
+    "mii1_txd2": [
+      {
+        "device": "XXX1",
+        "pin": "K15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G16"
+      }
+    ],
+    "mii1_txd1": [
+      {
+        "device": "XXX1",
+        "pin": "K16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H14"
+      }
+    ],
+    "mii1_txd0": [
+      {
+        "device": "XXX1",
+        "pin": "K17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H15"
+      }
+    ],
+    "mii1_tx_clk": [
+      {
+        "device": "XXX1",
+        "pin": "K18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H16"
+      }
+    ],
+    "mii1_rxd1": [
+      {
+        "device": "XXX1",
+        "pin": "L15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D16"
+      }
+    ],
+    "mii1_rxd2": [
+      {
+        "device": "XXX1",
+        "pin": "L16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D15"
+      }
+    ],
+    "mii1_rxd3": [
+      {
+        "device": "XXX1",
+        "pin": "L17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D14"
+      }
+    ],
+    "mii1_rx_clk": [
+      {
+        "device": "XXX1",
+        "pin": "L18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E16"
+      }
+    ],
+    "USB0_CE": [
+      {
+        "device": "XXX1",
+        "pin": "M15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K13"
+      }
+    ],
+    "mii1_rxd0": [
+      {
+        "device": "XXX1",
+        "pin": "M16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E14"
+      }
+    ],
+    "mdio": [
+      {
+        "device": "XXX1",
+        "pin": "M17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E13"
+      }
+    ],
+    "mdc": [
+      {
+        "device": "XXX1",
+        "pin": "M18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "D13"
+      }
+    ],
+    "VPP": [
+      {
+        "device": "XXX1",
+        "pin": "M5",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H6"
+      }
+    ],
+    "USB0_DP": [
+      {
+        "device": "XXX1",
+        "pin": "N17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K15"
+      }
+    ],
+    "USB0_DM": [
+      {
+        "device": "XXX1",
+        "pin": "N18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K16"
+      }
+    ],
+    "vddshv2(1)": [
+      {
+        "device": "XXX1",
+        "pin": "P10",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX1",
+        "pin": "P11"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K9"
+      }
+    ],
+    "vddshv3(1)": [
+      {
+        "device": "XXX1",
+        "pin": "P12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX1",
+        "pin": "P13"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L9"
+      }
+    ],
+    "usb0_vbus": [
+      {
+        "device": "XXX1",
+        "pin": "P15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J16"
+      }
+    ],
+    "USB0_ID": [
+      {
+        "device": "XXX1",
+        "pin": "P16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K14"
+      }
+    ],
+    "USB1_ID": [
+      {
+        "device": "XXX1",
+        "pin": "P17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L14"
+      }
+    ],
+    "USB1_CE": [
+      {
+        "device": "XXX1",
+        "pin": "P18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L13"
+      }
+    ],
+    "vddshv1(1)": [
+      {
+        "device": "XXX1",
+        "pin": "P7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX1",
+        "pin": "P8"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J9"
+      }
+    ],
+    "lcd_data0": [
+      {
+        "device": "XXX1",
+        "pin": "R1",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G3"
+      }
+    ],
+    "gpmc_ad13": [
+      {
+        "device": "XXX1",
+        "pin": "R12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R6"
+      }
+    ],
+    "gpmc_a0": [
+      {
+        "device": "XXX1",
+        "pin": "R13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T12"
+      }
+    ],
+    "gpmc_a4": [
+      {
+        "device": "XXX1",
+        "pin": "R14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R13"
+      }
+    ],
+    "USB1_DP": [
+      {
+        "device": "XXX1",
+        "pin": "R17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L15"
+      }
+    ],
+    "USB1_DM": [
+      {
+        "device": "XXX1",
+        "pin": "R18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L16"
+      }
+    ],
+    "lcd_data1": [
+      {
+        "device": "XXX1",
+        "pin": "R2",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G2"
+      }
+    ],
+    "lcd_data2": [
+      {
+        "device": "XXX1",
+        "pin": "R3",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "G1"
+      }
+    ],
+    "lcd_data3": [
+      {
+        "device": "XXX1",
+        "pin": "R4",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H3"
+      }
+    ],
+    "lcd_hsync": [
+      {
+        "device": "XXX1",
+        "pin": "R5",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F2"
+      }
+    ],
+    "lcd_ac_bias_en": [
+      {
+        "device": "XXX1",
+        "pin": "R6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "E1"
+      }
+    ],
+    "gpmc_advn_ale": [
+      {
+        "device": "XXX1",
+        "pin": "R7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "M1"
+      }
+    ],
+    "gpmc_ad2": [
+      {
+        "device": "XXX1",
+        "pin": "R8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R1"
+      }
+    ],
+    "gpmc_ad6": [
+      {
+        "device": "XXX1",
+        "pin": "R9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P4"
+      }
+    ],
+    "lcd_data4": [
+      {
+        "device": "XXX1",
+        "pin": "T1",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H2"
+      }
+    ],
+    "gpmc_ad9": [
+      {
+        "device": "XXX1",
+        "pin": "T10",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P5"
+      }
+    ],
+    "gpmc_ad10": [
+      {
+        "device": "XXX1",
+        "pin": "T11",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R5"
+      }
+    ],
+    "gpmc_ad12": [
+      {
+        "device": "XXX1",
+        "pin": "T12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P6"
+      }
+    ],
+    "gpmc_csn3": [
+      {
+        "device": "XXX1",
+        "pin": "T13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R7"
+      }
+    ],
+    "gpmc_a3": [
+      {
+        "device": "XXX1",
+        "pin": "T14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T13"
+      }
+    ],
+    "gpmc_a7": [
+      {
+        "device": "XXX1",
+        "pin": "T15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R14"
+      }
+    ],
+    "gpmc_a10": [
+      {
+        "device": "XXX1",
+        "pin": "T16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R15"
+      }
+    ],
+    "gpmc_wait0": [
+      {
+        "device": "XXX1",
+        "pin": "T17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P15"
+      }
+    ],
+    "usb1_vbus": [
+      {
+        "device": "XXX1",
+        "pin": "T18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "M15"
+      }
+    ],
+    "lcd_data5": [
+      {
+        "device": "XXX1",
+        "pin": "T2",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "H1"
+      }
+    ],
+    "lcd_data6": [
+      {
+        "device": "XXX1",
+        "pin": "T3",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J3"
+      }
+    ],
+    "lcd_data7": [
+      {
+        "device": "XXX1",
+        "pin": "T4",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J2"
+      }
+    ],
+    "lcd_data15": [
+      {
+        "device": "XXX1",
+        "pin": "T5",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "M3"
+      }
+    ],
+    "gpmc_ben0_cle": [
+      {
+        "device": "XXX1",
+        "pin": "T6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N3"
+      }
+    ],
+    "gpmc_oen_ren": [
+      {
+        "device": "XXX1",
+        "pin": "T7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N1"
+      }
+    ],
+    "gpmc_ad3": [
+      {
+        "device": "XXX1",
+        "pin": "T8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T3"
+      }
+    ],
+    "gpmc_ad7": [
+      {
+        "device": "XXX1",
+        "pin": "T9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R4"
+      }
+    ],
+    "lcd_data8": [
+      {
+        "device": "XXX1",
+        "pin": "U1",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "J1"
+      }
+    ],
+    "gpmc_ad8": [
+      {
+        "device": "XXX1",
+        "pin": "U10",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T4"
+      }
+    ],
+    "XTALOUT": [
+      {
+        "device": "XXX1",
+        "pin": "U11",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N16"
+      }
+    ],
+    "gpmc_ad11": [
+      {
+        "device": "XXX1",
+        "pin": "U12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T5"
+      }
+    ],
+    "gpmc_ad15": [
+      {
+        "device": "XXX1",
+        "pin": "U13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P7"
+      }
+    ],
+    "gpmc_a2": [
+      {
+        "device": "XXX1",
+        "pin": "U14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P12"
+      }
+    ],
+    "gpmc_a6": [
+      {
+        "device": "XXX1",
+        "pin": "U15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T14"
+      }
+    ],
+    "gpmc_a9": [
+      {
+        "device": "XXX1",
+        "pin": "U16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T15"
+      }
+    ],
+    "gpmc_wpn": [
+      {
+        "device": "XXX1",
+        "pin": "U17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R16"
+      }
+    ],
+    "gpmc_ben1": [
+      {
+        "device": "XXX1",
+        "pin": "U18",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N14"
+      }
+    ],
+    "lcd_data9": [
+      {
+        "device": "XXX1",
+        "pin": "U2",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K3"
+      }
+    ],
+    "lcd_data10": [
+      {
+        "device": "XXX1",
+        "pin": "U3",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K2"
+      }
+    ],
+    "lcd_data11": [
+      {
+        "device": "XXX1",
+        "pin": "U4",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "K1"
+      }
+    ],
+    "lcd_vsync": [
+      {
+        "device": "XXX1",
+        "pin": "U5",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F3"
+      }
+    ],
+    "gpmc_wen": [
+      {
+        "device": "XXX1",
+        "pin": "U6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N2"
+      }
+    ],
+    "gpmc_ad0": [
+      {
+        "device": "XXX1",
+        "pin": "U7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R3"
+      }
+    ],
+    "gpmc_ad4": [
+      {
+        "device": "XXX1",
+        "pin": "U8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T2"
+      }
+    ],
+    "gpmc_csn1": [
+      {
+        "device": "XXX1",
+        "pin": "U9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P2"
+      }
+    ],
+    "XTALIN": [
+      {
+        "device": "XXX1",
+        "pin": "V10",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P16"
+      }
+    ],
+    "vss_osc": [
+      {
+        "device": "XXX1",
+        "pin": "V11",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "N15"
+      }
+    ],
+    "gpmc_clk": [
+      {
+        "device": "XXX1",
+        "pin": "V12",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T7"
+      }
+    ],
+    "gpmc_ad14": [
+      {
+        "device": "XXX1",
+        "pin": "V13",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T6"
+      }
+    ],
+    "gpmc_a1": [
+      {
+        "device": "XXX1",
+        "pin": "V14",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R12"
+      }
+    ],
+    "gpmc_a5": [
+      {
+        "device": "XXX1",
+        "pin": "V15",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P13"
+      }
+    ],
+    "gpmc_a8": [
+      {
+        "device": "XXX1",
+        "pin": "V16",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P14"
+      }
+    ],
+    "gpmc_a11": [
+      {
+        "device": "XXX1",
+        "pin": "V17",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T16"
+      }
+    ],
+    "lcd_data12": [
+      {
+        "device": "XXX1",
+        "pin": "V2",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L3"
+      }
+    ],
+    "lcd_data13": [
+      {
+        "device": "XXX1",
+        "pin": "V3",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L2"
+      }
+    ],
+    "lcd_data14": [
+      {
+        "device": "XXX1",
+        "pin": "V4",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "L1"
+      }
+    ],
+    "lcd_pclk": [
+      {
+        "device": "XXX1",
+        "pin": "V5",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "F1"
+      }
+    ],
+    "gpmc_csn0": [
+      {
+        "device": "XXX1",
+        "pin": "V6",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P3"
+      }
+    ],
+    "gpmc_ad1": [
+      {
+        "device": "XXX1",
+        "pin": "V7",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "R2"
+      }
+    ],
+    "gpmc_ad5": [
+      {
+        "device": "XXX1",
+        "pin": "V8",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "T1"
+      }
+    ],
+    "gpmc_csn2": [
+      {
+        "device": "XXX1",
+        "pin": "V9",
+        "type": "INOUT"
+      },
+      {
+        "device": "XXX2",
+        "pin": "P1"
+      }
+    ]
+  }
+}
