@@ -59,13 +59,13 @@ BASE_BSDL_PATH = os.path.join(os.path.dirname(__file__), "resources", "bsdl_json
 import os
 
 def updateBsrLength():
-    global fullBsrLength, outgoing_bsr, incoming_bsr
+    global fullBsrLength, outgoing_bsr_bits, incoming_bsr_bits
     fullBsrLength = 0
     for device in assigned_devices:
         fullBsrLength += assigned_devices[device]["bsr_length"]
 
-    outgoing_bsr = b''
-    incoming_bsr = b''
+    outgoing_bsr_bits = b''
+    incoming_bsr_bits = b''
 
     return fullBsrLength
 
@@ -750,6 +750,98 @@ def exchange_bsr(update=True):
     return incoming_bsr_bits
 
 
+def get_bsr_cells_from_package_pin(model_name: str, bsdl_name: str, package_pin: str) -> tuple[str, str, str]:
+    """
+    Given model + BSDL + package pin, return (input_cell, output_cell, control_cell)
+    as strings from BSR, or 'null' if not present.
+    """
+    def get_device_name(devices: dict, role) -> str:
+        for name, props in devices.items():
+            if props.get("role") == role:
+                return name
+        raise ValueError("No device with role 'core' found.")
+
+    # Load model
+    model_path = os.path.join("resources", "models", f"{model_name}.json")
+    with open(model_path, "r") as f:
+        model = json.load(f)
+
+    netlist = model.get("netlist", {})
+    if not isinstance(netlist, dict):
+        raise ValueError("Model netlist is not in expected dict format.")
+
+    core_ref = get_device_name(model["devices"], "core")
+    package_ref = get_device_name(model["devices"], "package")
+
+    # Find U1 core pin for given U2 package pin
+    core_pin = None
+    for pins in netlist.values():
+        for pin in pins:
+            if pin["device"] == package_ref and pin["pin"].upper() == package_pin.upper():
+                for other_pin in pins:
+                    if other_pin["device"] == core_ref:
+                        core_pin = other_pin["pin"]
+                        break
+        if core_pin:
+            break
+
+    if not core_pin:
+        raise ValueError(f"Could not find core pin for package pin '{package_pin}' in model '{model_name}'.")
+
+    # Load BSDL JSON
+    bsdl_path = os.path.join("resources", "bsdl_json", bsdl_name, "bsdl.json")
+    with open(bsdl_path, "r") as f:
+        bsdl = json.load(f)
+
+    ports = bsdl.get("ports", [])
+    bsr = bsdl.get("bsr", [])
+
+    # Get signal name from port pin mapping
+    signal_name = None
+    for port in ports:
+        if port.get("pin", "").upper() == core_pin.upper():
+            signal_name = port.get("name")
+            break
+
+    if not signal_name:
+        return ("null", "null", "null")
+
+    input_cell = "null"
+    output_cell = "null"
+    control_cell = "null"
+    ccell_name = None
+
+    # First pass: find input/output and ccell name
+    for cell in bsr:
+        if cell.get("port") == signal_name:
+            func = cell.get("function", "").lower()
+            cell_num_str = str(cell.get("cell_num"))
+            if func == "input":
+                input_cell = cell_num_str
+            elif func.startswith("output"):
+                output_cell = cell_num_str
+                ccell_name = cell.get("c_cell")  # name of the control port, not a number
+
+    if ccell_name:
+        control_cell = ccell_name
+
+    return (input_cell, output_cell, control_cell)
+
+def set_bsr_bit(bit_index_from_right, value) -> str:
+    global outgoing_bsr_bits
+    """
+    Sets the bit at the given index (counting from right, LSB = 0) to 0 or 1.
+    Returns the updated bitstring.
+    """
+    if int(value) not in (0, 1):
+        raise ValueError("Bit value must be 0 or 1.")
+    if int(bit_index_from_right) < 0 or int(bit_index_from_right) >= len(outgoing_bsr_bits):
+        raise IndexError("Bit index out of range.")
+
+    bsr_list = list(outgoing_bsr_bits)
+    bsr_list[-(int(bit_index_from_right) + 1)] = str(value)
+    outgoing_bsr_bits = ''.join(bsr_list)
+    return outgoing_bsr_bits
 
 
 
@@ -766,6 +858,10 @@ def exchange_bsr(update=True):
 
 # --- Usage example ---
 if __name__ == "__main__":
+    #print(get_bsr_cells_from_package_pin("osd3358", "am335x", "P13")[1])
+
+    # below is for testing the actual boundary scan chain
+    
     print(get_controllers())
     open_controller(0)
 
@@ -780,7 +876,7 @@ if __name__ == "__main__":
     #id4 = assign_device(4, "mpv_diosa")
 
     #print(f"Total BSR Length: {updateBsrLength()}")
-    assign_device(1, "SPRM607")
+    assign_device(1, "am335x")
     
     tlr()
 
@@ -792,19 +888,19 @@ if __name__ == "__main__":
     
     generate_safe_bsr() # this is needed to initialise the outgoing variable
 
-    #print(send_ir_chain("SAMPLE", "SAMPLE", "SAMPLE", "SAMPLE"))
     print(send_ir_chain("EXTEST"))
 
-    print(exchange_bsr(True))   
-
-    #outgoing_bsr_bits = incoming_bsr_bits
-
+    print(exchange_bsr(True))   # write the safe values
     
-    
-    print(exchange_bsr(True))   # now we should be in sync
-                                                                                                                                                                                              #    5         4         3         2         1
-                                                                                                            #                                                                                 4321098765432109876543210987654321098765432109876543210
-    outgoing_bsr_bits = "01001001001001001001001001001001001001001001001001001001001000000100000001000000100000000000000100000000000000000000000010010000100100101010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010010"
+    print(exchange_bsr(True))   # write again while reading to get local copy in sync
+
+    outgoing_bsr_bits = incoming_bsr_bits   # so we match what the current state is exactly though doesn't matter really
+    pins = get_bsr_cells_from_package_pin("osd3358", "am335x", "P13")
+    print(pins)
+
+    set_bsr_bit(pins[1], 1) #set USR0 output high
+    set_bsr_bit(pins[2], 0) #enable the output cell
+
     print(exchange_bsr(True))
 
     # now we can read back
