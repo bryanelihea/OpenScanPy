@@ -1,0 +1,36 @@
+{
+    "model": "the model name",
+    "devices": {
+        "U1": {
+            "type": "bsdl",
+            "bsdl_name": "am335x"
+        },
+        "@": {
+            "type": "@"
+        }
+    },
+    "netlist": {
+        "WARMRSTn": [
+            {
+                "device": "U1",
+                "pin": "A10",
+                "type": "INOUT"
+            },
+            {
+                "device": "@",
+                "pin": "R11"
+            }
+        ],
+        "TDO": [
+            {
+                "device": "U1",
+                "pin": "A11",
+                "type": "OUTPUT"
+            },
+            {
+                "device": "@",
+                "pin": "C2"
+            }
+        ]
+    }
+}

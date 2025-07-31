@@ -749,35 +749,38 @@ def exchange_bsr(update=True):
 
     return incoming_bsr_bits
 
+def get_device_ref_for_bsdl(model: dict, bsdl_name: str) -> str:
+    """
+    Given a model dict and bsdl_name, returns the device reference (e.g., 'U1') that
+    is of type 'bsdl' and has matching 'bsdl_name'.
+    """
+    for ref, details in model.get("devices", {}).items():
+        if details.get("type") == "bsdl" and details.get("bsdl_name") == bsdl_name:
+            return ref
+    raise ValueError(f"No device with type 'bsdl' and bsdl_name '{bsdl_name}' found in model.")
 
 def get_bsr_cells_from_package_pin(model_name: str, bsdl_name: str, package_pin: str) -> tuple[str, str, str]:
     """
     Given model + BSDL + package pin, return (input_cell, output_cell, control_cell)
     as strings from BSR, or 'null' if not present.
     """
-    def get_device_name(devices: dict, role) -> str:
-        for name, props in devices.items():
-            if props.get("role") == role:
-                return name
-        raise ValueError("No device with role 'core' found.")
 
     # Load model
-    model_path = os.path.join("resources", "models", f"{model_name}.json")
+    model_path = os.path.join("resources", "models", f"{model_name}_model.json")
     with open(model_path, "r") as f:
         model = json.load(f)
+
+    core_ref = get_device_ref_for_bsdl(model, bsdl_name)
 
     netlist = model.get("netlist", {})
     if not isinstance(netlist, dict):
         raise ValueError("Model netlist is not in expected dict format.")
 
-    core_ref = get_device_name(model["devices"], "core")
-    package_ref = get_device_name(model["devices"], "package")
-
     # Find U1 core pin for given U2 package pin
     core_pin = None
     for pins in netlist.values():
         for pin in pins:
-            if pin["device"] == package_ref and pin["pin"].upper() == package_pin.upper():
+            if pin["device"] == "@" and pin["pin"].upper() == package_pin.upper():
                 for other_pin in pins:
                     if other_pin["device"] == core_ref:
                         core_pin = other_pin["pin"]
@@ -843,6 +846,154 @@ def set_bsr_bit(bit_index_from_right, value) -> str:
     outgoing_bsr_bits = ''.join(bsr_list)
     return outgoing_bsr_bits
 
+from collections import defaultdict
+import csv
+
+import csv
+import json
+import os
+from collections import defaultdict
+
+import csv
+import json
+import os
+from collections import defaultdict
+
+def parse_netlist_to_model(netlist_csv, bom_csv, output_path, model_name):
+    model = {
+        "model": model_name,
+        "devices": {
+            "@": {
+                "type": "@"
+            }
+        },
+        "netlist": {}
+    }
+
+    nets = defaultdict(list)
+    devices = {}
+    pin_counts = defaultdict(set)
+    part_info = {}
+
+    # Parse BoM file with normalized headers
+    with open(bom_csv, newline='') as bomfile:
+        raw_reader = csv.reader(bomfile)
+        headers = [h.strip().strip('"') for h in next(raw_reader)]
+        reader = csv.DictReader(bomfile, fieldnames=headers)
+        for row in reader:
+            ref = row['Designator'].strip()
+            part_info[ref] = {
+                "part_number": row.get("Part_Number", "").strip().replace("'",""),
+                "package": row.get("Package", "").strip().replace("'",""),
+                "stock_number": row.get("Stock_Number", "").strip().replace("'",""),
+                "value": row.get("Value", "").strip().replace("'","")
+            }
+
+    # Parse netlist CSV
+    with open(netlist_csv, newline='') as csvfile:
+        raw_reader = csv.reader(csvfile, delimiter=';')
+        headers = [h.strip().strip('"') for h in next(raw_reader)]
+        reader = csv.DictReader(csvfile, delimiter=';', fieldnames=headers)
+        for row in reader:
+            ref = row['Component Ref ID'].strip()
+            pin = row['Pin Ref ID'].strip().replace("\"","")
+            net = row['Net Name'].strip().replace("\"","").strip()
+
+            if not ref or not pin or not net:
+                continue
+
+            pin_counts[ref].add(pin)
+
+            if ref not in devices:
+                if ref.upper().startswith("R"):
+                    model_type = "resistor"
+                elif ref.upper().startswith("C"):
+                    model_type = "capacitor"
+                else:
+                    model_type = "unknown"
+
+                part = part_info.get(ref, {})
+
+                devices[ref] = {
+                    "type": "model",
+                    "model_name": model_type,
+                    "part_number": part.get("part_number", ""),
+                    "package": part.get("package", ""),
+                    "stock_number": part.get("stock_number", ""),
+                    "value": part.get("value", "")
+                }
+
+            nets[net].append({
+                "device": ref,
+                "pin": pin
+            })
+
+    # Promote single-pin devices to '@'
+    single_pin_refs = {ref for ref, pins in pin_counts.items() if len(pins) == 1}
+
+    for net, conns in nets.items():
+        for conn in conns:
+            ref = conn["device"]
+            if ref in single_pin_refs:
+                conn["device"] = "@"
+                conn["pin"] = ref
+                devices.pop(ref, None)
+
+    model["devices"].update(devices)
+    model["netlist"] = dict(nets)
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w") as f:
+        json.dump(model, f, indent=2)
+
+    print(f"Model '{model_name}' written to {output_path}")
+
+def odb_component_parser(input_path1, output_csv_path, input_path2=None):
+    """
+    Parses one or two ODB-style component files and outputs a CSV with Designator, Part_Number, and Package.
+
+    :param input_path1: Path to first component file (e.g., top side)
+    :param output_csv_path: Path to output CSV
+    :param input_path2: Optional path to second component file (e.g., bottom side)
+    """
+    def parse_file(path):
+        components = {}
+        current_ref = None
+
+        with open(path, 'r') as file:
+            for line in file:
+                line = line.strip()
+                if line.startswith("#") or not line:
+                    continue
+
+                if line.startswith("CMP"):
+                    parts = line.split()
+                    current_ref = parts[6]
+                    stk_ref = parts[7]
+                    components[current_ref] = {"Stock Number": "", "Part_Number": "", "Package": "", "Value": ""}
+                    components[current_ref]["Stock_Number"] = stk_ref
+                elif line.startswith("PRP") and current_ref:
+                    parts = line.split(maxsplit=2)
+                    if len(parts) == 3:
+                        key, value = parts[1], parts[2].strip('"')
+                        if key == "Part_Number":
+                            components[current_ref]["Part_Number"] = value
+                        elif key == "Package":
+                            components[current_ref]["Package"] = value
+                        elif key == "R_Ohms":
+                            components[current_ref]["Value"] = value
+        return components
+
+    all_components = parse_file(input_path1)
+    if input_path2 and os.path.exists(input_path2):
+        all_components.update(parse_file(input_path2))
+
+    # Write to CSV
+    with open(output_csv_path, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["Designator", "Stock_Number", "Part_Number", "Package", "Value"])
+        for ref, props in sorted(all_components.items()):
+            writer.writerow([ref, props["Stock_Number"], props["Part_Number"], props["Package"], props["Value"]])
 
 
 
@@ -858,10 +1009,25 @@ def set_bsr_bit(bit_index_from_right, value) -> str:
 
 # --- Usage example ---
 if __name__ == "__main__":
-    #print(get_bsr_cells_from_package_pin("osd3358", "am335x", "P13")[1])
+    # this creates the BoM from the ODB++ component files
+    #odb_component_parser("projects/71065/bom/components_top", "projects/71065/bom/71065_bom.csv", "projects/71065/bom/components_bot")
+
+    # this takes the netlist exported from ZofZ and the BoM extracted from the ODB++ file and generates the PCB model
+    # any single pin COMPONENTS are treated as "pins" for the model - i.e. test points
+    '''
+    parse_netlist_to_model(
+        bom_csv="projects/71065/bom/71065_bom.csv",
+        netlist_csv="projects/71065/netlists/71065_netlist.csv",
+        model_name="71065",
+        output_path="projects/71065/models/71065_model.json"
+    )
+    '''
+
+    print(get_bsr_cells_from_package_pin("osd3358", "am335x", "P13"))
 
     # below is for testing the actual boundary scan chain
     
+    '''
     print(get_controllers())
     open_controller(0)
 
@@ -906,4 +1072,4 @@ if __name__ == "__main__":
     # now we can read back
     #print(exchange_bsr(True))
 
-    
+    '''

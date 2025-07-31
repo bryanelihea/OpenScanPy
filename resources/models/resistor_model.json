@@ -1,0 +1,31 @@
+{
+    "model": "resistor",
+    "devices": {
+        "@": {
+            "type": "@"
+        }
+    },
+    "netlist": {
+        "A": [
+            {
+                "device": "@",
+                "pin": "A"
+            }
+        ],
+        "B": [
+            {
+                "device": "@",
+                "pin": "B"
+            }
+        ]
+    },
+    "behavior": {
+        "transparent_net_pairs": [
+            [
+                "A",
+                "B"
+            ]
+        ],
+        "max_resistance_ohms": 1000000
+    }
+}
