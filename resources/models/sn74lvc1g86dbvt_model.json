@@ -1,0 +1,38 @@
+{
+  "model": "sn74lvc1g86dbvt",
+  "devices": {
+    "@": {
+      "type": "@"
+    }
+  },
+  "netlist": {
+    "A": [
+      {
+        "device": "@",
+        "pin": "A"
+      }
+    ],
+    "B": [
+      {
+        "device": "@",
+        "pin": "B"
+      }
+    ],
+    "Y": [
+      {
+        "device": "@",
+        "pin": "Y"
+      }
+    ]
+  },
+  "behavior": {
+    "logic_function": {
+      "type": "xor",
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "output": "Y"
+    }
+  }
+}

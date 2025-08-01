@@ -1,0 +1,38 @@
+{
+    "model": "npn",
+    "devices": {
+        "@": {
+            "type": "@"
+        }
+    },
+    "netlist": {
+        "B": [
+            {
+                "device": "@",
+                "pin": "B"
+            }
+        ],
+        "C": [
+            {
+                "device": "@",
+                "pin": "C"
+            }
+        ],
+        "E": [
+            {
+                "device": "@",
+                "pin": "E"
+            }
+        ]
+    },
+    "behavior": {
+        "path": {
+            "from": "C",
+            "to": "E",
+            "drop_voltage": 0.2,
+            "control_net": "B",
+            "reference_net": "E",
+            "trigger_voltage": 0.7
+        }
+    }
+}

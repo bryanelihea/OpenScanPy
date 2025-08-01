@@ -1,5 +1,5 @@
 {
-    "model": "resistor",
+    "model": "diode",
     "devices": {
         "@": {
             "type": "@"
@@ -9,22 +9,21 @@
         "A": [
             {
                 "device": "@",
-                "pin": "1"
+                "pin": "A"
             }
         ],
-        "B": [
+        "K": [
             {
                 "device": "@",
-                "pin": "2"
+                "pin": "K"
             }
         ]
     },
     "behavior": {
-        "between": {
-            "nets": [
-                "A",
-                "B"
-            ]
+        "path": {
+            "from_net": "A",
+            "to_net": "K",
+            "voltage_drop": 0.6
         }
     }
 }

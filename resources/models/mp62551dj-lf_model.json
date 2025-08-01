@@ -1,0 +1,44 @@
+{
+  "model": "mp62551dj-lf",
+  "devices": {
+    "@": {
+      "type": "@"
+    }
+  },
+  "netlist": {
+    "IN": [
+      {
+        "device": "@",
+        "pin": "IN"
+      }
+    ],
+    "OUT": [
+      {
+        "device": "@",
+        "pin": "OUT"
+      }
+    ],
+    "EN": [
+      {
+        "device": "@",
+        "pin": "EN"
+      }
+    ],
+    "GND": [
+      {
+        "device": "@",
+        "pin": "GND"
+      }
+    ]
+  },
+  "behavior": {
+    "paths": [
+      {
+        "from": "IN",
+        "to": "OUT",
+        "control_net": "EN",
+        "control_value": "high"
+      }
+    ]
+  }
+}
