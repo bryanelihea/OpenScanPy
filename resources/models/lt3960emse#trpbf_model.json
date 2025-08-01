@@ -1,0 +1,84 @@
+{
+  "model": "lt3960emse#trpbf",
+  "devices": {
+    "@": {
+      "type": "@"
+    }
+  },
+  "netlist": {
+    "SDAIN": [
+      {
+        "device": "@",
+        "pin": "SDAIN"
+      }
+    ],
+    "SCLIN": [
+      {
+        "device": "@",
+        "pin": "SCLIN"
+      }
+    ],
+    "CANSDAH": [
+      {
+        "device": "@",
+        "pin": "CANSDAH"
+      }
+    ],
+    "CANSDA L": [
+      {
+        "device": "@",
+        "pin": "CANSDA L"
+      }
+    ],
+    "CANSCLH": [
+      {
+        "device": "@",
+        "pin": "CANSCLH"
+      }
+    ],
+    "CANSCLL": [
+      {
+        "device": "@",
+        "pin": "CANSCLL"
+      }
+    ],
+    "EN": [
+      {
+        "device": "@",
+        "pin": "EN"
+      }
+    ],
+    "GND": [
+      {
+        "device": "@",
+        "pin": "GND"
+      }
+    ]
+  },
+  "behavior": {
+    "path": [
+      {
+        "from": "SDAIN",
+        "to": {
+          "diff_pair": [
+            "CANSDAH",
+            "CANSDA L"
+          ]
+        },
+        "control_net": "EN",
+        "note": "I2C SDA to CAN"
+      },
+      {
+        "from": "SCLIN",
+        "to": {
+          "diff_pair": [
+            "CANSCLH",
+            "CANSCLL"
+          ]
+        },
+        "control_net": "EN",
+        "note": "I2C SCL to CAN"
+      }
+    ]
+  }
+}

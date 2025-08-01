@@ -1,0 +1,250 @@
+{
+  "model": "sn74lvcc3245apw",
+  "devices": {
+    "@": {
+      "type": "@"
+    }
+  },
+  "netlist": {
+    "A1": [
+      {
+        "device": "@",
+        "pin": "A1"
+      }
+    ],
+    "B1": [
+      {
+        "device": "@",
+        "pin": "B1"
+      }
+    ],
+    "A2": [
+      {
+        "device": "@",
+        "pin": "A2"
+      }
+    ],
+    "B2": [
+      {
+        "device": "@",
+        "pin": "B2"
+      }
+    ],
+    "A3": [
+      {
+        "device": "@",
+        "pin": "A3"
+      }
+    ],
+    "B3": [
+      {
+        "device": "@",
+        "pin": "B3"
+      }
+    ],
+    "A4": [
+      {
+        "device": "@",
+        "pin": "A4"
+      }
+    ],
+    "B4": [
+      {
+        "device": "@",
+        "pin": "B4"
+      }
+    ],
+    "A5": [
+      {
+        "device": "@",
+        "pin": "A5"
+      }
+    ],
+    "B5": [
+      {
+        "device": "@",
+        "pin": "B5"
+      }
+    ],
+    "A6": [
+      {
+        "device": "@",
+        "pin": "A6"
+      }
+    ],
+    "B6": [
+      {
+        "device": "@",
+        "pin": "B6"
+      }
+    ],
+    "A7": [
+      {
+        "device": "@",
+        "pin": "A7"
+      }
+    ],
+    "B7": [
+      {
+        "device": "@",
+        "pin": "B7"
+      }
+    ],
+    "A8": [
+      {
+        "device": "@",
+        "pin": "A8"
+      }
+    ],
+    "B8": [
+      {
+        "device": "@",
+        "pin": "B8"
+      }
+    ],
+    "DIR": [
+      {
+        "device": "@",
+        "pin": "DIR"
+      }
+    ],
+    "OE": [
+      {
+        "device": "@",
+        "pin": "OE"
+      }
+    ]
+  },
+  "behavior": {
+    "paths": [
+      {
+        "from": "A1",
+        "to": "B1",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B1",
+        "to": "A1",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A2",
+        "to": "B2",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B2",
+        "to": "A2",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A3",
+        "to": "B3",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B3",
+        "to": "A3",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A4",
+        "to": "B4",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B4",
+        "to": "A4",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A5",
+        "to": "B5",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B5",
+        "to": "A5",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A6",
+        "to": "B6",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B6",
+        "to": "A6",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A7",
+        "to": "B7",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B7",
+        "to": "A7",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A8",
+        "to": "B8",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B8",
+        "to": "A8",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      }
+    ]
+  }
+}

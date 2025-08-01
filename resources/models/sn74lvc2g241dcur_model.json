@@ -1,0 +1,60 @@
+{
+  "model": "sn74lvc2g241dcur",
+  "devices": {
+    "@": {
+      "type": "@"
+    }
+  },
+  "netlist": {
+    "A1": [
+      {
+        "device": "@",
+        "pin": "A1"
+      }
+    ],
+    "Y1": [
+      {
+        "device": "@",
+        "pin": "Y1"
+      }
+    ],
+    "1OE": [
+      {
+        "device": "@",
+        "pin": "1OE"
+      }
+    ],
+    "A2": [
+      {
+        "device": "@",
+        "pin": "A2"
+      }
+    ],
+    "Y2": [
+      {
+        "device": "@",
+        "pin": "Y2"
+      }
+    ],
+    "2OE": [
+      {
+        "device": "@",
+        "pin": "2OE"
+      }
+    ]
+  },
+  "behavior": {
+    "paths": [
+      {
+        "from": "A1",
+        "to": "Y1",
+        "control_net": "1OE"
+      },
+      {
+        "from": "A2",
+        "to": "Y2",
+        "control_net": "2OE"
+      }
+    ]
+  }
+}

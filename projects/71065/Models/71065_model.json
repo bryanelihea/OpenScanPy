@@ -6,11 +6,12 @@
     },
     "U1": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "osd3358-512m-bsm",
       "part_number": "OSD3358-512M-BSM",
       "package": "BGA-256",
       "stock_number": "30-0011-0068-00",
-      "value": ""
+      "value": "",
+      "function": "ARM"
     },
     "X3": {
       "type": "model",
@@ -18,7 +19,8 @@
       "part_number": "ECS-3225MV-240-BN-TR",
       "package": "SMD-4",
       "stock_number": "30-1510-0018-10",
-      "value": ""
+      "value": "",
+      "function": "24MHz"
     },
     "R22": {
       "type": "model",
@@ -26,47 +28,53 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "C138": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C137": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C136": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C135": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C111": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R258": {
       "type": "model",
@@ -74,7 +82,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R257": {
       "type": "model",
@@ -82,15 +91,17 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "J6": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "634008149821",
       "package": "RJ45",
       "stock_number": "634008149821-RJ45",
-      "value": ""
+      "value": "",
+      "function": "RJ45"
     },
     "D4": {
       "type": "model",
@@ -98,47 +109,53 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "LK5": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "link",
       "part_number": "",
       "package": "1206",
       "stock_number": "30-1100-0000-80",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "LK4": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "link",
       "part_number": "",
       "package": "1206",
       "stock_number": "30-1100-0000-80",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "LK3": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "link",
       "part_number": "",
       "package": "1206",
       "stock_number": "30-1100-0000-80",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "LK2": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "link",
       "part_number": "",
       "package": "1206",
       "stock_number": "30-1100-0000-80",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "LK1": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "link",
       "part_number": "",
       "package": "1206",
       "stock_number": "30-1100-0000-80",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "SW2": {
       "type": "model",
@@ -146,7 +163,8 @@
       "part_number": "7914J-1-000E",
       "package": "2020 (5050 Metric)",
       "stock_number": "30-1500-0001-01",
-      "value": ""
+      "value": "",
+      "function": "SPST"
     },
     "Q10": {
       "type": "model",
@@ -154,15 +172,17 @@
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
-      "value": ""
+      "value": "",
+      "function": "NPN"
     },
     "J29": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "",
       "package": "CONN6",
       "stock_number": "30-3001-0006-07",
-      "value": ""
+      "value": "",
+      "function": "Connector"
     },
     "L20": {
       "type": "model",
@@ -170,7 +190,8 @@
       "part_number": "PA2756NLT",
       "package": "LCCI-50",
       "stock_number": "30-0508-0069-00",
-      "value": ""
+      "value": "",
+      "function": "Inductor CM"
     },
     "R239": {
       "type": "model",
@@ -178,7 +199,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "F2": {
       "type": "model",
@@ -186,15 +208,17 @@
       "part_number": "",
       "package": "4020",
       "stock_number": "30-1505-0018-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "J7": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "90814-3718",
       "package": "Picoflex-18",
       "stock_number": "IDC18",
-      "value": ""
+      "value": "",
+      "function": "IDC"
     },
     "LED1": {
       "type": "model",
@@ -202,7 +226,8 @@
       "part_number": "LTSN-C191NSKT-PA",
       "package": "0603",
       "stock_number": "Diode_LED",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R102": {
       "type": "model",
@@ -210,7 +235,8 @@
       "part_number": "RC1206FR-07100KL",
       "package": "1206",
       "stock_number": "30-1100-1040-00",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R238": {
       "type": "model",
@@ -218,7 +244,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R237": {
       "type": "model",
@@ -226,23 +253,26 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "J28": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "SMDFLAT545",
       "package": "",
       "stock_number": "30-3025-0023-20",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J26": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "T1": {
       "type": "model",
@@ -250,7 +280,8 @@
       "part_number": "7490100111A",
       "package": "12.7mm x 8.8mm",
       "stock_number": "TRANSFORMER_9",
-      "value": ""
+      "value": "",
+      "function": "Transformer Ethernet"
     },
     "LED2": {
       "type": "model",
@@ -258,7 +289,8 @@
       "part_number": "SML-310PTT86L",
       "package": "0603",
       "stock_number": "30-1300-0065-01",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "L7": {
       "type": "model",
@@ -266,39 +298,44 @@
       "part_number": "744 232 222",
       "package": "1206",
       "stock_number": "IND_COM_IRON_4",
-      "value": ""
+      "value": "",
+      "function": "Bead CM"
     },
     "J18": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J22": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J21": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J9": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "374-1-012-0-NTX-KT0",
       "package": "JTAG",
       "stock_number": "JTAG1",
-      "value": ""
+      "value": "",
+      "function": "JTAG"
     },
     "F3": {
       "type": "model",
@@ -306,7 +343,8 @@
       "part_number": "MF-MSMF010-2",
       "package": "1812",
       "stock_number": "FUSE_RESETTABLE",
-      "value": ""
+      "value": "",
+      "function": "RESETTABLE"
     },
     "D20": {
       "type": "model",
@@ -314,7 +352,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D19": {
       "type": "model",
@@ -322,7 +361,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "SW1": {
       "type": "model",
@@ -330,7 +370,8 @@
       "part_number": "7914J-1-000E",
       "package": "2020 (5050 Metric)",
       "stock_number": "30-1500-0001-01",
-      "value": ""
+      "value": "",
+      "function": "SPST"
     },
     "RN2": {
       "type": "model",
@@ -338,7 +379,8 @@
       "part_number": "CAY16-332J4LF",
       "package": "1206",
       "stock_number": "30-1102-0005-00",
-      "value": "3300"
+      "value": "3300",
+      "function": ""
     },
     "RN1": {
       "type": "model",
@@ -346,7 +388,8 @@
       "part_number": "CAY16-332J4LF",
       "package": "1206",
       "stock_number": "30-1102-0005-00",
-      "value": "3300"
+      "value": "3300",
+      "function": ""
     },
     "R236": {
       "type": "model",
@@ -354,7 +397,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R235": {
       "type": "model",
@@ -362,7 +406,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R234": {
       "type": "model",
@@ -370,7 +415,8 @@
       "part_number": "?RC0402FR-0768RL?",
       "package": "0402",
       "stock_number": "30-1100-6800-40",
-      "value": "68"
+      "value": "68",
+      "function": ""
     },
     "R233": {
       "type": "model",
@@ -378,7 +424,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R232": {
       "type": "model",
@@ -386,7 +433,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R231": {
       "type": "model",
@@ -394,7 +442,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "Q12": {
       "type": "model",
@@ -402,7 +451,8 @@
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
-      "value": ""
+      "value": "",
+      "function": "NPN"
     },
     "Q11": {
       "type": "model",
@@ -410,7 +460,8 @@
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
-      "value": ""
+      "value": "",
+      "function": "NPN"
     },
     "Q9": {
       "type": "model",
@@ -418,7 +469,8 @@
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
-      "value": ""
+      "value": "",
+      "function": "NPN"
     },
     "Q4": {
       "type": "model",
@@ -426,7 +478,8 @@
       "part_number": "BSS63LT1G",
       "package": "SOT-23-3",
       "stock_number": "30-0050-0020-00",
-      "value": ""
+      "value": "",
+      "function": "PNP"
     },
     "LED8": {
       "type": "model",
@@ -434,7 +487,8 @@
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "LED7": {
       "type": "model",
@@ -442,7 +496,8 @@
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "LED6": {
       "type": "model",
@@ -450,7 +505,8 @@
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "LED5": {
       "type": "model",
@@ -458,7 +514,8 @@
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "LED4": {
       "type": "model",
@@ -466,7 +523,8 @@
       "part_number": "SML-D12M1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-10",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "LED3": {
       "type": "model",
@@ -474,7 +532,8 @@
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "L14": {
       "type": "model",
@@ -482,7 +541,8 @@
       "part_number": "742 792 116",
       "package": "1206",
       "stock_number": "30-0530-0011-00",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L8": {
       "type": "model",
@@ -490,7 +550,8 @@
       "part_number": "742 792 116",
       "package": "1206",
       "stock_number": "30-0530-0011-00",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L3": {
       "type": "model",
@@ -498,31 +559,35 @@
       "part_number": "S21100139",
       "package": "23.3mm x 18.5mm",
       "stock_number": "30-0508-0097-00",
-      "value": ""
+      "value": "",
+      "function": "CMC"
     },
     "J24": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "USB-A-S-F-B-SM2-TR",
       "package": "USB-A",
       "stock_number": "30-3017-0004-00",
-      "value": ""
+      "value": "",
+      "function": "USB"
     },
     "J23": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "629105136821",
       "package": "Micro USB-B",
       "stock_number": "30-3017-0012-00",
-      "value": ""
+      "value": "",
+      "function": "USB"
     },
     "J2": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "90814-3712",
       "package": "Picoflex-12",
       "stock_number": "30-3012-0012-01",
-      "value": ""
+      "value": "",
+      "function": "IDC"
     },
     "D34": {
       "type": "model",
@@ -530,7 +595,8 @@
       "part_number": "ESD112-B1-02EL",
       "package": "TSLP-2-20",
       "stock_number": "30-1300-0071-01",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D31": {
       "type": "model",
@@ -538,7 +604,8 @@
       "part_number": "ESD112-B1-02EL",
       "package": "TSLP-2-20",
       "stock_number": "30-1300-0071-01",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D30": {
       "type": "model",
@@ -546,7 +613,8 @@
       "part_number": "ESD112-B1-02EL",
       "package": "TSLP-2-20",
       "stock_number": "30-1300-0071-01",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D22": {
       "type": "model",
@@ -554,7 +622,8 @@
       "part_number": "ESD112-B1-02EL",
       "package": "TSLP-2-20",
       "stock_number": "30-1300-0071-01",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D21": {
       "type": "model",
@@ -562,7 +631,8 @@
       "part_number": "ESD112-B1-02EL",
       "package": "TSLP-2-20",
       "stock_number": "30-1300-0071-01",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D16": {
       "type": "model",
@@ -570,7 +640,8 @@
       "part_number": "B540C-13-F",
       "package": "SMC",
       "stock_number": "30-1300-0080-00",
-      "value": ""
+      "value": "",
+      "function": "SCHOTTKY"
     },
     "D15": {
       "type": "model",
@@ -578,7 +649,8 @@
       "part_number": "SMCJ36A",
       "package": "SMC",
       "stock_number": "30-1300-0064-00",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D14": {
       "type": "model",
@@ -586,47 +658,53 @@
       "part_number": "MMSD4148T1G",
       "package": "SOD-123",
       "stock_number": "30-1300-0070-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "J4": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "1241150-4",
       "package": "Pinstrip-4",
       "stock_number": "PLUG4",
-      "value": ""
+      "value": "",
+      "function": "Pinstrip"
     },
     "C96": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C95": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C94": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J475KE96D",
       "package": "0402",
       "stock_number": "30-1202-4750-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "U23": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "mp62551dj-lf",
       "part_number": "MP62551DJ-LF",
       "package": "SOT23-6",
       "stock_number": "30-1010-8001-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R20": {
       "type": "model",
@@ -634,7 +712,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "X1": {
       "type": "model",
@@ -642,15 +721,17 @@
       "part_number": "ABM3-25.000MHZ-B2-T",
       "package": "SMD-2",
       "stock_number": "30-1510-0017-30",
-      "value": ""
+      "value": "",
+      "function": "25MHz"
     },
     "U22": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "mp62551dj-lf",
       "part_number": "MP62551DJ-LF",
       "package": "SOT23-6",
       "stock_number": "30-1010-8001-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "U10": {
       "type": "model",
@@ -658,7 +739,8 @@
       "part_number": "KSZ8081RNBIA",
       "package": "QFN-32",
       "stock_number": "IC_TRX_ETHERNET_2",
-      "value": ""
+      "value": "",
+      "function": "PHY"
     },
     "U9": {
       "type": "model",
@@ -666,7 +748,8 @@
       "part_number": "KLM8G1GETF-B041",
       "package": "VFBGA-153",
       "stock_number": "30-0013-4012-02",
-      "value": ""
+      "value": "",
+      "function": "eMMC"
     },
     "U4": {
       "type": "model",
@@ -674,7 +757,8 @@
       "part_number": "TPD2EUSB30DRTR",
       "package": "DRT (SOT-3)",
       "stock_number": "30-0011-0050-00",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "U2": {
       "type": "model",
@@ -682,7 +766,8 @@
       "part_number": "TPD2EUSB30DRTR",
       "package": "DRT (SOT-3)",
       "stock_number": "30-0011-0050-00",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "SWR1": {
       "type": "model",
@@ -690,7 +775,8 @@
       "part_number": "SMR13016T",
       "package": "2828 (7272 Metric)",
       "stock_number": "30-1500-0002-00",
-      "value": ""
+      "value": "",
+      "function": "HEX"
     },
     "R205": {
       "type": "model",
@@ -698,7 +784,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R199": {
       "type": "model",
@@ -706,7 +793,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R196": {
       "type": "model",
@@ -714,7 +802,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R194": {
       "type": "model",
@@ -722,7 +811,8 @@
       "part_number": "RC0402FR-0747KL",
       "package": "0402",
       "stock_number": "30-1100-4730-50",
-      "value": "47000"
+      "value": "47000",
+      "function": ""
     },
     "R193": {
       "type": "model",
@@ -730,7 +820,8 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R189": {
       "type": "model",
@@ -738,7 +829,8 @@
       "part_number": "RC0402FR-0747KL",
       "package": "0402",
       "stock_number": "30-1100-4730-50",
-      "value": "47000"
+      "value": "47000",
+      "function": ""
     },
     "R188": {
       "type": "model",
@@ -746,7 +838,8 @@
       "part_number": "RC1206FR073K3L",
       "package": "1206",
       "stock_number": "RES_SINGLE",
-      "value": "3300"
+      "value": "3300",
+      "function": ""
     },
     "R187": {
       "type": "model",
@@ -754,7 +847,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R186": {
       "type": "model",
@@ -762,7 +856,8 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "RES_SINGLE",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R184": {
       "type": "model",
@@ -770,7 +865,8 @@
       "part_number": "RC1206FR-07100RL",
       "package": "1206",
       "stock_number": "RES_SINGLE",
-      "value": "100"
+      "value": "100",
+      "function": ""
     },
     "R183": {
       "type": "model",
@@ -778,7 +874,8 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R182": {
       "type": "model",
@@ -786,7 +883,8 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "RES_SINGLE",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R181": {
       "type": "model",
@@ -794,7 +892,8 @@
       "part_number": "RC1206FR073K3L",
       "package": "1206",
       "stock_number": "RES_SINGLE",
-      "value": "3300"
+      "value": "3300",
+      "function": ""
     },
     "R158": {
       "type": "model",
@@ -802,7 +901,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-2710-00",
-      "value": "270"
+      "value": "270",
+      "function": ""
     },
     "R157": {
       "type": "model",
@@ -810,7 +910,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-2710-00",
-      "value": "270"
+      "value": "270",
+      "function": ""
     },
     "R155": {
       "type": "model",
@@ -818,7 +919,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R154": {
       "type": "model",
@@ -826,7 +928,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R152": {
       "type": "model",
@@ -834,7 +937,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-2710-00",
-      "value": "270"
+      "value": "270",
+      "function": ""
     },
     "R151": {
       "type": "model",
@@ -842,7 +946,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-2710-00",
-      "value": "270"
+      "value": "270",
+      "function": ""
     },
     "R147": {
       "type": "model",
@@ -850,7 +955,8 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R143": {
       "type": "model",
@@ -858,7 +964,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R141": {
       "type": "model",
@@ -866,7 +973,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R137": {
       "type": "model",
@@ -874,7 +982,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R135": {
       "type": "model",
@@ -882,7 +991,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R130": {
       "type": "model",
@@ -890,7 +1000,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R110": {
       "type": "model",
@@ -898,7 +1009,8 @@
       "part_number": "RC0603FR-0747KL",
       "package": "0603",
       "stock_number": "30-1100-4730-40",
-      "value": "47k"
+      "value": "47k",
+      "function": ""
     },
     "R108": {
       "type": "model",
@@ -906,7 +1018,8 @@
       "part_number": "RC1206FR-073R3L",
       "package": "1206",
       "stock_number": "30-1100-0033-00",
-      "value": "3.3"
+      "value": "3.3",
+      "function": ""
     },
     "R107": {
       "type": "model",
@@ -914,7 +1027,8 @@
       "part_number": "",
       "package": "0603",
       "stock_number": "30-1100-5610-30",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R101": {
       "type": "model",
@@ -922,7 +1036,8 @@
       "part_number": "RC0603FR-0747KL",
       "package": "0603",
       "stock_number": "30-1100-4730-40",
-      "value": "47k"
+      "value": "47k",
+      "function": ""
     },
     "R100": {
       "type": "model",
@@ -930,7 +1045,8 @@
       "part_number": "RC0603FR-0710KL",
       "package": "0603",
       "stock_number": "30-1100-1030-40",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R98": {
       "type": "model",
@@ -938,7 +1054,8 @@
       "part_number": "RC1206FR-070RL",
       "package": "1206",
       "stock_number": "30-1100-0000-00",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R78": {
       "type": "model",
@@ -946,7 +1063,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R77": {
       "type": "model",
@@ -954,7 +1072,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R76": {
       "type": "model",
@@ -962,7 +1081,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R74": {
       "type": "model",
@@ -970,7 +1090,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R73": {
       "type": "model",
@@ -978,7 +1099,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R67": {
       "type": "model",
@@ -986,7 +1108,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R61": {
       "type": "model",
@@ -994,7 +1117,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R56": {
       "type": "model",
@@ -1002,7 +1126,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R51": {
       "type": "model",
@@ -1010,7 +1135,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R50": {
       "type": "model",
@@ -1018,7 +1144,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R48": {
       "type": "model",
@@ -1026,7 +1153,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R46": {
       "type": "model",
@@ -1034,7 +1162,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R45": {
       "type": "model",
@@ -1042,7 +1171,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R42": {
       "type": "model",
@@ -1050,7 +1180,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R39": {
       "type": "model",
@@ -1058,7 +1189,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R38": {
       "type": "model",
@@ -1066,7 +1198,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R34": {
       "type": "model",
@@ -1074,7 +1207,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R28": {
       "type": "model",
@@ -1082,7 +1216,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R27": {
       "type": "model",
@@ -1090,7 +1225,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R26": {
       "type": "model",
@@ -1098,7 +1234,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R25": {
       "type": "model",
@@ -1106,7 +1243,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R19": {
       "type": "model",
@@ -1114,7 +1252,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R18": {
       "type": "model",
@@ -1122,7 +1261,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R5": {
       "type": "model",
@@ -1130,7 +1270,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "Q2": {
       "type": "model",
@@ -1138,279 +1279,314 @@
       "part_number": "SQJ479EP-T1_GE3",
       "package": "PowerPAK-8",
       "stock_number": "30-0050-0030-00",
-      "value": ""
+      "value": "",
+      "function": "P-Channel"
     },
     "J17": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "USB3140-30-0230-1-C",
       "package": "USB-B Micro",
       "stock_number": "30-3017-0017-00",
-      "value": ""
+      "value": "",
+      "function": "USB"
     },
     "J16": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "TSM-103-01-T-SV-P-TR",
       "package": "Pinstrip-3",
       "stock_number": "30-3001-0003-06",
-      "value": ""
+      "value": "",
+      "function": "Pinstrip"
     },
     "J14": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J13": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J12": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J11": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "61031621121",
       "package": "Pinstrip-16-2",
       "stock_number": "30-3002-5016-10",
-      "value": ""
+      "value": "",
+      "function": "Pinstrip"
     },
     "J10": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "695402400222",
       "package": "Terminal-2W",
       "stock_number": "30-3025-0023-10",
-      "value": ""
+      "value": "",
+      "function": "Terminal"
     },
     "J8": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "90814-3908",
       "package": "Picoflex-8",
       "stock_number": "IDC8",
-      "value": ""
+      "value": "",
+      "function": "IDC"
     },
     "J3": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "TSM-103-01-T-SV-P-TR",
       "package": "Pinstrip-3",
       "stock_number": "30-3001-0003-06",
-      "value": ""
+      "value": "",
+      "function": "Pinstrip"
     },
     "J1": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "90814-3712",
       "package": "Picoflex-12",
       "stock_number": "30-3012-0012-01",
-      "value": ""
+      "value": "",
+      "function": "IDC"
     },
     "C87": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM21BR71H474KA88L",
       "package": "0805",
       "stock_number": "30-1201-0028-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C86": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM21BR71H474KA88L",
       "package": "0805",
       "stock_number": "30-1201-0028-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C81": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R5BB105",
       "package": "0402",
       "stock_number": "30-1202-1050-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C80": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C79": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J475KE96D",
       "package": "0402",
       "stock_number": "30-1202-4750-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C77": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C76": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C75": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C60": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R5BB105",
       "package": "0402",
       "stock_number": "30-1202-1050-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C59": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0805C102K5RAC7800",
       "package": "0805",
       "stock_number": "30-1201-0007-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C38": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM188R72A104KA35D",
       "package": "0603",
       "stock_number": "30-1201-0097-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C30": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "EEEFK1H221P",
       "package": "4040",
       "stock_number": "30-1200-0025-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C29": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "EEEFK1H221P",
       "package": "4040",
       "stock_number": "30-1200-0025-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C23": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R9BB102",
       "package": "0402",
       "stock_number": "30-1202-1020-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C21": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0402C220K5GAC7867",
       "package": "0402",
       "stock_number": "30-1202-2200-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C20": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0402C220K5GAC7867",
       "package": "0402",
       "stock_number": "30-1202-2200-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C18": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R9BB102",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C14": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C13": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "LMK107BBJ106MALT",
       "package": "0603",
       "stock_number": "30-1201-0087-01",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C12": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C11": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CL10B225KP8NNNC",
       "package": "0603",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C9": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C8": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0603MRX5R5BB226",
       "package": "0603",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C1": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "TPSD107K010R0100",
       "package": "2917",
       "stock_number": "30-1200-0009-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R9": {
       "type": "model",
@@ -1418,7 +1594,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-2710-00",
-      "value": "270"
+      "value": "270",
+      "function": ""
     },
     "R192": {
       "type": "model",
@@ -1426,7 +1603,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R225": {
       "type": "model",
@@ -1434,15 +1612,17 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "C98": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R9BB102",
       "package": "0402",
       "stock_number": "30-1201-0065-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R227": {
       "type": "model",
@@ -1450,7 +1630,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "D13": {
       "type": "model",
@@ -1458,15 +1639,17 @@
       "part_number": "UDZVTE-1715B",
       "package": "SOD323",
       "stock_number": "30-1300-0009-00",
-      "value": ""
+      "value": "",
+      "function": "ZENER"
     },
     "C99": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R256": {
       "type": "model",
@@ -1474,15 +1657,17 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "C58": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R3": {
       "type": "model",
@@ -1490,7 +1675,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R2": {
       "type": "model",
@@ -1498,7 +1684,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "L26": {
       "type": "model",
@@ -1506,7 +1693,8 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L25": {
       "type": "model",
@@ -1514,7 +1702,8 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L24": {
       "type": "model",
@@ -1522,7 +1711,8 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L23": {
       "type": "model",
@@ -1530,7 +1720,8 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L22": {
       "type": "model",
@@ -1538,7 +1729,8 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L21": {
       "type": "model",
@@ -1546,119 +1738,134 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "C134": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C133": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C132": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C131": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C130": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C129": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C128": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C127": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C126": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C125": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C124": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C114": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C113": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C110": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "D7": {
       "type": "model",
@@ -1666,7 +1873,8 @@
       "part_number": "TPD2EUSB30DRTR",
       "package": "DRT (SOT-3)",
       "stock_number": "30-0011-0050-00",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D6": {
       "type": "model",
@@ -1674,15 +1882,17 @@
       "part_number": "TPD2EUSB30DRTR",
       "package": "DRT (SOT-3)",
       "stock_number": "30-0011-0050-00",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "C42": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0805X153J5GECAUTO",
       "package": "0805",
       "stock_number": "30-1201-0050-10",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "D35": {
       "type": "model",
@@ -1690,7 +1900,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "R255": {
       "type": "model",
@@ -1698,7 +1909,8 @@
       "part_number": "FRC16C1J470JTP",
       "package": "0603",
       "stock_number": "30-1100-4700-60",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R254": {
       "type": "model",
@@ -1706,7 +1918,8 @@
       "part_number": "FRC16C1J470JTP",
       "package": "0603",
       "stock_number": "30-1100-4700-60",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R253": {
       "type": "model",
@@ -1714,7 +1927,8 @@
       "part_number": "FRC16C1J470JTP",
       "package": "0603",
       "stock_number": "30-1100-4700-60",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R252": {
       "type": "model",
@@ -1722,15 +1936,17 @@
       "part_number": "FRC16C1J470JTP",
       "package": "0603",
       "stock_number": "30-1100-4700-60",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C123": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "TAJB476K010RNJ",
       "package": "1411",
       "stock_number": "30-1200-0023-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "U29": {
       "type": "model",
@@ -1738,7 +1954,8 @@
       "part_number": "TLP291SE",
       "package": "SO-4",
       "stock_number": "30-1030-0028-20",
-      "value": ""
+      "value": "",
+      "function": "Opto Isolator"
     },
     "U28": {
       "type": "model",
@@ -1746,23 +1963,26 @@
       "part_number": "NC7WV17P6X",
       "package": "SC-70-6",
       "stock_number": "30-0020-0054-00",
-      "value": ""
+      "value": "",
+      "function": "Invertor"
     },
     "U27": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc1g86dbvt",
       "part_number": "SN74LVC1G86DBVT",
       "package": "SOT-23-5",
       "stock_number": "30-1010-0086-00",
-      "value": ""
+      "value": "",
+      "function": "XOR"
     },
     "U21": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "lt3960emse#trpbf",
       "part_number": "LT3960EMSE#TRPBF",
       "package": "MSOP-10-EP",
       "stock_number": "30-1030-0125-00",
-      "value": ""
+      "value": "",
+      "function": "I2C/CAN"
     },
     "R251": {
       "type": "model",
@@ -1770,7 +1990,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R250": {
       "type": "model",
@@ -1778,7 +1999,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R249": {
       "type": "model",
@@ -1786,7 +2008,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R248": {
       "type": "model",
@@ -1794,7 +2017,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R247": {
       "type": "model",
@@ -1802,7 +2026,8 @@
       "part_number": "RC0603FR-0760R4L",
       "package": "0603",
       "stock_number": "30-1100-6000-50",
-      "value": "60.4"
+      "value": "60.4",
+      "function": ""
     },
     "R246": {
       "type": "model",
@@ -1810,7 +2035,8 @@
       "part_number": "RC0603FR-0760R4L",
       "package": "0603",
       "stock_number": "30-1100-6000-50",
-      "value": "60.4"
+      "value": "60.4",
+      "function": ""
     },
     "R245": {
       "type": "model",
@@ -1818,7 +2044,8 @@
       "part_number": "RC0603FR-0760R4L",
       "package": "0603",
       "stock_number": "30-1100-6000-50",
-      "value": "60.4"
+      "value": "60.4",
+      "function": ""
     },
     "R244": {
       "type": "model",
@@ -1826,7 +2053,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R243": {
       "type": "model",
@@ -1834,7 +2062,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R242": {
       "type": "model",
@@ -1842,7 +2071,8 @@
       "part_number": "RC0603FR-0760R4L",
       "package": "0603",
       "stock_number": "30-1100-6000-50",
-      "value": "60.4"
+      "value": "60.4",
+      "function": ""
     },
     "R241": {
       "type": "model",
@@ -1850,7 +2080,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "30-1100-4720-60",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R240": {
       "type": "model",
@@ -1858,71 +2089,80 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "30-1100-4720-60",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "C122": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C121": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C120": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C119": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R9BB102",
       "package": "0402",
       "stock_number": "30-1202-1020-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C118": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0603KRX7R9BB472",
       "package": "0603",
       "stock_number": "30-1201-0062-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C117": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J225KE95D",
       "package": "0402",
       "stock_number": "30-1202-2250-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C116": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0603KRX7R9BB472",
       "package": "0603",
       "stock_number": "30-1201-0062-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C115": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R179": {
       "type": "model",
@@ -1930,7 +2170,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "30-1100-4720-60",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R99": {
       "type": "model",
@@ -1938,23 +2179,26 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "30-1100-4720-60",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "C112": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C3225X7T2J104K160AC",
       "package": "1210",
       "stock_number": "30-1201-0100-01",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "J25": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "MEM2061-01-188-00-A",
       "package": "MicroSD",
       "stock_number": "30-3025-0031-00",
-      "value": ""
+      "value": "",
+      "function": "SD Micro"
     },
     "L2": {
       "type": "model",
@@ -1962,23 +2206,26 @@
       "part_number": "742 792 116",
       "package": "1206",
       "stock_number": "30-0530-0011-00",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "C109": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C3225X7T2J104K160AC",
       "package": "1210",
       "stock_number": "30-1201-0100-01",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "J27": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "610312243021",
       "package": "SocketStrip-12",
       "stock_number": "30-3001-5012-00",
-      "value": ""
+      "value": "",
+      "function": "SocketStip"
     },
     "L19": {
       "type": "model",
@@ -1986,7 +2233,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L18": {
       "type": "model",
@@ -1994,7 +2242,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L17": {
       "type": "model",
@@ -2002,7 +2251,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L16": {
       "type": "model",
@@ -2010,7 +2260,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L12": {
       "type": "model",
@@ -2018,7 +2269,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L11": {
       "type": "model",
@@ -2026,7 +2278,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L10": {
       "type": "model",
@@ -2034,7 +2287,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L9": {
       "type": "model",
@@ -2042,7 +2296,8 @@
       "part_number": "742 792 093",
       "package": "0805",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L6": {
       "type": "model",
@@ -2050,7 +2305,8 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "D40": {
       "type": "model",
@@ -2058,7 +2314,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D38": {
       "type": "model",
@@ -2066,7 +2323,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D37": {
       "type": "model",
@@ -2074,7 +2332,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D26": {
       "type": "model",
@@ -2082,7 +2341,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D25": {
       "type": "model",
@@ -2090,7 +2350,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D24": {
       "type": "model",
@@ -2098,7 +2359,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D23": {
       "type": "model",
@@ -2106,7 +2368,8 @@
       "part_number": "SMAJ36CA",
       "package": "SMA",
       "stock_number": "DIODE_BIDIR-TVS",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "X2": {
       "type": "model",
@@ -2114,7 +2377,8 @@
       "part_number": "RA2400IKMTOFC-PF",
       "package": "2012",
       "stock_number": "30-0510-0013-01",
-      "value": ""
+      "value": "",
+      "function": "24MHz"
     },
     "U26": {
       "type": "model",
@@ -2122,7 +2386,8 @@
       "part_number": "TLP291SE",
       "package": "SO-4",
       "stock_number": "30-1030-0028-20",
-      "value": ""
+      "value": "",
+      "function": "Opto Isolator"
     },
     "U25": {
       "type": "model",
@@ -2130,7 +2395,8 @@
       "part_number": "TLP291SE",
       "package": "SO-4",
       "stock_number": "30-1030-0028-20",
-      "value": ""
+      "value": "",
+      "function": "Opto Isolator"
     },
     "U24": {
       "type": "model",
@@ -2138,7 +2404,8 @@
       "part_number": "NC7WV17P6X",
       "package": "SC-70-6",
       "stock_number": "30-0020-0054-00",
-      "value": ""
+      "value": "",
+      "function": "Invertor"
     },
     "RN3": {
       "type": "model",
@@ -2146,7 +2413,8 @@
       "part_number": "CAY16-332J4LF",
       "package": "1206",
       "stock_number": "30-1102-0005-00",
-      "value": "3300"
+      "value": "3300",
+      "function": ""
     },
     "Q8": {
       "type": "model",
@@ -2154,7 +2422,8 @@
       "part_number": "BC856A,215",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0019-10",
-      "value": ""
+      "value": "",
+      "function": "PNP"
     },
     "Q7": {
       "type": "model",
@@ -2162,7 +2431,8 @@
       "part_number": "BC856A,215",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0019-10",
-      "value": ""
+      "value": "",
+      "function": "PNP"
     },
     "Q6": {
       "type": "model",
@@ -2170,7 +2440,8 @@
       "part_number": "BC856A,215",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0019-10",
-      "value": ""
+      "value": "",
+      "function": "PNP"
     },
     "Q5": {
       "type": "model",
@@ -2178,7 +2449,8 @@
       "part_number": "BC856A,215",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0019-10",
-      "value": ""
+      "value": "",
+      "function": "PNP"
     },
     "L15": {
       "type": "model",
@@ -2186,7 +2458,8 @@
       "part_number": "MCF08062G900-T",
       "package": "0302",
       "stock_number": "30-0508-0093-00",
-      "value": ""
+      "value": "",
+      "function": "CMC"
     },
     "L13": {
       "type": "model",
@@ -2194,7 +2467,8 @@
       "part_number": "MCF08062G900-T",
       "package": "0302",
       "stock_number": "30-0508-0093-00",
-      "value": ""
+      "value": "",
+      "function": "CMC"
     },
     "L5": {
       "type": "model",
@@ -2202,7 +2476,8 @@
       "part_number": "742 792 116",
       "package": "1206",
       "stock_number": "30-0530-0011-00",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "L4": {
       "type": "model",
@@ -2210,7 +2485,8 @@
       "part_number": "74404054047",
       "package": "2020",
       "stock_number": "30-0508-0095-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "D39": {
       "type": "model",
@@ -2218,7 +2494,8 @@
       "part_number": "S1B-13-F",
       "package": "DO-214AC (SMA)",
       "stock_number": "30-1300-0041-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "D36": {
       "type": "model",
@@ -2226,7 +2503,8 @@
       "part_number": "S1B-13-F",
       "package": "DO-214AC (SMA)",
       "stock_number": "30-1300-0041-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "D29": {
       "type": "model",
@@ -2234,7 +2512,8 @@
       "part_number": "ESD112-B1-02EL",
       "package": "TSLP-2-20",
       "stock_number": "30-1300-0071-01",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D18": {
       "type": "model",
@@ -2242,7 +2521,8 @@
       "part_number": "MMSD4148T1G",
       "package": "SOD-123",
       "stock_number": "30-1300-0070-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "D17": {
       "type": "model",
@@ -2250,39 +2530,44 @@
       "part_number": "BAV99,215",
       "package": "SOT23-3",
       "stock_number": "30-1300-0003-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "C108": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C107": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C106": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C105": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R36": {
       "type": "model",
@@ -2290,7 +2575,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R224": {
       "type": "model",
@@ -2298,7 +2584,8 @@
       "part_number": "CR1206-FX-1201ELF",
       "package": "1206",
       "stock_number": "30-1100-1220-10",
-      "value": "1.2k"
+      "value": "1.2k",
+      "function": ""
     },
     "R223": {
       "type": "model",
@@ -2306,7 +2593,8 @@
       "part_number": "RC0402JR-0710RL",
       "package": "0402",
       "stock_number": "30-1100-1000-50",
-      "value": "10"
+      "value": "10",
+      "function": ""
     },
     "R222": {
       "type": "model",
@@ -2314,7 +2602,8 @@
       "part_number": "MCR18EZHJ473E",
       "package": "1206",
       "stock_number": "30-1100-4730-00",
-      "value": "47000"
+      "value": "47000",
+      "function": ""
     },
     "R221": {
       "type": "model",
@@ -2322,7 +2611,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R220": {
       "type": "model",
@@ -2330,7 +2620,8 @@
       "part_number": "RC0402FR-07220KL",
       "package": "0402",
       "stock_number": "30-1100-2250-60",
-      "value": "220000"
+      "value": "220000",
+      "function": ""
     },
     "R219": {
       "type": "model",
@@ -2338,7 +2629,8 @@
       "part_number": "RC0402FR-0722KL",
       "package": "0402",
       "stock_number": "30-1100-2230-40",
-      "value": "22000"
+      "value": "22000",
+      "function": ""
     },
     "R218": {
       "type": "model",
@@ -2346,7 +2638,8 @@
       "part_number": "CR1206-FX-1201ELF",
       "package": "1206",
       "stock_number": "30-1100-1220-10",
-      "value": "1.2k"
+      "value": "1.2k",
+      "function": ""
     },
     "R217": {
       "type": "model",
@@ -2354,7 +2647,8 @@
       "part_number": "RC0402JR-0710RL",
       "package": "0402",
       "stock_number": "30-1100-1000-50",
-      "value": "10"
+      "value": "10",
+      "function": ""
     },
     "R216": {
       "type": "model",
@@ -2362,7 +2656,8 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R215": {
       "type": "model",
@@ -2370,15 +2665,17 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "C97": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R191": {
       "type": "model",
@@ -2386,7 +2683,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R190": {
       "type": "model",
@@ -2394,7 +2692,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R4": {
       "type": "model",
@@ -2402,15 +2701,17 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "C93": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CL10B225KP8NNNC",
       "package": "0603",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R23": {
       "type": "model",
@@ -2418,15 +2719,17 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "C91": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "R214": {
       "type": "model",
@@ -2434,31 +2737,35 @@
       "part_number": "RC0603FR-070RL",
       "package": "0603",
       "stock_number": "30-1100-0000-40",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "U20": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc2g241dcur",
       "part_number": "SN74LVC2G241DCUR",
       "package": "VFSOP-8",
       "stock_number": "IC_LOG_BUFFER2_1",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U19": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc2g241dcur",
       "part_number": "SN74LVC2G241DCUR",
       "package": "VFSOP-8",
       "stock_number": "IC_LOG_BUFFER2_1",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U18": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc2g241dcur",
       "part_number": "SN74LVC2G241DCUR",
       "package": "VFSOP-8",
       "stock_number": "IC_LOG_BUFFER2_1",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U17": {
       "type": "model",
@@ -2466,7 +2773,8 @@
       "part_number": "LM358DT",
       "package": "SOIC-8",
       "stock_number": "30-1030-0008-00",
-      "value": ""
+      "value": "",
+      "function": "Op-Amp"
     },
     "U16": {
       "type": "model",
@@ -2474,55 +2782,62 @@
       "part_number": "TLC555IDR",
       "package": "SOIC-8",
       "stock_number": "30-0020-0065-00",
-      "value": ""
+      "value": "",
+      "function": "555"
     },
     "U15": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc2t45dctt",
       "part_number": "SN74LVC2T45DCTT",
       "package": "SM8 (SSOP-8)",
       "stock_number": "IC_LOG_BUFFER2",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U14": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvcc3245apw",
       "part_number": "SN74LVCC3245APW",
       "package": "TSSOP-24",
       "stock_number": "IC_LOG_BUFFER8_1",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U13": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc2t45dctt",
       "part_number": "SN74LVC2T45DCTT",
       "package": "SM8 (SSOP-8)",
       "stock_number": "IC_LOG_BUFFER2",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U12": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvcc3245apw",
       "part_number": "SN74LVCC3245APW",
       "package": "TSSOP-24",
       "stock_number": "IC_LOG_BUFFER8_1",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U11": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvcc3245apw",
       "part_number": "SN74LVCC3245APW",
       "package": "TSSOP-24",
       "stock_number": "IC_LOG_BUFFER8_1",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U8": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sn74lvc2g241dcur",
       "part_number": "SN74LVC2G241DCUR",
       "package": "VFSOP-8",
       "stock_number": "30-0010-0241-01",
-      "value": ""
+      "value": "",
+      "function": "Buffer"
     },
     "U7": {
       "type": "model",
@@ -2530,7 +2845,8 @@
       "part_number": "ISL31472EIBZ",
       "package": "SOIC-8",
       "stock_number": "IC_TRX_485_2",
-      "value": ""
+      "value": "",
+      "function": "RS485"
     },
     "U6": {
       "type": "model",
@@ -2538,7 +2854,8 @@
       "part_number": "AOZ1283PI",
       "package": "SOIC-8-EP",
       "stock_number": "30-0051-0067-00",
-      "value": ""
+      "value": "",
+      "function": "DC-DC"
     },
     "U5": {
       "type": "model",
@@ -2546,7 +2863,8 @@
       "part_number": "TLV431AIDBZR",
       "package": "SOT-23-3",
       "stock_number": "30-0011-0041-00",
-      "value": ""
+      "value": "",
+      "function": "VRef"
     },
     "U3": {
       "type": "model",
@@ -2554,7 +2872,8 @@
       "part_number": "MAX6371KA+T",
       "package": "SOT-23-8",
       "stock_number": "30-1030-0124-00",
-      "value": ""
+      "value": "",
+      "function": "Supervisor"
     },
     "R213": {
       "type": "model",
@@ -2562,7 +2881,8 @@
       "part_number": "CR1206-FX-1201ELF",
       "package": "1206",
       "stock_number": "30-1100-1220-10",
-      "value": "1.2k"
+      "value": "1.2k",
+      "function": ""
     },
     "R212": {
       "type": "model",
@@ -2570,7 +2890,8 @@
       "part_number": "RC0402JR-0710RL",
       "package": "0402",
       "stock_number": "30-1100-1000-50",
-      "value": "10"
+      "value": "10",
+      "function": ""
     },
     "R211": {
       "type": "model",
@@ -2578,7 +2899,8 @@
       "part_number": "MCR18EZHJ473E",
       "package": "1206",
       "stock_number": "30-1100-4730-00",
-      "value": "47000"
+      "value": "47000",
+      "function": ""
     },
     "R210": {
       "type": "model",
@@ -2586,7 +2908,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R209": {
       "type": "model",
@@ -2594,7 +2917,8 @@
       "part_number": "RC0402FR-07220KL",
       "package": "0402",
       "stock_number": "30-1100-2250-60",
-      "value": "220000"
+      "value": "220000",
+      "function": ""
     },
     "R208": {
       "type": "model",
@@ -2602,7 +2926,8 @@
       "part_number": "RC0402FR-0722KL",
       "package": "0402",
       "stock_number": "30-1100-2230-40",
-      "value": "22000"
+      "value": "22000",
+      "function": ""
     },
     "R207": {
       "type": "model",
@@ -2610,7 +2935,8 @@
       "part_number": "CR1206-FX-1201ELF",
       "package": "1206",
       "stock_number": "30-1100-1220-10",
-      "value": "1.2k"
+      "value": "1.2k",
+      "function": ""
     },
     "R206": {
       "type": "model",
@@ -2618,7 +2944,8 @@
       "part_number": "RC0402JR-0710RL",
       "package": "0402",
       "stock_number": "30-1100-1000-50",
-      "value": "10"
+      "value": "10",
+      "function": ""
     },
     "R204": {
       "type": "model",
@@ -2626,7 +2953,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R203": {
       "type": "model",
@@ -2634,7 +2962,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R202": {
       "type": "model",
@@ -2642,7 +2971,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R201": {
       "type": "model",
@@ -2650,7 +2980,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R200": {
       "type": "model",
@@ -2658,7 +2989,8 @@
       "part_number": "RC0402FR-0722KL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22000"
+      "value": "22000",
+      "function": ""
     },
     "R198": {
       "type": "model",
@@ -2666,7 +2998,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R197": {
       "type": "model",
@@ -2674,7 +3007,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R195": {
       "type": "model",
@@ -2682,7 +3016,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R185": {
       "type": "model",
@@ -2690,7 +3025,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R180": {
       "type": "model",
@@ -2698,7 +3034,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R178": {
       "type": "model",
@@ -2706,7 +3043,8 @@
       "part_number": "RC0402FR-07680RL",
       "package": "0402",
       "stock_number": "30-1100-6810-70",
-      "value": "680"
+      "value": "680",
+      "function": ""
     },
     "R177": {
       "type": "model",
@@ -2714,7 +3052,8 @@
       "part_number": "RC0402FR-07220RL",
       "package": "0402",
       "stock_number": "30-1100-0220-50",
-      "value": "220"
+      "value": "220",
+      "function": ""
     },
     "R176": {
       "type": "model",
@@ -2722,7 +3061,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-7520-30",
-      "value": "7500"
+      "value": "7500",
+      "function": ""
     },
     "R175": {
       "type": "model",
@@ -2730,7 +3070,8 @@
       "part_number": "RC0402FR-0756KL",
       "package": "0402",
       "stock_number": "30-1100-5630-50",
-      "value": "56000"
+      "value": "56000",
+      "function": ""
     },
     "R174": {
       "type": "model",
@@ -2738,7 +3079,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R173": {
       "type": "model",
@@ -2746,7 +3088,8 @@
       "part_number": "RC0402FR-072K7L",
       "package": "0402",
       "stock_number": "30-1100-2720-50",
-      "value": "2700"
+      "value": "2700",
+      "function": ""
     },
     "R172": {
       "type": "model",
@@ -2754,7 +3097,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-5110-30",
-      "value": "510"
+      "value": "510",
+      "function": ""
     },
     "R171": {
       "type": "model",
@@ -2762,7 +3106,8 @@
       "part_number": "RC0402FR-073K3L",
       "package": "0402",
       "stock_number": "30-1100-3320-50",
-      "value": "3300"
+      "value": "3300",
+      "function": ""
     },
     "R170": {
       "type": "model",
@@ -2770,7 +3115,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R169": {
       "type": "model",
@@ -2778,7 +3124,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R168": {
       "type": "model",
@@ -2786,7 +3133,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-4330-30",
-      "value": "43000"
+      "value": "43000",
+      "function": ""
     },
     "R167": {
       "type": "model",
@@ -2794,7 +3142,8 @@
       "part_number": "RC0402FR-07220RL",
       "package": "0402",
       "stock_number": "30-1100-0220-50",
-      "value": "220"
+      "value": "220",
+      "function": ""
     },
     "R166": {
       "type": "model",
@@ -2802,7 +3151,8 @@
       "part_number": "RC0402FR-07220RL",
       "package": "0402",
       "stock_number": "30-1100-0220-50",
-      "value": "220"
+      "value": "220",
+      "function": ""
     },
     "R165": {
       "type": "model",
@@ -2810,7 +3160,8 @@
       "part_number": "RC0402FR-07220RL",
       "package": "0402",
       "stock_number": "30-1100-0220-50",
-      "value": "220"
+      "value": "220",
+      "function": ""
     },
     "R164": {
       "type": "model",
@@ -2818,7 +3169,8 @@
       "part_number": "ERA-2AED241X",
       "package": "0402",
       "stock_number": "30-1100-2410-50",
-      "value": "240"
+      "value": "240",
+      "function": ""
     },
     "R163": {
       "type": "model",
@@ -2826,7 +3178,8 @@
       "part_number": "RC0402FR-071K5L",
       "package": "0402",
       "stock_number": "30-1100-1520-50",
-      "value": "1500"
+      "value": "1500",
+      "function": ""
     },
     "R162": {
       "type": "model",
@@ -2834,7 +3187,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R161": {
       "type": "model",
@@ -2842,7 +3196,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R160": {
       "type": "model",
@@ -2850,7 +3205,8 @@
       "part_number": "CRCW0402100RFKED",
       "package": "0402",
       "stock_number": "30-1100-1010-50",
-      "value": "100"
+      "value": "100",
+      "function": ""
     },
     "R159": {
       "type": "model",
@@ -2858,7 +3214,8 @@
       "part_number": "RC0402FR-071KL",
       "package": "0402",
       "stock_number": "30-1100-1020-60",
-      "value": "1000"
+      "value": "1000",
+      "function": ""
     },
     "R156": {
       "type": "model",
@@ -2866,7 +3223,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R153": {
       "type": "model",
@@ -2874,7 +3232,8 @@
       "part_number": "RC0402FR-0732K4L",
       "package": "0402",
       "stock_number": "30-1100-3230-50",
-      "value": "32400"
+      "value": "32400",
+      "function": ""
     },
     "R150": {
       "type": "model",
@@ -2882,7 +3241,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R149": {
       "type": "model",
@@ -2890,7 +3250,8 @@
       "part_number": "RC0805FR-0747RL",
       "package": "0805",
       "stock_number": "30-1100-4700-20",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R148": {
       "type": "model",
@@ -2898,7 +3259,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R146": {
       "type": "model",
@@ -2906,7 +3268,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R145": {
       "type": "model",
@@ -2914,7 +3277,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R144": {
       "type": "model",
@@ -2922,7 +3286,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R142": {
       "type": "model",
@@ -2930,7 +3295,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R140": {
       "type": "model",
@@ -2938,7 +3304,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R139": {
       "type": "model",
@@ -2946,7 +3313,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R138": {
       "type": "model",
@@ -2954,7 +3322,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R136": {
       "type": "model",
@@ -2962,7 +3331,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R134": {
       "type": "model",
@@ -2970,7 +3340,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R133": {
       "type": "model",
@@ -2978,7 +3349,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R132": {
       "type": "model",
@@ -2986,7 +3358,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R131": {
       "type": "model",
@@ -2994,7 +3367,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R129": {
       "type": "model",
@@ -3002,7 +3376,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R128": {
       "type": "model",
@@ -3010,7 +3385,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R127": {
       "type": "model",
@@ -3018,7 +3394,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R126": {
       "type": "model",
@@ -3026,7 +3403,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R125": {
       "type": "model",
@@ -3034,7 +3412,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R124": {
       "type": "model",
@@ -3042,7 +3421,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R123": {
       "type": "model",
@@ -3050,7 +3430,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R122": {
       "type": "model",
@@ -3058,7 +3439,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R121": {
       "type": "model",
@@ -3066,7 +3448,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R120": {
       "type": "model",
@@ -3074,7 +3457,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R119": {
       "type": "model",
@@ -3082,7 +3466,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R118": {
       "type": "model",
@@ -3090,7 +3475,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R117": {
       "type": "model",
@@ -3098,7 +3484,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R116": {
       "type": "model",
@@ -3106,7 +3493,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R115": {
       "type": "model",
@@ -3114,7 +3502,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R114": {
       "type": "model",
@@ -3122,7 +3511,8 @@
       "part_number": "RC0402FR-071KL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "1000"
+      "value": "1000",
+      "function": ""
     },
     "R113": {
       "type": "model",
@@ -3130,7 +3520,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R112": {
       "type": "model",
@@ -3138,7 +3529,8 @@
       "part_number": "RC0603FR-0768KL",
       "package": "0603",
       "stock_number": "30-1100-6930-00",
-      "value": "68k"
+      "value": "68k",
+      "function": ""
     },
     "R111": {
       "type": "model",
@@ -3146,7 +3538,8 @@
       "part_number": "RC0603FR-071KL",
       "package": "0603",
       "stock_number": "30-1100-1020-40",
-      "value": "1000"
+      "value": "1000",
+      "function": ""
     },
     "R109": {
       "type": "model",
@@ -3154,7 +3547,8 @@
       "part_number": "RC0603FR-0710KL",
       "package": "0603",
       "stock_number": "30-1100-1030-40",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R106": {
       "type": "model",
@@ -3162,7 +3556,8 @@
       "part_number": "RC0603FR-0715KL",
       "package": "0603",
       "stock_number": "30-1100-1530-40",
-      "value": "15000"
+      "value": "15000",
+      "function": ""
     },
     "R105": {
       "type": "model",
@@ -3170,7 +3565,8 @@
       "part_number": "RC0603FR-07100KL",
       "package": "0603",
       "stock_number": "30-1100-1040-40",
-      "value": "100k"
+      "value": "100k",
+      "function": ""
     },
     "R104": {
       "type": "model",
@@ -3178,7 +3574,8 @@
       "part_number": "RC0603FR-0751KL",
       "package": "0603",
       "stock_number": "30-1100-5130-00",
-      "value": "51000"
+      "value": "51000",
+      "function": ""
     },
     "R103": {
       "type": "model",
@@ -3186,7 +3583,8 @@
       "part_number": "RC0603FR-073KL",
       "package": "0603",
       "stock_number": "30-1100-3020-40",
-      "value": "3k"
+      "value": "3k",
+      "function": ""
     },
     "R97": {
       "type": "model",
@@ -3194,7 +3592,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R96": {
       "type": "model",
@@ -3202,7 +3601,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R95": {
       "type": "model",
@@ -3210,7 +3610,8 @@
       "part_number": "RC0402FR-0722KL",
       "package": "0402",
       "stock_number": "30-1100-2230-40",
-      "value": "22000"
+      "value": "22000",
+      "function": ""
     },
     "R94": {
       "type": "model",
@@ -3218,7 +3619,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R93": {
       "type": "model",
@@ -3226,7 +3628,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R92": {
       "type": "model",
@@ -3234,7 +3637,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R91": {
       "type": "model",
@@ -3242,7 +3646,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R90": {
       "type": "model",
@@ -3250,7 +3655,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R89": {
       "type": "model",
@@ -3258,7 +3664,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R88": {
       "type": "model",
@@ -3266,7 +3673,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R87": {
       "type": "model",
@@ -3274,7 +3682,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R86": {
       "type": "model",
@@ -3282,7 +3691,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R85": {
       "type": "model",
@@ -3290,7 +3700,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R84": {
       "type": "model",
@@ -3298,7 +3709,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R83": {
       "type": "model",
@@ -3306,7 +3718,8 @@
       "part_number": "",
       "package": "0402",
       "stock_number": "30-1100-1210-50",
-      "value": "120"
+      "value": "120",
+      "function": ""
     },
     "R82": {
       "type": "model",
@@ -3314,7 +3727,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R81": {
       "type": "model",
@@ -3322,7 +3736,8 @@
       "part_number": "CRCW04020000Z0ED",
       "package": "0402",
       "stock_number": "30-1100-0000-50",
-      "value": "0"
+      "value": "0",
+      "function": ""
     },
     "R80": {
       "type": "model",
@@ -3330,7 +3745,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R79": {
       "type": "model",
@@ -3338,7 +3754,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R75": {
       "type": "model",
@@ -3346,7 +3763,8 @@
       "part_number": "RC0402FR-076K49L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "6490"
+      "value": "6490",
+      "function": ""
     },
     "R69": {
       "type": "model",
@@ -3354,7 +3772,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R68": {
       "type": "model",
@@ -3362,7 +3781,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R66": {
       "type": "model",
@@ -3370,7 +3790,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R65": {
       "type": "model",
@@ -3378,7 +3799,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R62": {
       "type": "model",
@@ -3386,7 +3808,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R60": {
       "type": "model",
@@ -3394,7 +3817,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R59": {
       "type": "model",
@@ -3402,7 +3826,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R58": {
       "type": "model",
@@ -3410,7 +3835,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R55": {
       "type": "model",
@@ -3418,7 +3844,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R54": {
       "type": "model",
@@ -3426,7 +3853,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R53": {
       "type": "model",
@@ -3434,7 +3862,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R52": {
       "type": "model",
@@ -3442,7 +3871,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R49": {
       "type": "model",
@@ -3450,7 +3880,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R47": {
       "type": "model",
@@ -3458,7 +3889,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R44": {
       "type": "model",
@@ -3466,7 +3898,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R43": {
       "type": "model",
@@ -3474,7 +3907,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R41": {
       "type": "model",
@@ -3482,7 +3916,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R40": {
       "type": "model",
@@ -3490,7 +3925,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R37": {
       "type": "model",
@@ -3498,7 +3934,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R35": {
       "type": "model",
@@ -3506,7 +3943,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "R32": {
       "type": "model",
@@ -3514,7 +3952,8 @@
       "part_number": "RC0402FR-0775RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "75"
+      "value": "75",
+      "function": ""
     },
     "R31": {
       "type": "model",
@@ -3522,7 +3961,8 @@
       "part_number": "RC0402FR-0775RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "75"
+      "value": "75",
+      "function": ""
     },
     "R30": {
       "type": "model",
@@ -3530,7 +3970,8 @@
       "part_number": "RC0402FR-0775RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "75"
+      "value": "75",
+      "function": ""
     },
     "R29": {
       "type": "model",
@@ -3538,7 +3979,8 @@
       "part_number": "RC0402FR-0775RL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "75"
+      "value": "75",
+      "function": ""
     },
     "R24": {
       "type": "model",
@@ -3546,7 +3988,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R21": {
       "type": "model",
@@ -3554,7 +3997,8 @@
       "part_number": "RC0402FR-071KL",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "1000"
+      "value": "1000",
+      "function": ""
     },
     "R17": {
       "type": "model",
@@ -3562,7 +4006,8 @@
       "part_number": "RC0402FR-07100KL",
       "package": "0402",
       "stock_number": "30-1100-1040-50",
-      "value": "100000"
+      "value": "100000",
+      "function": ""
     },
     "R16": {
       "type": "model",
@@ -3570,7 +4015,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R15": {
       "type": "model",
@@ -3578,7 +4024,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "30-1100-4720-60",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R14": {
       "type": "model",
@@ -3586,7 +4033,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "30-1100-4720-60",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R13": {
       "type": "model",
@@ -3594,7 +4042,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R12": {
       "type": "model",
@@ -3602,7 +4051,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R11": {
       "type": "model",
@@ -3610,7 +4060,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R10": {
       "type": "model",
@@ -3618,7 +4069,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R8": {
       "type": "model",
@@ -3626,7 +4078,8 @@
       "part_number": "CRCW040210K0FKEDC",
       "package": "0402",
       "stock_number": "30-1100-1030-50",
-      "value": "10000"
+      "value": "10000",
+      "function": ""
     },
     "R7": {
       "type": "model",
@@ -3634,7 +4087,8 @@
       "part_number": "RC0402FR-0747RL",
       "package": "0402",
       "stock_number": "30-1100-4700-40",
-      "value": "47"
+      "value": "47",
+      "function": ""
     },
     "R6": {
       "type": "model",
@@ -3642,7 +4096,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "R1": {
       "type": "model",
@@ -3650,7 +4105,8 @@
       "part_number": "RC0402FR-074K7L",
       "package": "0402",
       "stock_number": "RES_SINGLE",
-      "value": "4700"
+      "value": "4700",
+      "function": ""
     },
     "Q1": {
       "type": "model",
@@ -3658,7 +4114,8 @@
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
-      "value": ""
+      "value": "",
+      "function": "NPN"
     },
     "L1": {
       "type": "model",
@@ -3666,23 +4123,26 @@
       "part_number": "BLM15PD121SN1D",
       "package": "0402",
       "stock_number": "IND_SINGLE_AIR",
-      "value": ""
+      "value": "",
+      "function": "Bead"
     },
     "J19": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "IGNORE",
       "part_number": "610308243021",
       "package": "SocketStrip-8",
       "stock_number": "30-3001-5008-10",
-      "value": ""
+      "value": "",
+      "function": "SocketStrip"
     },
     "F1": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "link",
       "part_number": "0685T6000-01",
       "package": "1206",
       "stock_number": "30-2001-0056-00",
-      "value": ""
+      "value": "",
+      "function": "FUSE"
     },
     "D12": {
       "type": "model",
@@ -3690,7 +4150,8 @@
       "part_number": "PESD3V3L5UY",
       "package": "SOT363",
       "stock_number": "30-1300-0037-00",
-      "value": ""
+      "value": "",
+      "function": "ESD"
     },
     "D9": {
       "type": "model",
@@ -3698,7 +4159,8 @@
       "part_number": "SMCJ5.0A",
       "package": "SMC",
       "stock_number": "30-1300-0032-00",
-      "value": ""
+      "value": "",
+      "function": "TVS"
     },
     "D8": {
       "type": "model",
@@ -3706,7 +4168,8 @@
       "part_number": "BAV99,215",
       "package": "SOT23-3",
       "stock_number": "30-1300-0003-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "D5": {
       "type": "model",
@@ -3714,7 +4177,8 @@
       "part_number": "BAS70-05,215",
       "package": "SOT23-3",
       "stock_number": "30-1300-0028-01",
-      "value": ""
+      "value": "",
+      "function": "SCHOTTKY"
     },
     "D3": {
       "type": "model",
@@ -3722,7 +4186,8 @@
       "part_number": "MURS320T3G",
       "package": "SMC",
       "stock_number": "30-1300-0015-00",
-      "value": ""
+      "value": "",
+      "function": "DIODE"
     },
     "D2": {
       "type": "model",
@@ -3730,7 +4195,8 @@
       "part_number": "BAS70-06",
       "package": "SOT23-3",
       "stock_number": "30-0300-0059-00",
-      "value": ""
+      "value": "",
+      "function": "SCHOTTKY"
     },
     "D1": {
       "type": "model",
@@ -3738,527 +4204,593 @@
       "part_number": "BAS70-06",
       "package": "SOT23-3",
       "stock_number": "30-0300-0059-00",
-      "value": ""
+      "value": "",
+      "function": "SCHOTTKY"
     },
     "C90": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C89": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C88": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C85": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C84": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C83": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C82": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C78": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C74": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C73": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R5BB105",
       "package": "0402",
       "stock_number": "30-1202-1050-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C72": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R9BB102",
       "package": "0402",
       "stock_number": "30-1202-1020-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C71": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R5BB105",
       "package": "0402",
       "stock_number": "30-1202-1050-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C70": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C69": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "0402N102J250CT",
       "package": "0402",
       "stock_number": "30-1201-0065-10",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C68": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R9BB103",
       "package": "0402",
       "stock_number": "30-1201-0071-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C67": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C66": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C65": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C64": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C63": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C62": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C61": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C57": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C56": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C55": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C54": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C53": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C52": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C51": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0603C103K5RAC7867",
       "package": "0603",
       "stock_number": "30-1201-0041-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C50": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CL21A226MOCLRNC",
       "package": "0805",
       "stock_number": "30-1201-0119-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C49": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CL21A226MOCLRNC",
       "package": "0805",
       "stock_number": "30-1201-0119-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C48": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0603C102K5RAC7867",
       "package": "0603",
       "stock_number": "30-1201-0042-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C47": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0603C104K5RAC7867",
       "package": "0603",
       "stock_number": "30-1201-0047-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C46": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM21BR71H474KA88L",
       "package": "0805",
       "stock_number": "30-1201-0028-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C45": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM21BR71H474KA88L",
       "package": "0805",
       "stock_number": "30-1201-0028-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C44": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM188R72A104KA35D",
       "package": "0603",
       "stock_number": "30-1201-0097-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C43": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0603JRNPO9BN470",
       "package": "0603",
       "stock_number": "30-1201-0077-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C41": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "502S47W472KV3E",
       "package": "2220",
       "stock_number": "30-1201-0096-01",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C40": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "885342207009",
       "package": "0805",
       "stock_number": "30-1201-0030-10",
-      "value": ""
+      "value": "",
+      "function": "Capacitor"
     },
     "C39": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0805C104K5RAC7800",
       "package": "0805",
       "stock_number": "30-1201-0014-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C37": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C36": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C35": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CL10B225KP8NNNC",
       "package": "0603",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C34": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C33": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C32": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM21BR71H474KA88L",
       "package": "0805",
       "stock_number": "30-1201-0028-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C31": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM21BR71H474KA88L",
       "package": "0805",
       "stock_number": "30-1201-0028-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C28": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "502S47W472KV3E",
       "package": "2220",
       "stock_number": "30-1201-0096-01",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C27": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "885342207009",
       "package": "0805",
       "stock_number": "30-1201-0030-10",
-      "value": ""
+      "value": "",
+      "function": "Capacitor"
     },
     "C26": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C25": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C24": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX5R9BB102",
       "package": "0402",
       "stock_number": "30-1202-1020-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C22": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM155R60J224KE01D",
       "package": "0402",
       "stock_number": "30-1202-2240-50",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C19": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "NMC-H1206X7R102K2KVTRPF",
       "package": "1206",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C17": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C16": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C15": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C10": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C7": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0603MRX5R5BB226",
       "package": "0603",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C6": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C5": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R9BB103",
       "package": "0402",
       "stock_number": "30-1201-0071-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C4": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0603C180J5GAC7867",
       "package": "0603",
       "stock_number": "30-1201-0078-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C3": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "C0603C180J5GAC7867",
       "package": "0603",
       "stock_number": "30-1201-0078-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C2": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C92": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CL10B225KP8NNNC",
       "package": "0603",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "R226": {
       "type": "model",
@@ -4266,7 +4798,8 @@
       "part_number": "RC0402FR-0722RL",
       "package": "0402",
       "stock_number": "30-1100-2200-30",
-      "value": "22"
+      "value": "22",
+      "function": ""
     },
     "Q3": {
       "type": "model",
@@ -4274,7 +4807,8 @@
       "part_number": "BC856,215",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0019-00",
-      "value": ""
+      "value": "",
+      "function": "PNP"
     },
     "R228": {
       "type": "model",
@@ -4282,7 +4816,8 @@
       "part_number": "RC0402FR-0747KL",
       "package": "0402",
       "stock_number": "30-1100-4730-50",
-      "value": "47000"
+      "value": "47000",
+      "function": ""
     },
     "R229": {
       "type": "model",
@@ -4290,7 +4825,8 @@
       "part_number": "RC0402FR-071KL",
       "package": "0402",
       "stock_number": "30-1100-1020-60",
-      "value": "1000"
+      "value": "1000",
+      "function": ""
     },
     "R230": {
       "type": "model",
@@ -4298,47 +4834,53 @@
       "part_number": "RC0402FR-0712KL",
       "package": "0402",
       "stock_number": "30-1100-1230-50",
-      "value": "12000"
+      "value": "12000",
+      "function": ""
     },
     "C100": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C101": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "GRM1885C2A102JA01D",
       "package": "0603",
       "stock_number": "30-1201-1000-00",
-      "value": ""
+      "value": "",
+      "function": ""
     },
     "C102": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C103": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "30-1202-0001-00",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     },
     "C104": {
       "type": "model",
-      "model_name": "capacitor",
+      "model_name": "IGNORE",
       "part_number": "CC0402KRX7R7BB104",
       "package": "0402",
       "stock_number": "CAP_NONPOL",
-      "value": ""
+      "value": "",
+      "function": "CAPACITOR"
     }
   },
   "netlist": {

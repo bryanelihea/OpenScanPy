@@ -1,0 +1,82 @@
+{
+  "model": "sn74lvc2t45dctt",
+  "devices": {
+    "@": {
+      "type": "@"
+    }
+  },
+  "netlist": {
+    "A1": [
+      {
+        "device": "@",
+        "pin": "A1"
+      }
+    ],
+    "B1": [
+      {
+        "device": "@",
+        "pin": "B1"
+      }
+    ],
+    "A2": [
+      {
+        "device": "@",
+        "pin": "A2"
+      }
+    ],
+    "B2": [
+      {
+        "device": "@",
+        "pin": "B2"
+      }
+    ],
+    "DIR": [
+      {
+        "device": "@",
+        "pin": "DIR"
+      }
+    ],
+    "OE": [
+      {
+        "device": "@",
+        "pin": "OE"
+      }
+    ]
+  },
+  "behavior": {
+    "paths": [
+      {
+        "from": "A1",
+        "to": "B1",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B1",
+        "to": "A1",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      },
+      {
+        "from": "A2",
+        "to": "B2",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "high",
+        "enable_value": "low"
+      },
+      {
+        "from": "B2",
+        "to": "A2",
+        "control_net": "DIR",
+        "enable_net": "OE",
+        "control_value": "low",
+        "enable_value": "low"
+      }
+    ]
+  }
+}

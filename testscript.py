@@ -886,7 +886,8 @@ def parse_netlist_to_model(netlist_csv, bom_csv, output_path, model_name):
                 "part_number": row.get("Part_Number", "").strip().replace("'",""),
                 "package": row.get("Package", "").strip().replace("'",""),
                 "stock_number": row.get("Stock_Number", "").strip().replace("'",""),
-                "value": row.get("Value", "").strip().replace("'","")
+                "value": row.get("Value", "").strip().replace("'",""),
+                "function": row.get("Function", "").strip().replace("'","")
             }
 
     # Parse netlist CSV
@@ -905,12 +906,27 @@ def parse_netlist_to_model(netlist_csv, bom_csv, output_path, model_name):
             pin_counts[ref].add(pin)
 
             if ref not in devices:
-                if ref.upper().startswith("R"):
+                part = part_info.get(ref, {})
+                part_number = part.get("part_number", "")
+                model_type = "unknown"
+
+                # Check if part-specific model exists
+                model_path = os.path.join("resources", "models", f"{str.lower(part_number)}_model.json")
+                if part_number and os.path.isfile(model_path):
+                    model_type = str.lower(part_number)
+
+                function = part.get("function", "").lower()
+
+                if function == "fuse":
+                    model_type = "link"
+                elif ref.upper().startswith("J"):
+                    model_type = "IGNORE"
+                elif ref.upper().startswith("R"):
                     model_type = "resistor"
+                elif ref.upper().startswith("LK"):
+                    model_type = "link"
                 elif ref.upper().startswith("C"):
-                    model_type = "capacitor"
-                else:
-                    model_type = "unknown"
+                    model_type = "IGNORE"
 
                 part = part_info.get(ref, {})
 
@@ -920,7 +936,8 @@ def parse_netlist_to_model(netlist_csv, bom_csv, output_path, model_name):
                     "part_number": part.get("part_number", ""),
                     "package": part.get("package", ""),
                     "stock_number": part.get("stock_number", ""),
-                    "value": part.get("value", "")
+                    "value": part.get("value", ""),
+                    "function": part.get("function", "")
                 }
 
             nets[net].append({
@@ -948,6 +965,13 @@ def parse_netlist_to_model(netlist_csv, bom_csv, output_path, model_name):
 
     print(f"Model '{model_name}' written to {output_path}")
 
+        # Print devices with unknown model_name
+    print("\nDevices with unknown model type:")
+    for ref, props in devices.items():
+        if props.get("model_name") == "unknown":
+            print(f"  {ref}: part_number='{props.get('part_number', '')}', package='{props.get('package', '')}', function='{props.get('function', '')}'")
+
+
 def odb_component_parser(input_path1, output_csv_path, input_path2=None):
     """
     Parses one or two ODB-style component files and outputs a CSV with Designator, Part_Number, and Package.
@@ -970,7 +994,7 @@ def odb_component_parser(input_path1, output_csv_path, input_path2=None):
                     parts = line.split()
                     current_ref = parts[6]
                     stk_ref = parts[7]
-                    components[current_ref] = {"Stock Number": "", "Part_Number": "", "Package": "", "Value": ""}
+                    components[current_ref] = {"Stock Number": "", "Part_Number": "", "Package": "", "Value": "", "Function": ""}
                     components[current_ref]["Stock_Number"] = stk_ref
                 elif line.startswith("PRP") and current_ref:
                     parts = line.split(maxsplit=2)
@@ -982,6 +1006,8 @@ def odb_component_parser(input_path1, output_csv_path, input_path2=None):
                             components[current_ref]["Package"] = value
                         elif key == "R_Ohms":
                             components[current_ref]["Value"] = value
+                        elif key == "Function":
+                            components[current_ref]["Function"] = value
         return components
 
     all_components = parse_file(input_path1)
@@ -991,9 +1017,9 @@ def odb_component_parser(input_path1, output_csv_path, input_path2=None):
     # Write to CSV
     with open(output_csv_path, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["Designator", "Stock_Number", "Part_Number", "Package", "Value"])
+        writer.writerow(["Designator", "Stock_Number", "Part_Number", "Package", "Value", "Function"])
         for ref, props in sorted(all_components.items()):
-            writer.writerow([ref, props["Stock_Number"], props["Part_Number"], props["Package"], props["Value"]])
+            writer.writerow([ref, props["Stock_Number"], props["Part_Number"], props["Package"], props["Value"], props["Function"]])
 
 
 
@@ -1014,16 +1040,16 @@ if __name__ == "__main__":
 
     # this takes the netlist exported from ZofZ and the BoM extracted from the ODB++ file and generates the PCB model
     # any single pin COMPONENTS are treated as "pins" for the model - i.e. test points
-    '''
+    
     parse_netlist_to_model(
         bom_csv="projects/71065/bom/71065_bom.csv",
         netlist_csv="projects/71065/netlists/71065_netlist.csv",
         model_name="71065",
         output_path="projects/71065/models/71065_model.json"
     )
-    '''
+    
 
-    print(get_bsr_cells_from_package_pin("osd3358", "am335x", "P13"))
+    print(get_bsr_cells_from_package_pin("osd3358-512m-bsm", "am335x", "P13"))
 
     # below is for testing the actual boundary scan chain
     
