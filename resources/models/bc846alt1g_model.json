@@ -1,5 +1,5 @@
 {
-    "model": "resistor",
+    "model": "bc846alt1g",
     "behavioural": true,
     "devices": {
         "@": {
@@ -7,13 +7,19 @@
         }
     },
     "netlist": {
-        "A": [
+        "B": [
             {
                 "device": "@",
                 "pin": "1"
             }
         ],
-        "B": [
+        "C": [
+            {
+                "device": "@",
+                "pin": "3"
+            }
+        ],
+        "E": [
             {
                 "device": "@",
                 "pin": "2"
@@ -22,9 +28,12 @@
     },
     "behavior": {
         "path": {
-            "from_net": "A",
-            "to_net": "B",
-            "bidirectional": true
+            "from": "C",
+            "to": "E",
+            "drop_voltage": 0.2,
+            "control_net": "B",
+            "reference_net": "E",
+            "trigger_voltage": 0.7
         }
     }
 }

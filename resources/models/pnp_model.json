@@ -27,8 +27,8 @@
     },
     "behavior": {
         "path": {
-            "from": "E",
-            "to": "C",
+            "from_net": "E",
+            "to_net": "C",
             "drop_voltage": 0.2,
             "control_net": "B",
             "reference_net": "E",

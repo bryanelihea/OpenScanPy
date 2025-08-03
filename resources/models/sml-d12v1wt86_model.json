@@ -1,5 +1,5 @@
 {
-    "model": "resistor",
+    "model": "sml-d12v1wt86",
     "behavioural": true,
     "devices": {
         "@": {
@@ -10,21 +10,21 @@
         "A": [
             {
                 "device": "@",
-                "pin": "1"
+                "pin": "A"
             }
         ],
-        "B": [
+        "K": [
             {
                 "device": "@",
-                "pin": "2"
+                "pin": "K"
             }
         ]
     },
     "behavior": {
         "path": {
             "from_net": "A",
-            "to_net": "B",
-            "bidirectional": true
+            "to_net": "K",
+            "voltage_drop": 2.2
         }
     }
 }

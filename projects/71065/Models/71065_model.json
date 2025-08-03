@@ -168,7 +168,7 @@
     },
     "Q10": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "bc846alt1g",
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
@@ -447,7 +447,7 @@
     },
     "Q12": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "bc846alt1g",
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
@@ -456,7 +456,7 @@
     },
     "Q11": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "bc846alt1g",
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
@@ -465,7 +465,7 @@
     },
     "Q9": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "bc846alt1g",
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
@@ -483,7 +483,7 @@
     },
     "LED8": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sml-d12v1wt86",
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
@@ -492,7 +492,7 @@
     },
     "LED7": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sml-d12v1wt86",
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
@@ -501,7 +501,7 @@
     },
     "LED6": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sml-d12v1wt86",
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
@@ -510,7 +510,7 @@
     },
     "LED5": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sml-d12v1wt86",
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
@@ -528,7 +528,7 @@
     },
     "LED3": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "sml-d12v1wt86",
       "part_number": "SML-D12V1WT86",
       "package": "0603",
       "stock_number": "30-1300-0051-20",
@@ -4110,7 +4110,7 @@
     },
     "Q1": {
       "type": "model",
-      "model_name": "unknown",
+      "model_name": "bc846alt1g",
       "part_number": "BC846ALT1G",
       "package": "SOT-23-3",
       "stock_number": "30-1050-0009-00",
