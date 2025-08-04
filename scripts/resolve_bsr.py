@@ -10,12 +10,7 @@ def set_project(name):
 import os
 import json
 
-def get_device_pins_from_model_pin(model_name: str, model_pin: str) -> list[tuple[str, str, str]]:
-    """
-    Given a model name and an @ pin (model_pin), return a list of (device, pin, source)
-    for each connected pin. Source is either 'model:<model_name>' or 'bsdl:<bsdl_name>'.
-    """
-    def load_model(name):
+def load_model(name):
         path = os.path.join("resources", "models", f"{name}_model.json")
         if not os.path.exists(path):
             path = os.path.join("projects", project_name, "models", f"{name}_model.json")
@@ -23,6 +18,12 @@ def get_device_pins_from_model_pin(model_name: str, model_pin: str) -> list[tupl
             raise FileNotFoundError(f"Model file not found: {name}")
         with open(path, "r") as f:
             return json.load(f)
+
+def get_device_pins_from_model_pin(model_name: str, model_pin: str) -> list[tuple[str, str, str]]:
+    """
+    Given a model name and an @ pin (model_pin), return a list of (device, pin, source)
+    for each connected pin. Source is either 'model:<model_name>' or 'bsdl:<bsdl_name>'.
+    """
 
     model = load_model(model_name)
     results = []
@@ -117,6 +118,42 @@ def resolve_bsr(model, pin, bsdl):
 
     def pop_stack_level():
         path_stack.pop()
+    
+    def get_pin_for_path_label(model_name: str, label: str) -> tuple[str, str] | None:
+        """
+        Given a model and a label such as 'from_net' or 'to_net',
+        resolve it to the connected (device, pin) pair.
+        """
+        model = load_model(model_name)
+        path = model.get("behavior", {}).get("path", {})
+        logical_label = path.get(label)
+        if logical_label is None:
+            print(f"[WARN] Path has no label '{label}'")
+            return None
+
+        # Find which pin on '@' maps to that logical pin name
+
+        for net_name, connections in model.get("netlist", {}).items():
+            if net_name == logical_label:
+                for conn in connections:
+                    if conn["device"] == "@":
+                        return conn["pin"]
+
+        print(f"[WARN] Could not resolve label '{label}' to any @ pin")
+        return None
+
+
+
+
+    def get_model_behavior_paths(model_name: str) -> list:
+        model = load_model(model_name)
+        if model.get("behavioural", False):
+            return model.get("behavior", {}).get("path", [])
+        return []
+
+    def is_model_behavioural(model_name: str) -> bool:
+        model = load_model(model_name)
+        return model.get("behavioural", False) is True
 
     def find_bsdl_targets(results, bsdl_name):
         bsdl_name = bsdl_name.strip().lower()
@@ -128,9 +165,11 @@ def resolve_bsr(model, pin, bsdl):
         print(f"[INFO] Direct BSR net {'FOUND' if rtn else 'NOT FOUND'} at {model} level")
         return rtn
 
+    # set the inital top level, usually the board
     results = get_device_pins_from_model_pin(model, pin)
     push_stack_level(model, pin, results)
 
+    # now we iterate through until we've 'popped' back to the top. This will fan out as we go down but shouldn't be too many levels
     while path_stack:
         level = path_stack[-1]
         idx = get_stack_index()
@@ -151,7 +190,14 @@ def resolve_bsr(model, pin, bsdl):
 
         if dev_type.lower().startswith("model:"):
             submodel = dev_type[6:]
+            print(f"[INFO] Entering {device}.{device_pin} ({submodel})")
             sub_results = get_device_pins_from_model_pin(submodel, device_pin)
+            if not sub_results:
+                is_behavioural = is_model_behavioural(submodel)
+                print(f"[INFO] {submodel} is {'behavioural' if is_behavioural else 'not behavioural'}")
+                paths = get_model_behavior_paths(submodel)
+                print(f"[INFO] {paths}")
+                print(f"[INFO] Signal continues through {device}.{get_pin_for_path_label(submodel, 'to_net')}")
             push_stack_level(submodel, device_pin, sub_results)
         else:
             increment_stack_index()
