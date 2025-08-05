@@ -197,7 +197,12 @@ def resolve_bsr(model, pin, bsdl):
                 print(f"[INFO] {submodel} is {'behavioural' if is_behavioural else 'not behavioural'}")
                 paths = get_model_behavior_paths(submodel)
                 print(f"[INFO] {paths}")
-                print(f"[INFO] Signal continues through {device}.{get_pin_for_path_label(submodel, 'to_net')}")
+
+                if get_pin_for_path_label(submodel, 'from_net') == device_pin:
+                    print(f"[INFO] Signal continues from {device}.{device_pin} through {device}.{get_pin_for_path_label(submodel, 'to_net')}")
+                else:
+                    print(f"[INFO] Signal continues from {device}.{device_pin} through {device}.{get_pin_for_path_label(submodel, 'from_net')}")
+
             push_stack_level(submodel, device_pin, sub_results)
         else:
             increment_stack_index()
